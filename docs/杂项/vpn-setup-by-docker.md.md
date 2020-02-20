@@ -1,3 +1,12 @@
+---
+layout: default 
+title: 使用docker搭建VPN
+parent: literature-art
+nav_order: 2
+hash: 2020-02-20
+
+---
+
 ```
 docker, docker-compose
 ```
@@ -59,5 +68,5 @@ VPN_PASSWORD=wangle12958
 # VPN_DNS_SRV2=1.0.0.1
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTIzMjI2MTZdfQ==
+eyJoaXN0b3J5IjpbOTIyNTk3OTM0XX0=
 -->
