@@ -67,3 +67,10 @@ footer_content: "Copyright &copy; 2017-2019 Patrick Marsceill. Distributed by an
 # Google Analytics Tracking (optional)
 # e.g, UA-1234567-89
 ga_tracking: UA-127508752-1
+
+# gitalk
+gitalk:
+  owner: codiy1992
+  repo: codiy1992.github.io
+  clientID: 6013bee34640a2d2ca59
+  clientSecret: 5312844fb251dfc7aaaad370b3182f17af42da0c

@@ -8,7 +8,8 @@
 
 
 ### 配置theme
-1. 根据`https://pmarsceill.github.io/just-the-docs/`文档配置theme
+1. 编辑_config.yml去掉默认的theme配置,并添加配置`remote_theme: pmarsceill/just-the-docs`
+2. 如需自定义页面内容,可透过_layouts/default.html覆盖默认配置来实现
 
 
 ### 配置github-pages
@@ -18,5 +19,33 @@
 ### 配置stackedit作为博文管理编辑器
 
 
-### 配置disqus
-1. 添加disqus,参考`https://desiredpersona.com/disqus-comments-jekyll/`
+### 配置gitalk
+1. 配置_layouts/default.html, 以覆盖模板默认配置
+2. 添加如下代码:
+```
+<!-- Link Gitalk  -->
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
+    <div id="gitalk-container"></div>     <script type="text/javascript">
+        var gitalk = new Gitalk({
+            clientID:  '{{ site.gitalk.clientID }}',
+            clientSecret: '{{ site.gitalk.clientSecret }}',
+            repo: '{{ site.gitalk.repo }}',
+            owner: '{{ site.gitalk.owner }}',
+            admin: ['{{ site.gitalk.owner }}'],
+            id: window.location.pathname,
+            labels: ['gitalk'],
+            perPage: 50
+        });
+        gitalk.render('gitalk-container');
+    </script> 
+<!-- Gitalk end -->
+```
+3. 编辑_config.yml增加gitalk配置
+```
+gitalk:
+  owner: xxxx
+  repo: xxxx
+  clientID: xxxxxx
+  clientSecret: xxxx
+```
