@@ -1,6 +1,6 @@
 ---
 layout: default 
-title: 使用docker搭建VPN
+title: Mac装机配置
 parent: others
 nav_order: 2
 hash: 2020-02-20-mac-setup
@@ -133,5 +133,5 @@ brew cask install macvim
 	2. command + p 输入 keybindings.json 拷贝出来
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyNzk0OTAzMF19
+eyJoaXN0b3J5IjpbLTk1NjczODM4N119
 -->
