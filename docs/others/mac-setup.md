@@ -7,17 +7,20 @@ hash: 2020-02-20-mac-setup
 
 ---
 
+## Mac 装机步骤
+
 1. 安装homebrew([https://brew.sh/](https://brew.sh/))
 2. 安装item2 `brew cask install item2`
 3. 安装chrome `brew cask install google-chrome`
 4. 安装输入法
 5. 设置键盘映射, 改为自己习惯的.
 6. 安装配置oh-my-zsh
-```
-# 安装oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-# 安装powerline字体
+	6.1 安装oh-my-zsh
+	`sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+
+	6.2 安装powerline字体
+	```
 	# clone
 	git clone https://github.com/powerline/fonts.git --depth=1
 	# install
@@ -26,30 +29,34 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 	# clean-up a bit
 	cd ..
 	rm -rf fonts
+	```
 
-# 设置item2配色方案和字体
-	Perferences—->Profiles—->Colors—->Color Presets 选择 Solarized Dark
-	Perferences—->Profiles—->Text-->Font 选择任意 Powerline 结尾的字体
+	6.3 设置item2配色方案和字体
+	> Perferences—->Profiles—->Colors—->Color Presets 选择 Solarized Dark
+	> Perferences—->Profiles—->Text-->Font 选择任意 Powerline 结尾的字体
 
-# 安装zsh插件
-    brew install autojump
-    在.zshrc中指定插件 plugins=(git autojump)
+	6.4 安装zsh插件
+    > brew install autojump
+    > 在.zshrc中指定插件 plugins=(git autojump)
     
-# 修改zsh主题
+	6.5 修改zsh主题
+	```
 	vi .zshrc  
 	// 修改ZSH_THEME  
 	ZSH_THEME="agnoster"
+	```
 	
-# 设置.zshrc 不显示电脑名(在.zshrc导出该函数即可)
+	6.6 设置.zshrc 不显示电脑名(在.zshrc导出该函数即可)
+	```
 	prompt_context() {  
 		if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then  
 		prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"  
 		fi  
 	}
-
-# 配置自己的profile
-  .myzshrc
-``` 
+    ```
+    
+	6.7 配置自己的profile
+	 >  .myzshrc
 
 7.  配置.ssh
 ```
@@ -98,7 +105,6 @@ brew cask install macvim
 	
 	# python
 	
-	
 	...
 ```  
 
@@ -130,5 +136,6 @@ brew cask install macvim
 	2. command + p 输入 keybindings.json 拷贝出来
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTY5MjM2NTIsLTk1NjczODM4N119
+eyJoaXN0b3J5IjpbMzIyMjQ5MzAyLC0xMzU2OTIzNjUyLC05NT
+Y3MzgzODddfQ==
 -->
