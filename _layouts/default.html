@@ -84,7 +84,6 @@ layout: table_wrappers
               {% endfor %}
             </ul>
           {% endif %}
-          
           <!-- Link Gitalk  -->
           <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
           <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
@@ -95,14 +94,14 @@ layout: table_wrappers
                   repo: '{{ site.gitalk.repo }}',
                   owner: '{{ site.gitalk.owner }}',
                   admin: ['{{ site.gitalk.owner }}'],
-                  id: window.location.pathname,
+                  id: '{{ page.name }}',
                   labels: ['gitalk'],
                   perPage: 50
               });
               gitalk.render('gitalk-container');
-          </script> 
+          </script>
         <!-- Gitalk end -->
-        
+
           {% if site.footer_content != nil %}
             <hr>
             <footer role="contentinfo">
