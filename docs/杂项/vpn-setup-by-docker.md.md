@@ -3,7 +3,7 @@ layout: default
 title: 使用docker搭建VPN
 parent: others
 nav_order: 2
-hash: 2020-02-20
+hash: 2020-02-20-vpn-setup
 
 ---
 
@@ -68,5 +68,5 @@ VPN_PASSWORD=wangle12958
 # VPN_DNS_SRV2=1.0.0.1
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTEwNjIxNjEwXX0=
+eyJoaXN0b3J5IjpbLTg2Mzk1MTkzNV19
 -->
