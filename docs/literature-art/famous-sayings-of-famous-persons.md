@@ -2,6 +2,7 @@
 layout: default 
 title: 中外名人名言
 parent: literature-art
+date: 2020-02-20
 nav_order: 2
 ---
 
