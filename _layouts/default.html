@@ -95,7 +95,7 @@ layout: table_wrappers
                   repo: '{{ site.gitalk.repo }}',
                   owner: '{{ site.gitalk.owner }}',
                   admin: ['{{ site.gitalk.owner }}'],
-                  id: md5(window.location.pathname),
+                  id: md5('{% if page.hash %} {{page.hash }} {% else %} {{ page.name }} {% endif %}'.trim()),
                   labels: ['gitalk'],
                   perPage: 50
               });
