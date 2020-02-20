@@ -7,8 +7,6 @@ hash: 2020-02-20-mac-setup
 
 ---
 
-## Mac 装机步骤
-
 1. 安装homebrew([https://brew.sh/](https://brew.sh/))
 2. 安装item2 `brew cask install item2`
 3. 安装chrome `brew cask install google-chrome`
@@ -136,6 +134,6 @@ brew cask install macvim
 	2. command + p 输入 keybindings.json 拷贝出来
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzIyMjQ5MzAyLC0xMzU2OTIzNjUyLC05NT
-Y3MzgzODddfQ==
+eyJoaXN0b3J5IjpbLTE1NjgyMjUyODcsLTEzNTY5MjM2NTIsLT
+k1NjczODM4N119
 -->
