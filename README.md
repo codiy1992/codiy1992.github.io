@@ -17,7 +17,7 @@
 
 
 ### 配置stackedit作为博文管理编辑器
-
+1. 前往`https://stackedit.io/`添加一个workspaces,以项目的docs作为路径
 
 ### 配置gitalk
 1. 配置_layouts/default.html, 以覆盖模板默认配置
