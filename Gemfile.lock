@@ -251,7 +251,6 @@ DEPENDENCIES
   jekyll (~> 3.8.0)
   jekyll-feed (~> 0.6)
   just-the-docs (~> 0.2.7)
-  tzinfo-data
 
 BUNDLED WITH
    1.16.2
