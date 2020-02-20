@@ -62,7 +62,7 @@ aux_links:
 heading_anchors: true
 
 # Footer content appears at the bottom of every page's main content
-footer_content: "Copyright &copy; 2014-2020 <a href="https://codiy.net">codiy.net</a> "
+footer_content: "Copyright &copy; 2014-2020 <a href='https://codiy.net'>codiy.net</a> "
 
 # Google Analytics Tracking (optional)
 # e.g, UA-1234567-89
