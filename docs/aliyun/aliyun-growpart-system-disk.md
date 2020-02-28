@@ -2,6 +2,7 @@
 layout: default
 title: 阿里云ECS扩容系统盘
 parent: aliyun
+hash: 2020-02-26-aliyun-growpart-ecs
 nav_order: 2
 ---
 
@@ -66,5 +67,5 @@ tmpfs           1.6G     0  1.6G   0% /run/user/0
 ```
 [1]: https://help.aliyun.com/document_detail/111738.html?spm=a2c4g.11186623.6.789.e7b91b251yWyb6
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTY1MzQzNzNdfQ==
+eyJoaXN0b3J5IjpbMTUwMTMzMDYxNywtMTg5NjUzNDM3M119
 -->
