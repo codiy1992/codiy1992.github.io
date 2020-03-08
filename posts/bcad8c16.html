@@ -1,33 +1,367 @@
-<!DOCTYPE html><html lang="en"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" name="viewport"><title>阿里云ECS扩容系统盘 | codiy.net</title><meta name="keywords" content="codiy"><meta name="description" content="我的网络日志，欢迎收藏转发~"><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/github.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"><link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"><script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script><script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script><script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script><script src="/js/main.js"></script><script>var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="https://hm.baidu.com/hm.js?98427e540e24e1052c99584c4f60d13e";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}()</script><meta name="generator" content="Hexo 4.2.0"></head><body><header id="header"><a id="title" href="/" class="logo">codiy.net</a><ul id="menu"><li class="menu-item"><a href="/about.html" class="menu-item-link">ABOUT</a></li><li class="menu-item"><a href="https://github.com/codiy1992/codiy1992.github.io" class="menu-item-link" target="_blank"><i class="fa fa-github fa-2x"></i></a></li></ul></header><div id="sidebar"><button id="sidebar-toggle" class="toggle"><i class="fa fa-arrow-right" aria-hidden="true"></i></button><div id="site-toc"><input id="search-input" class="search-input" type="text" placeholder="search..."><div id="tree"><ul><li class="directory"><a href="#" class="directory"><i class="fa fa-plus-square-o"></i> 01-DevOPs</a><ul><li class="directory"><a href="#" class="directory"><i class="fa fa-plus-square-o"></i> gitlab</a><ul><li class="file"><a href="/posts/8fd97de.html">gitlab-runner的安装</a></li><div class="article-toc" style="display:none"></div></ul><ul><li class="file"><a href="/posts/8dbcf254.html">gitlab的安装(docker)</a></li><div class="article-toc" style="display:none"></div></ul></li></ul><ul><li class="file active"><a href="/posts/bcad8c16.html">阿里云ECS扩容系统盘</a></li><div class="article-toc" style="display:none"></div></ul></li></ul><ul><li class="directory"><a href="#" class="directory"><i class="fa fa-plus-square-o"></i> 02-Docker容器</a><ul><li class="file"><a href="/posts/fc9d589f.html">快速搭建启动VPN服务</a></li><div class="article-toc" style="display:none"></div></ul></li></ul><ul><li class="directory"><a href="#" class="directory"><i class="fa fa-plus-square-o"></i> 03-其他</a><ul><li class="file"><a href="/posts/dc1cf1dc.html">Emacs快速指南中文版</a></li><div class="article-toc" style="display:none"></div></ul><ul><li class="directory"><a href="#" class="directory"><i class="fa fa-plus-square-o"></i> Hexo博客</a><ul><li class="file"><a href="/posts/9f9e864b.html">markdown设定及文章样式</a></li><div class="article-toc" style="display:none"></div></ul></li></ul><ul><li class="file"><a href="/posts/9f52af5e.html">MarkDown支持参考</a></li><div class="article-toc" style="display:none"></div></ul><ul><li class="directory"><a href="#" class="directory"><i class="fa fa-plus-square-o"></i> 文学与艺术</a><ul><li class="file"><a href="/posts/e62940aa.html">中国古典诗歌意象</a></li><div class="article-toc" style="display:none"></div></ul><ul><li class="file"><a href="/posts/c4e0783c.html">中外名人名言</a></li><div class="article-toc" style="display:none"></div></ul><ul><li class="file"><a href="/posts/9122050a.html">红楼梦人物关系图</a></li><div class="article-toc" style="display:none"></div></ul></li></ul></li></ul></div></div></div><div id="content"><h1 id="article-title">阿里云ECS扩容系统盘</h1><div class="article-meta"><span>codiy</span> <span>2019-03-05 15:37:33</span><div id="article-categories"><span><i class="fa fa-folder" aria-hidden="true"></i> <a href="/categories/01-DevOPs/">01-DevOPs</a></span></div></div><div id="article-content" class="markdown-body"><p>详见 <a href="https://help.aliyun.com/document_detail/111738.html?spm=a2c4g.11186623.6.789.e7b91b251yWyb6" target="_blank" rel="noopener">扩展分区和文件系统_Linux系统盘</a></p><p>针对centos7系统，操作如下，注意是<strong>系统盘</strong>, 不是<strong>数据盘</strong>:</p><pre><code class="hljs plain"># 安装扩容工具
-yum install cloud-utils-growpart
-yum install xfsprogs
-# 确定内核版本大于3.6.0
-uname -a</code></pre><pre><code class="hljs plain">[root@ecshost ~]# fdisk -l
-Disk &#x2F;dev&#x2F;vda: 107.4 GB, 107374182400 bytes, 209715200 sectors
-Units &#x3D; sectors of 1 * 512 &#x3D; 512 bytes
-Sector size (logical&#x2F;physical): 512 bytes &#x2F; 512 bytes
-I&#x2F;O size (minimum&#x2F;optimal): 512 bytes &#x2F; 512 bytes
-Disk label type: dos
-Disk identifier: 0x0008d73a
+<!DOCTYPE html>
+<html lang="en">
 
-   Device Boot      Start         End      Blocks   Id  System
-&#x2F;dev&#x2F;vda1   *        2048    41943039    20970496   83  Linux</code></pre><pre><code class="hljs plain">[root@ecshost ~]# df -h
-Filesystem      Size  Used Avail Use% Mounted on
-devtmpfs        7.8G     0  7.8G   0% &#x2F;dev
-tmpfs           7.8G     0  7.8G   0% &#x2F;dev&#x2F;shm
-tmpfs           7.8G  344K  7.8G   1% &#x2F;run
-tmpfs           7.8G     0  7.8G   0% &#x2F;sys&#x2F;fs&#x2F;cgroup
-tmpfs           1.6G     0  1.6G   0% &#x2F;run&#x2F;user&#x2F;0
-&#x2F;dev&#x2F;vda1        20G  1.5G   18G   8% &#x2F;</code></pre><pre><code class="hljs plain">[root@ecshost ~]# growpart &#x2F;dev&#x2F;vda 1
-CHANGED: partition&#x3D;1 start&#x3D;2048 old: size&#x3D;41940992 end&#x3D;41943040 new: size&#x3D;209710462,end&#x3D;209712510</code></pre><pre><code class="hljs plain">[root@ecshost ~]# resize2fs &#x2F;dev&#x2F;vda1
-resize2fs 1.42.9 (28-Dec-2013)
-Filesystem at &#x2F;dev&#x2F;vda1 is mounted on &#x2F;; on-line resizing required
-old_desc_blocks &#x3D; 2, new_desc_blocks &#x3D; 7
-The filesystem on &#x2F;dev&#x2F;vda1 is now 26213807 blocks long.</code></pre><pre><code class="hljs plain">[root@ecshost ~]# df -h
-Filesystem      Size  Used Avail Use% Mounted on
-&#x2F;dev&#x2F;vda1        99G  1.6G   93G   2% &#x2F;
-devtmpfs        7.8G     0  7.8G   0% &#x2F;dev
-tmpfs           7.8G     0  7.8G   0% &#x2F;dev&#x2F;shm
-tmpfs           7.8G  500K  7.8G   1% &#x2F;run
-tmpfs           7.8G     0  7.8G   0% &#x2F;sys&#x2F;fs&#x2F;cgroup
-tmpfs           1.6G     0  1.6G   0% &#x2F;run&#x2F;user&#x2F;0</code></pre></div><div class="post-guide"><div class="item left"><a href="/posts/9f52af5e.html"><i class="fa fa-angle-left" aria-hidden="true"></i> MarkDown支持参考</a></div><div class="item right"><a href="/posts/c4e0783c.html">文学与艺术 <i class="fa fa-angle-right" aria-hidden="true"></i></a></div></div><div id="gitalk-container"></div><script type="text/javascript">$(document).ready(function(){new Gitalk({clientID:"6013bee34640a2d2ca59",clientSecret:"5312844fb251dfc7aaaad370b3182f17af42da0c",repo:"codiy1992.github.io",owner:"codiy1992",admin:["codiy1992"],labels:["gitalk"],id:md5("1551771453000".trim()),perPage:50}).render("gitalk-container")})</script></div><div id="footer"><p>©2014-<span id="footerYear"></span> <a href="/">codiy</a> All Rights Reserved.<br>Powered by <a href="//hexo.io" target="_blank">Hexo</a></p></div><script type="text/javascript">document.getElementById("footerYear").innerHTML=(new Date).getFullYear()+""</script><script src="https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js"></script><script>$(document).ready(function(){window.mermaid&&mermaid.initialize({theme:"forest"})})</script><button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button></body></html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	
+	<!-- title -->
+	
+	<title>
+	
+		阿里云ECS扩容系统盘 | 
+	 
+	codiy.net
+	</title>
+	
+	<!-- keywords,description -->
+	
+		<meta name="keywords" content="codiy" />
+	 
+		<meta name="description" content="我的网络日志，欢迎收藏转发~" />
+	
+
+	<!-- favicon -->
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+	
+  
+
+	
+<link rel="stylesheet" href="/css/main.css">
+
+	
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/github.min.css">
+
+    
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+
+	
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+
+	
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+
+	
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+
+	
+		
+<script src="https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js"></script>
+
+	
+	
+<script src="/js/main.js"></script>
+
+	
+	<!-- 百度统计 -->
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "https://hm.baidu.com/hm.js?98427e540e24e1052c99584c4f60d13e";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>		
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+	<header id="header">
+    <a id="title" href="/" class="logo">codiy.net</a>
+
+	<ul id="menu">
+		<li class="menu-item">
+			<a href="/about.html" class="menu-item-link">ABOUT</a>
+		</li>
+		<li class="menu-item">
+			<a href="https://github.com/codiy1992/codiy1992.github.io" class="menu-item-link" target="_blank">
+				<i class="fa fa-github fa-2x"></i>
+			</a>
+		</li>
+	</ul>
+</header>
+
+	
+<div id="sidebar">
+	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
+	
+	<div id="site-toc">
+		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<div id="tree">
+			
+
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										01-DevOPs
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										gitlab
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/posts/8fd97de.html">
+										gitlab-runner的安装
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/posts/8dbcf254.html">
+										gitlab的安装(docker)
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="file active">
+									<a href="/posts/bcad8c16.html">
+										阿里云ECS扩容系统盘
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										02-Docker容器
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/posts/fc9d589f.html">
+										快速搭建启动VPN服务
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										03-其他
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/posts/dc1cf1dc.html">
+										Emacs快速指南中文版
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										Hexo博客
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/posts/9f9e864b.html">
+										markdown设定及文章样式
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/posts/9f52af5e.html">
+										MarkDown支持参考
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										文学与艺术
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/posts/e62940aa.html">
+										中国古典诗歌意象
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/posts/c4e0783c.html">
+										中外名人名言
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/posts/9122050a.html">
+										红楼梦人物关系图
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+		</div>
+	</div>
+</div>
+
+	<!-- 引入正文 -->
+	<div id="content">
+		<h1 id="article-title">
+
+	阿里云ECS扩容系统盘
+</h1>
+<div class="article-meta">
+	<span>codiy</span>
+	<span>2019-03-05 15:37:33</span>
+    
+		<div id="article-categories">
+            
+                
+                    <span>
+                        <i class="fa fa-folder" aria-hidden="true"></i>
+                        <a href="/categories/01-DevOPs/">01-DevOPs</a>
+						
+                    </span>
+                
+            
+		</div>
+    
+</div>
+
+<div id="article-content" class="markdown-body">
+	<p>详见 <a href="https://help.aliyun.com/document_detail/111738.html?spm=a2c4g.11186623.6.789.e7b91b251yWyb6" target="_blank" rel="noopener">扩展分区和文件系统_Linux系统盘</a></p>
+<p>针对centos7系统，操作如下，注意是<strong>系统盘</strong>, 不是<strong>数据盘</strong>:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs plain"># 安装扩容工具<br>yum install cloud-utils-growpart<br>yum install xfsprogs<br># 确定内核版本大于3.6.0<br>uname -a<br></code></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs plain">[root@ecshost ~]# fdisk -l<br>Disk &#x2F;dev&#x2F;vda: 107.4 GB, 107374182400 bytes, 209715200 sectors<br>Units &#x3D; sectors of 1 * 512 &#x3D; 512 bytes<br>Sector size (logical&#x2F;physical): 512 bytes &#x2F; 512 bytes<br>I&#x2F;O size (minimum&#x2F;optimal): 512 bytes &#x2F; 512 bytes<br>Disk label type: dos<br>Disk identifier: 0x0008d73a<br><br>   Device Boot      Start         End      Blocks   Id  System<br>&#x2F;dev&#x2F;vda1   *        2048    41943039    20970496   83  Linux<br></code></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs plain">[root@ecshost ~]# df -h<br>Filesystem      Size  Used Avail Use% Mounted on<br>devtmpfs        7.8G     0  7.8G   0% &#x2F;dev<br>tmpfs           7.8G     0  7.8G   0% &#x2F;dev&#x2F;shm<br>tmpfs           7.8G  344K  7.8G   1% &#x2F;run<br>tmpfs           7.8G     0  7.8G   0% &#x2F;sys&#x2F;fs&#x2F;cgroup<br>tmpfs           1.6G     0  1.6G   0% &#x2F;run&#x2F;user&#x2F;0<br>&#x2F;dev&#x2F;vda1        20G  1.5G   18G   8% &#x2F;<br></code></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs plain">[root@ecshost ~]# growpart &#x2F;dev&#x2F;vda 1<br>CHANGED: partition&#x3D;1 start&#x3D;2048 old: size&#x3D;41940992 end&#x3D;41943040 new: size&#x3D;209710462,end&#x3D;209712510<br></code></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs plain">[root@ecshost ~]# resize2fs &#x2F;dev&#x2F;vda1<br>resize2fs 1.42.9 (28-Dec-2013)<br>Filesystem at &#x2F;dev&#x2F;vda1 is mounted on &#x2F;; on-line resizing required<br>old_desc_blocks &#x3D; 2, new_desc_blocks &#x3D; 7<br>The filesystem on &#x2F;dev&#x2F;vda1 is now 26213807 blocks long.<br></code></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs plain">[root@ecshost ~]# df -h<br>Filesystem      Size  Used Avail Use% Mounted on<br>&#x2F;dev&#x2F;vda1        99G  1.6G   93G   2% &#x2F;<br>devtmpfs        7.8G     0  7.8G   0% &#x2F;dev<br>tmpfs           7.8G     0  7.8G   0% &#x2F;dev&#x2F;shm<br>tmpfs           7.8G  500K  7.8G   1% &#x2F;run<br>tmpfs           7.8G     0  7.8G   0% &#x2F;sys&#x2F;fs&#x2F;cgroup<br>tmpfs           1.6G     0  1.6G   0% &#x2F;run&#x2F;user&#x2F;0<br></code></pre></td></tr></table></figure>
+
+</div>
+
+
+    <div class="post-guide">
+        <div class="item left">
+            
+              <a href="/posts/9f52af5e.html">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  MarkDown支持参考
+              </a>
+            
+        </div>
+        <div class="item right">
+            
+              <a href="/posts/c4e0783c.html">
+                文学与艺术
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            
+        </div>
+    </div>
+
+
+
+		  <div id="gitalk-container"></div>
+          <script type="text/javascript">
+             $(document).ready(function () {
+                var gitalk = new Gitalk({
+                    clientID:  '6013bee34640a2d2ca59',
+                    clientSecret: '5312844fb251dfc7aaaad370b3182f17af42da0c',
+                    repo: 'codiy1992.github.io',
+                    owner: 'codiy1992',
+                    admin: ['codiy1992'],
+                    labels: ['gitalk'],
+                    id: md5('1551771453000'.trim()),
+                    perPage: 50
+                });
+                gitalk.render('gitalk-container');
+             });
+          </script>
+
+
+	</div>
+	<div id="footer">
+	<p>
+	©2014-<span id="footerYear"></span> 
+	<a href="/">codiy</a> 
+	All Rights Reserved.
+	<br>
+	Powered by <a href="//hexo.io" target="_blank">Hexo</a>
+	</p>
+</div>
+<script type="text/javascript"> 
+	document.getElementById('footerYear').innerHTML = new Date().getFullYear() + '';
+</script>
+
+<!-- 引入mermaid,以支持markdown流程图绘制 -->
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			if (window.mermaid) {
+				mermaid.initialize({theme: 'forest'});
+			}
+		});
+	</script>
+
+	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+</body>
+</html>
