@@ -1,0 +1,139 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Codiy's Notebook – Self-hosted</title><link>https://note.codiy.net/docs/selfhosted/</link><description>Recent content in Self-hosted on Codiy's Notebook</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 16 Jan 2022 11:59:15 +0800</lastBuildDate><atom:link href="https://note.codiy.net/docs/selfhosted/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Caddy Usage</title><link>https://note.codiy.net/docs/2022/01/caddy-usage/</link><pubDate>Sun, 16 Jan 2022 11:59:15 +0800</pubDate><guid>https://note.codiy.net/docs/2022/01/caddy-usage/</guid><description>
+&lt;h2 id="build-your-own-caddy-images">Build your own caddy images&lt;/h2>
+&lt;p>Dockerfile:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-Dockerfile" data-lang="Dockerfile">&lt;span style="color:#8b008b;font-weight:bold">FROM&lt;/span>&lt;span style="color:#cd5555"> caddy:builder AS builder&lt;/span>&lt;span style="color:#a61717;background-color:#e3d2d2">
+&lt;/span>&lt;span style="color:#a61717;background-color:#e3d2d2">
+&lt;/span>&lt;span style="color:#a61717;background-color:#e3d2d2">&lt;/span>&lt;span style="color:#8b008b;font-weight:bold">RUN&lt;/span> xcaddy build &lt;span style="color:#cd5555">\
+&lt;/span>&lt;span style="color:#cd5555">&lt;/span> --with github.com/caddy-dns/alidns&lt;span style="color:#a61717;background-color:#e3d2d2">
+&lt;/span>&lt;span style="color:#a61717;background-color:#e3d2d2">
+&lt;/span>&lt;span style="color:#a61717;background-color:#e3d2d2">&lt;/span>&lt;span style="color:#8b008b;font-weight:bold">FROM&lt;/span>&lt;span style="color:#cd5555"> caddy&lt;/span>&lt;span style="color:#a61717;background-color:#e3d2d2">
+&lt;/span>&lt;span style="color:#a61717;background-color:#e3d2d2">
+&lt;/span>&lt;span style="color:#a61717;background-color:#e3d2d2">&lt;/span>&lt;span style="color:#8b008b;font-weight:bold">COPY&lt;/span> --from=builder /usr/bin/caddy /usr/bin/caddy&lt;span style="color:#a61717;background-color:#e3d2d2">
+&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="caddy-tls-settings">Caddy TLS Settings&lt;/h2>
+&lt;p>&lt;strong>&lt;a href="https://caddyserver.com/docs/caddyfile/directives/tls">Caddyfile Syntax&lt;/a>&lt;/strong>:&lt;/p>
+&lt;pre tabindex="0">&lt;code>tls [internal|&amp;lt;email&amp;gt;] | [&amp;lt;cert_file&amp;gt; &amp;lt;key_file&amp;gt;] {
+protocols &amp;lt;min&amp;gt; [&amp;lt;max&amp;gt;]
+ciphers &amp;lt;cipher_suites...&amp;gt;
+curves &amp;lt;curves...&amp;gt;
+alpn &amp;lt;values...&amp;gt;
+load &amp;lt;paths...&amp;gt;
+ca &amp;lt;ca_dir_url&amp;gt;
+ca_root &amp;lt;pem_file&amp;gt;
+key_type ed25519|p256|p384|rsa2048|rsa4096
+dns &amp;lt;provider_name&amp;gt; [&amp;lt;params...&amp;gt;]
+resolvers &amp;lt;dns_servers...&amp;gt;
+eab &amp;lt;key_id&amp;gt; &amp;lt;mac_key&amp;gt;
+on_demand
+client_auth {
+mode [request|require|verify_if_given|require_and_verify]
+trusted_ca_cert &amp;lt;base64_der&amp;gt;
+trusted_ca_cert_file &amp;lt;filename&amp;gt;
+trusted_leaf_cert &amp;lt;base64_der&amp;gt;
+trusted_leaf_cert_file &amp;lt;filename&amp;gt;
+}
+issuer &amp;lt;issuer_name&amp;gt; [&amp;lt;params...&amp;gt;]
+}
+&lt;/code>&lt;/pre>&lt;h3 id="常见配置方式">常见配置方式&lt;/h3>
+&lt;p>&lt;a href="https://caddyserver.com/docs/automatic-https">Caddy Automatic Https&lt;/a>&lt;/p>
+&lt;p>&lt;strong>1. 使用内置的 CA 颁发自签证书&lt;/strong>&lt;/p>
+&lt;p>可能需要根据提示输入主机密码来将根证书安装到本机的信任库中&lt;/p>
+&lt;p>&lt;strong>2. 直接指定证书位置&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>tls {$SSL_CERT_PATH} {$SSL_KEY_PATH}
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>3. 使用 letsencrypt 或 zerossl 来获得公共认可的 TLS 证书并自动续期&lt;/strong>&lt;/p>
+&lt;p>免费版本的 letsencrypt, zerossl 证书有效期仅有 90 天, caddy 会在到期之前自动的更新证书. 根据 &lt;a href="https://datatracker.ietf.org/doc/html/rfc8555">ACME 协议&lt;/a>
+有以下三种常见方式来验证域名&lt;/p>
+&lt;ul>
+&lt;li>HTTP-01&lt;/li>
+&lt;li>TLS-ALPN-01&lt;/li>
+&lt;li>DNS-01&lt;/li>
+&lt;/ul>
+&lt;p>详细说明见 &lt;a href="https://letsencrypt.org/docs/challenge-types/">Challenge Types&lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>值得注意的是 ACME 协议和 letsencrypt, zerossl 只使用标准的 http, https, dns 端口(即 80, 443, 53) 来验证&lt;br>
+域名. 对于家庭网络公有IP的 &lt;code>80, 443&lt;/code> 端口可能被运营商默认屏蔽, 因此无法在家庭网络中正常的使用 &lt;code>http-01&lt;/code> 和 &lt;code>tls-alpn-01&lt;/code> 方式验证域名&lt;/p>
+&lt;/blockquote>
+&lt;p>对于 &lt;code>DNS-01&lt;/code> Chanllege, Caddy 提供了一系列的模块来支持 DNS 验证, 比如 &lt;code>route53&lt;/code>, &lt;code>alidns&lt;/code>, &lt;code>cloudflare&lt;/code> 等,
+详见&lt;a href="https://github.com/caddy-dns?type=source">Caddy Dns Modules&lt;/a>&lt;/p>
+&lt;h2 id="caddyfile-examples">Caddyfile Examples&lt;/h2>
+&lt;h3 id="caddy-work-with-vaultwardenuse-dns-01-chanllege">Caddy work with Vaultwarden(Use &lt;code>DNS-01&lt;/code> Chanllege)&lt;/h3>
+&lt;p>docker-compose.yaml&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="color:#8b008b;font-weight:bold">version&lt;/span>:&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#cd5555">&amp;#39;3&amp;#39;&lt;/span>&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb">&lt;/span>&lt;span style="color:#8b008b;font-weight:bold">services&lt;/span>:&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#8b008b;font-weight:bold">caddy&lt;/span>:&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#8b008b;font-weight:bold">image&lt;/span>:&lt;span style="color:#bbb"> &lt;/span>caddy&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#8b008b;font-weight:bold">container_name&lt;/span>:&lt;span style="color:#bbb"> &lt;/span>caddy&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#8b008b;font-weight:bold">build&lt;/span>:&lt;span style="color:#bbb"> &lt;/span>.&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#8b008b;font-weight:bold">restart&lt;/span>:&lt;span style="color:#bbb"> &lt;/span>always&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#8b008b;font-weight:bold">volumes&lt;/span>:&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>- ./Caddyfile:/etc/caddy/Caddyfile&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>- /share/Container/caddy/data:/data&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>- /share/Container/caddy/config:/config&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#8b008b;font-weight:bold">network_mode&lt;/span>:&lt;span style="color:#bbb"> &lt;/span>host&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#8b008b;font-weight:bold">environment&lt;/span>:&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>- ACME_AGREE=true&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>- DOMAIN_VWARDEN=https://YOUR_DOMAIN_HERE&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>- LOG_FILE=/data/access.log&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>- EMAIL=YOUR_EMAIL&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>- SERVER_VWARDEN=127.0.0.1&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>- ZEROSSL_API_KEY=&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>- ALIYUN_ACCESS_KEY_ID=&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>- ALIYUN_ACCESS_KEY_SECRET=&lt;span style="color:#bbb">
+&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Caddyfile&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-Caddyfile" data-lang="Caddyfile">&lt;span style="color:#cd5555">{$DOMAIN_VWARDEN}&lt;/span>&lt;span style="color:#000080;font-weight:bold">:443&lt;/span> {
+&lt;span style="color:#8b008b;font-weight:bold">log&lt;/span> {
+&lt;span style="color:#8b008b;font-weight:bold">level&lt;/span> &lt;span style="color:#cd5555">INFO&lt;/span>
+&lt;span style="color:#8b008b;font-weight:bold">output&lt;/span> &lt;span style="color:#cd5555">file&lt;/span> &lt;span style="color:#cd5555">{$LOG_FILE}&lt;/span> {
+&lt;span style="color:#8b008b;font-weight:bold">roll_size&lt;/span> &lt;span style="color:#cd5555">10MB&lt;/span>
+&lt;span style="color:#8b008b;font-weight:bold">roll_keep&lt;/span> &lt;span style="color:#b452cd">10&lt;/span>
+}
+}&lt;span style="color:#228b22">
+&lt;/span>&lt;span style="color:#228b22">
+&lt;/span>&lt;span style="color:#228b22"> # Uncomment this if you want to get a cert via ACME (Let&amp;#39;s Encrypt or ZeroSSL).
+&lt;/span>&lt;span style="color:#228b22"> # Use http-01 or tls-alpn-01 chanllege
+&lt;/span>&lt;span style="color:#228b22"> # tls {$EMAIL}
+&lt;/span>&lt;span style="color:#228b22">
+&lt;/span>&lt;span style="color:#228b22"> # Use dns-01 chanllege
+&lt;/span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">tls&lt;/span> {
+&lt;span style="color:#8b008b;font-weight:bold">issuer&lt;/span> &lt;span style="color:#cd5555">zerossl&lt;/span> &lt;span style="color:#cd5555">{$ZEROSSL_API_KEY}&lt;/span> {
+&lt;span style="color:#8b008b;font-weight:bold">dns&lt;/span> &lt;span style="color:#cd5555">alidns&lt;/span> {
+&lt;span style="color:#8b008b;font-weight:bold">access_key_id&lt;/span> &lt;span style="color:#cd5555">{$ALIYUN_ACCESS_KEY_ID}&lt;/span>
+&lt;span style="color:#8b008b;font-weight:bold">access_key_secret&lt;/span> &lt;span style="color:#cd5555">{$ALIYUN_ACCESS_KEY_SECRET}&lt;/span>
+}
+}
+}&lt;span style="color:#228b22">
+&lt;/span>&lt;span style="color:#228b22">
+&lt;/span>&lt;span style="color:#228b22"> # Or uncomment this if you&amp;#39;re providing your own cert.
+&lt;/span>&lt;span style="color:#228b22"> # tls {$SSL_CERT_PATH} {$SSL_KEY_PATH}
+&lt;/span>&lt;span style="color:#228b22">&lt;/span>
+&lt;span style="color:#8b008b;font-weight:bold">encode&lt;/span> &lt;span style="color:#cd5555">zstd&lt;/span> &lt;span style="color:#cd5555">gzip&lt;/span>&lt;span style="color:#228b22">
+&lt;/span>&lt;span style="color:#228b22">
+&lt;/span>&lt;span style="color:#228b22"> # Uncomment to improve security (WARNING: only use if you understand the implications!)
+&lt;/span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">header&lt;/span> {
+&lt;span style="color:#8b008b;font-weight:bold">Strict-Transport-Security&lt;/span> &lt;span style="color:#cd5555">&amp;#34;max-age=31536000;&amp;#34;&lt;/span>
+&lt;span style="color:#8b008b;font-weight:bold">X-XSS-Protection&lt;/span> &lt;span style="color:#cd5555">&amp;#34;1;&lt;/span> &lt;span style="color:#cd5555">mode=block&amp;#34;&lt;/span>
+&lt;span style="color:#8b008b;font-weight:bold">X-Frame-Options&lt;/span> &lt;span style="color:#cd5555">&amp;#34;DENY&amp;#34;&lt;/span>
+&lt;span style="color:#8b008b;font-weight:bold">X-Robots-Tag&lt;/span> &lt;span style="color:#cd5555">&amp;#34;none&amp;#34;&lt;/span>
+&lt;span style="color:#8b008b;font-weight:bold">-Server&lt;/span>
+}&lt;span style="color:#228b22">
+&lt;/span>&lt;span style="color:#228b22">
+&lt;/span>&lt;span style="color:#228b22"> # Uncomment to allow access to the admin interface only from local networks
+&lt;/span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#707a7c">@insecureadmin&lt;/span> {
+&lt;span style="color:#8b008b;font-weight:bold">not&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">remote_ip&lt;/span> &lt;span style="color:#b452cd">192&lt;/span>&lt;span style="color:#cd5555">.168.0.0/16&lt;/span> &lt;span style="color:#b452cd">172&lt;/span>&lt;span style="color:#cd5555">.16.0.0/12&lt;/span> &lt;span style="color:#b452cd">10&lt;/span>&lt;span style="color:#cd5555">.0.0.0/8&lt;/span>
+&lt;span style="color:#8b008b;font-weight:bold">path&lt;/span> &lt;span style="color:#cd5555">/admin*&lt;/span>
+}
+&lt;span style="color:#8b008b;font-weight:bold">redir&lt;/span> &lt;span style="color:#707a7c">@insecureadmin&lt;/span> &lt;span style="color:#cd5555">/&lt;/span>&lt;span style="color:#228b22">
+&lt;/span>&lt;span style="color:#228b22">
+&lt;/span>&lt;span style="color:#228b22"> # The negotiation endpoint is also proxied to Rocket
+&lt;/span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">reverse_proxy&lt;/span> &lt;span style="color:#707a7c">/notifications/hub/negotiate&lt;/span> vaultwarden:&lt;span style="color:#b452cd">80&lt;/span>&lt;span style="color:#228b22">
+&lt;/span>&lt;span style="color:#228b22">
+&lt;/span>&lt;span style="color:#228b22"> # Notifications redirected to the websockets server
+&lt;/span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">reverse_proxy&lt;/span> &lt;span style="color:#707a7c">/notifications/hub&lt;/span> &lt;span style="color:#cd5555">{$SERVER_VWARDEN}&lt;/span>&lt;span style="color:#cd5555">:3012&lt;/span>&lt;span style="color:#228b22">
+&lt;/span>&lt;span style="color:#228b22">
+&lt;/span>&lt;span style="color:#228b22"> # Proxy everything else to Rocket
+&lt;/span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">reverse_proxy&lt;/span> &lt;span style="color:#cd5555">{$SERVER_VWARDEN}&lt;/span>&lt;span style="color:#cd5555">:8012&lt;/span> {
+&lt;span style="color:#8b008b;font-weight:bold">header_up&lt;/span> &lt;span style="color:#cd5555">X-Real-IP&lt;/span> &lt;span style="color:#cd5555">{remote_host}&lt;/span>
+}
+}
+&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>
