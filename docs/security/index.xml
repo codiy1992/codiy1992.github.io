@@ -108,7 +108,13 @@ frpc -c ./frpc.ini
 &lt;/code>&lt;/pre>&lt;p>接着即可用 &lt;strong>CURL&lt;/strong> 嗅探指令来建立 xdebug 连接, 注意 &lt;code>X-Forwarded-For&lt;/code> 应当指定为 &lt;strong>frps&lt;/strong> 服务器地址&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-shell" data-lang="shell">curl -v &lt;span style="color:#cd5555">&amp;#34;http://&lt;/span>&lt;span style="color:#cd5555">${&lt;/span>&lt;span style="color:#00688b">TARGET_HOST&lt;/span>&lt;span style="color:#cd5555">}&lt;/span>&lt;span style="color:#cd5555">/?XDEBUG_SESSION_START=phpstrom&amp;#34;&lt;/span> &lt;span style="color:#cd5555">\
 &lt;/span>&lt;span style="color:#cd5555">&lt;/span> -H &lt;span style="color:#cd5555">&amp;#34;X-Forwarded-For: &lt;/span>&lt;span style="color:#cd5555">${&lt;/span>&lt;span style="color:#00688b">FRPS_HOST&lt;/span>&lt;span style="color:#cd5555">}&lt;/span>&lt;span style="color:#cd5555">&amp;#34;&lt;/span> -H &lt;span style="color:#cd5555">&amp;#34;Cookie: XDEBUG_SESSION=start&amp;#34;&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: Exploiting PHP deserialization And SSRF</title><link>https://note.codiy.net/docs/2021/02/php-deserialization-and-ssrf-exploiting/</link><pubDate>Sat, 27 Feb 2021 09:16:52 +0800</pubDate><guid>https://note.codiy.net/docs/2021/02/php-deserialization-and-ssrf-exploiting/</guid><description>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>
+&lt;p class="md__image">
+&lt;img
+src="https://img.codiy.net/uncataloged/2022-01/18174747.png"
+alt=""
+/>
+&lt;/p>&lt;/p></description></item><item><title>Docs: Exploiting PHP deserialization And SSRF</title><link>https://note.codiy.net/docs/2021/02/php-deserialization-and-ssrf-exploiting/</link><pubDate>Sat, 27 Feb 2021 09:16:52 +0800</pubDate><guid>https://note.codiy.net/docs/2021/02/php-deserialization-and-ssrf-exploiting/</guid><description>
 &lt;h2 id="1---反序列化利用链">1 - 反序列化利用链&lt;/h2>
 &lt;h3 id="11-基础知识和原理">1.1 基础知识和原理&lt;/h3>
 &lt;ul>
