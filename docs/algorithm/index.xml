@@ -9,31 +9,34 @@
 &lt;p>
 &lt;p class="md__image">
 &lt;img
-src="https://img.codiy.net/algorithm/2020-04/bubble.gif"
+src="https://img.codiy.net/algorithm/2020/04/bubble.gif"
 alt="冒泡排序算法示意图"
 />
 &lt;/p>&lt;/p>
 &lt;h2 id="4-php代码实现">4 PHP代码实现&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-php" data-lang="php">&lt;span style="color:#cd5555">/**
-&lt;/span>&lt;span style="color:#cd5555"> * 冒泡排序: 循环n-1次, 每次使最大的往后面放, 交换相邻两元素
-&lt;/span>&lt;span style="color:#cd5555"> * 时间复杂度: O(n2)
-&lt;/span>&lt;span style="color:#cd5555"> * 空间复杂度: O(1)
-&lt;/span>&lt;span style="color:#cd5555"> * 稳定排序
-&lt;/span>&lt;span style="color:#cd5555"> */&lt;/span>
-&lt;span style="color:#8b008b;font-weight:bold">function&lt;/span> &lt;span style="color:#008b45">bubbleSort&lt;/span>(&amp;amp;&lt;span style="color:#00688b">$arr&lt;/span>) {
-&lt;span style="color:#00688b">$length&lt;/span> = count(&lt;span style="color:#00688b">$arr&lt;/span>);
-&lt;span style="color:#8b008b;font-weight:bold">for&lt;/span>(&lt;span style="color:#00688b">$i&lt;/span> = &lt;span style="color:#b452cd">1&lt;/span>; &lt;span style="color:#00688b">$i&lt;/span> &amp;lt; &lt;span style="color:#00688b">$length&lt;/span>; ++&lt;span style="color:#00688b">$i&lt;/span>) { &lt;span style="color:#228b22">// 循环 $length - 1 次
-&lt;/span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">for&lt;/span>(&lt;span style="color:#00688b">$j&lt;/span> = &lt;span style="color:#b452cd">0&lt;/span>; &lt;span style="color:#00688b">$j&lt;/span> &amp;lt; &lt;span style="color:#00688b">$length&lt;/span> - &lt;span style="color:#00688b">$i&lt;/span> ; ++&lt;span style="color:#00688b">$j&lt;/span>) {&lt;span style="color:#228b22">// 每次使最大的放到最后
-&lt;/span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">if&lt;/span> (&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span> + &lt;span style="color:#b452cd">1&lt;/span>] &amp;lt; &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>]) {&lt;span style="color:#228b22">// 交换相邻两元素
-&lt;/span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">list&lt;/span>(&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>], &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span> + &lt;span style="color:#b452cd">1&lt;/span>]) = [&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span> + &lt;span style="color:#b452cd">1&lt;/span>], &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>]];
-}
-}
-}
-}
-&lt;span style="color:#00688b">$arr&lt;/span> = [&lt;span style="color:#b452cd">38&lt;/span>, &lt;span style="color:#b452cd">19&lt;/span>, &lt;span style="color:#b452cd">29&lt;/span>, &lt;span style="color:#b452cd">91&lt;/span>, &lt;span style="color:#b452cd">85&lt;/span>, &lt;span style="color:#b452cd">12&lt;/span>, &lt;span style="color:#b452cd">41&lt;/span>, &lt;span style="color:#b452cd">21&lt;/span>];
-bubbleSort(&lt;span style="color:#00688b">$arr&lt;/span>);
-print_r(&lt;span style="color:#00688b">$arr&lt;/span>);
-&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="5-效率分析">5 效率分析&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-php" data-lang="php">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555"> * 冒泡排序: 循环n-1次, 每次使最大的往后面放, 交换相邻两元素
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555"> * 时间复杂度: O(n2)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555"> * 空间复杂度: O(1)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555"> * 稳定排序
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555"> */&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8b008b;font-weight:bold">function&lt;/span> &lt;span style="color:#008b45">bubbleSort&lt;/span>(&amp;amp;&lt;span style="color:#00688b">$arr&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00688b">$length&lt;/span> = count(&lt;span style="color:#00688b">$arr&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8b008b;font-weight:bold">for&lt;/span>(&lt;span style="color:#00688b">$i&lt;/span> = &lt;span style="color:#b452cd">1&lt;/span>; &lt;span style="color:#00688b">$i&lt;/span> &amp;lt; &lt;span style="color:#00688b">$length&lt;/span>; ++&lt;span style="color:#00688b">$i&lt;/span>) { &lt;span style="color:#228b22">// 循环 $length - 1 次
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">for&lt;/span>(&lt;span style="color:#00688b">$j&lt;/span> = &lt;span style="color:#b452cd">0&lt;/span>; &lt;span style="color:#00688b">$j&lt;/span> &amp;lt; &lt;span style="color:#00688b">$length&lt;/span> - &lt;span style="color:#00688b">$i&lt;/span> ; ++&lt;span style="color:#00688b">$j&lt;/span>) {&lt;span style="color:#228b22">// 每次使最大的放到最后
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">if&lt;/span> (&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span> + &lt;span style="color:#b452cd">1&lt;/span>] &amp;lt; &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>]) {&lt;span style="color:#228b22">// 交换相邻两元素
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">list&lt;/span>(&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>], &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span> + &lt;span style="color:#b452cd">1&lt;/span>]) = [&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span> + &lt;span style="color:#b452cd">1&lt;/span>], &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>]];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00688b">$arr&lt;/span> = [&lt;span style="color:#b452cd">38&lt;/span>, &lt;span style="color:#b452cd">19&lt;/span>, &lt;span style="color:#b452cd">29&lt;/span>, &lt;span style="color:#b452cd">91&lt;/span>, &lt;span style="color:#b452cd">85&lt;/span>, &lt;span style="color:#b452cd">12&lt;/span>, &lt;span style="color:#b452cd">41&lt;/span>, &lt;span style="color:#b452cd">21&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>bubbleSort(&lt;span style="color:#00688b">$arr&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>print_r(&lt;span style="color:#00688b">$arr&lt;/span>);
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="5-效率分析">5 效率分析&lt;/h2>
 &lt;p>1、时间复杂度：O(n²)
 最好的情况：待排序记录按关键字从小到大排列（正序），需要比较n-1次，时间复杂度为O(n);
 最坏的情况：待排序记录按关键字从大到小排列（逆序），需要比较n-1+n-2+…+1=n(n-1)/2，交换次数和比较次数等值，时间复杂度依然为O(n²)。
@@ -49,48 +52,52 @@ print_r(&lt;span style="color:#00688b">$arr&lt;/span>);
 &lt;p>
 &lt;p class="md__image">
 &lt;img
-src="https://img.codiy.net/algorithm/2020-04/insert.gif"
+src="https://img.codiy.net/algorithm/2020/04/insert.gif"
 alt="算法图解"
 />
 &lt;/p>&lt;/p>
 &lt;h2 id="4-php代码实现">4 PHP代码实现&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-php" data-lang="php">&lt;span style="color:#cd5555">/**
-&lt;/span>&lt;span style="color:#cd5555"> * 插入排序: 每次往后多取一个元素, 和现有元素从后往前逐个比较, 比较大,就将现有元素后移一位
-&lt;/span>&lt;span style="color:#cd5555"> * 时间复杂度: O(n2)
-&lt;/span>&lt;span style="color:#cd5555"> * 空间复杂度: O(1)
-&lt;/span>&lt;span style="color:#cd5555"> * 稳定排序
-&lt;/span>&lt;span style="color:#cd5555"> */&lt;/span>
-&lt;span style="color:#8b008b;font-weight:bold">function&lt;/span> &lt;span style="color:#008b45">insertSort&lt;/span>(&amp;amp;&lt;span style="color:#00688b">$arr&lt;/span>) {
-&lt;span style="color:#00688b">$length&lt;/span> = count(&lt;span style="color:#00688b">$arr&lt;/span>);
-&lt;span style="color:#8b008b;font-weight:bold">for&lt;/span>(&lt;span style="color:#00688b">$i&lt;/span> = &lt;span style="color:#b452cd">1&lt;/span>; &lt;span style="color:#00688b">$i&lt;/span> &amp;lt; &lt;span style="color:#00688b">$length&lt;/span>; ++&lt;span style="color:#00688b">$i&lt;/span>) {&lt;span style="color:#228b22">// 每次往后多取一个元素
-&lt;/span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#00688b">$temp&lt;/span> = &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>];
-&lt;span style="color:#8b008b;font-weight:bold">for&lt;/span>(&lt;span style="color:#00688b">$j&lt;/span> = &lt;span style="color:#00688b">$i&lt;/span> - &lt;span style="color:#b452cd">1&lt;/span>; &lt;span style="color:#00688b">$j&lt;/span> &amp;gt;= &lt;span style="color:#b452cd">0&lt;/span>; --&lt;span style="color:#00688b">$j&lt;/span>) {&lt;span style="color:#228b22">// 和现有元素逐个从后往前比较
-&lt;/span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">if&lt;/span> (&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>] &amp;gt; &lt;span style="color:#00688b">$temp&lt;/span>) { &lt;span style="color:#228b22">// 比较大,就将现有元素后移一位
-&lt;/span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span> + &lt;span style="color:#b452cd">1&lt;/span>] = &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>];
-&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>] = &lt;span style="color:#00688b">$temp&lt;/span>;
-} &lt;span style="color:#8b008b;font-weight:bold">else&lt;/span> {
-&lt;span style="color:#8b008b;font-weight:bold">break&lt;/span>;
-}
-}
-}
-}
-&lt;span style="color:#00688b">$arr&lt;/span> = [&lt;span style="color:#b452cd">38&lt;/span>, &lt;span style="color:#b452cd">19&lt;/span>, &lt;span style="color:#b452cd">29&lt;/span>, &lt;span style="color:#b452cd">91&lt;/span>, &lt;span style="color:#b452cd">85&lt;/span>, &lt;span style="color:#b452cd">12&lt;/span>, &lt;span style="color:#b452cd">41&lt;/span>, &lt;span style="color:#b452cd">21&lt;/span>];
-insertSort(&lt;span style="color:#00688b">$arr&lt;/span>);
-print_r(&lt;span style="color:#00688b">$arr&lt;/span>);
-&lt;span style="color:#8b008b;font-weight:bold">function&lt;/span> &lt;span style="color:#008b45">insertSort2&lt;/span>(&amp;amp;&lt;span style="color:#00688b">$arr&lt;/span>) {
-&lt;span style="color:#00688b">$length&lt;/span> = count(&lt;span style="color:#00688b">$arr&lt;/span>);
-&lt;span style="color:#8b008b;font-weight:bold">for&lt;/span>(&lt;span style="color:#00688b">$i&lt;/span> = &lt;span style="color:#b452cd">1&lt;/span>; &lt;span style="color:#00688b">$i&lt;/span> &amp;lt; &lt;span style="color:#00688b">$length&lt;/span>; ++&lt;span style="color:#00688b">$i&lt;/span>) {&lt;span style="color:#228b22">// 每次往前多取一个元素
-&lt;/span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">for&lt;/span>(&lt;span style="color:#00688b">$j&lt;/span> = &lt;span style="color:#b452cd">0&lt;/span>; &lt;span style="color:#00688b">$j&lt;/span> &amp;lt; &lt;span style="color:#00688b">$i&lt;/span>; ++&lt;span style="color:#00688b">$j&lt;/span>) {&lt;span style="color:#228b22">// 和现有元素逐个从前往后比较
-&lt;/span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">if&lt;/span> (&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>] &amp;gt; &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>]) { &lt;span style="color:#228b22">// 找到第一个比它大的元素, 交换, 后续元素往后移一位
-&lt;/span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">list&lt;/span>(&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>], &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>]) = [&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>], &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>]];
-}
-}
-}
-}
-&lt;span style="color:#00688b">$arr&lt;/span> = [&lt;span style="color:#b452cd">38&lt;/span>, &lt;span style="color:#b452cd">19&lt;/span>, &lt;span style="color:#b452cd">29&lt;/span>, &lt;span style="color:#b452cd">91&lt;/span>, &lt;span style="color:#b452cd">85&lt;/span>, &lt;span style="color:#b452cd">12&lt;/span>, &lt;span style="color:#b452cd">41&lt;/span>, &lt;span style="color:#b452cd">21&lt;/span>];
-insertSort2(&lt;span style="color:#00688b">$arr&lt;/span>);
-print_r(&lt;span style="color:#00688b">$arr&lt;/span>);
-&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="5-效率分析">5 效率分析&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-php" data-lang="php">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555"> * 插入排序: 每次往后多取一个元素, 和现有元素从后往前逐个比较, 比较大,就将现有元素后移一位
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555"> * 时间复杂度: O(n2)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555"> * 空间复杂度: O(1)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555"> * 稳定排序
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555"> */&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8b008b;font-weight:bold">function&lt;/span> &lt;span style="color:#008b45">insertSort&lt;/span>(&amp;amp;&lt;span style="color:#00688b">$arr&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00688b">$length&lt;/span> = count(&lt;span style="color:#00688b">$arr&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8b008b;font-weight:bold">for&lt;/span>(&lt;span style="color:#00688b">$i&lt;/span> = &lt;span style="color:#b452cd">1&lt;/span>; &lt;span style="color:#00688b">$i&lt;/span> &amp;lt; &lt;span style="color:#00688b">$length&lt;/span>; ++&lt;span style="color:#00688b">$i&lt;/span>) {&lt;span style="color:#228b22">// 每次往后多取一个元素
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#00688b">$temp&lt;/span> = &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8b008b;font-weight:bold">for&lt;/span>(&lt;span style="color:#00688b">$j&lt;/span> = &lt;span style="color:#00688b">$i&lt;/span> - &lt;span style="color:#b452cd">1&lt;/span>; &lt;span style="color:#00688b">$j&lt;/span> &amp;gt;= &lt;span style="color:#b452cd">0&lt;/span>; --&lt;span style="color:#00688b">$j&lt;/span>) {&lt;span style="color:#228b22">// 和现有元素逐个从后往前比较
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">if&lt;/span> (&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>] &amp;gt; &lt;span style="color:#00688b">$temp&lt;/span>) { &lt;span style="color:#228b22">// 比较大,就将现有元素后移一位
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span> + &lt;span style="color:#b452cd">1&lt;/span>] = &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>] = &lt;span style="color:#00688b">$temp&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> } &lt;span style="color:#8b008b;font-weight:bold">else&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8b008b;font-weight:bold">break&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00688b">$arr&lt;/span> = [&lt;span style="color:#b452cd">38&lt;/span>, &lt;span style="color:#b452cd">19&lt;/span>, &lt;span style="color:#b452cd">29&lt;/span>, &lt;span style="color:#b452cd">91&lt;/span>, &lt;span style="color:#b452cd">85&lt;/span>, &lt;span style="color:#b452cd">12&lt;/span>, &lt;span style="color:#b452cd">41&lt;/span>, &lt;span style="color:#b452cd">21&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>insertSort(&lt;span style="color:#00688b">$arr&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>print_r(&lt;span style="color:#00688b">$arr&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8b008b;font-weight:bold">function&lt;/span> &lt;span style="color:#008b45">insertSort2&lt;/span>(&amp;amp;&lt;span style="color:#00688b">$arr&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00688b">$length&lt;/span> = count(&lt;span style="color:#00688b">$arr&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8b008b;font-weight:bold">for&lt;/span>(&lt;span style="color:#00688b">$i&lt;/span> = &lt;span style="color:#b452cd">1&lt;/span>; &lt;span style="color:#00688b">$i&lt;/span> &amp;lt; &lt;span style="color:#00688b">$length&lt;/span>; ++&lt;span style="color:#00688b">$i&lt;/span>) {&lt;span style="color:#228b22">// 每次往前多取一个元素
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">for&lt;/span>(&lt;span style="color:#00688b">$j&lt;/span> = &lt;span style="color:#b452cd">0&lt;/span>; &lt;span style="color:#00688b">$j&lt;/span> &amp;lt; &lt;span style="color:#00688b">$i&lt;/span>; ++&lt;span style="color:#00688b">$j&lt;/span>) {&lt;span style="color:#228b22">// 和现有元素逐个从前往后比较
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">if&lt;/span> (&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>] &amp;gt; &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>]) { &lt;span style="color:#228b22">// 找到第一个比它大的元素, 交换, 后续元素往后移一位
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">list&lt;/span>(&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>], &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>]) = [&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>], &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>]];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00688b">$arr&lt;/span> = [&lt;span style="color:#b452cd">38&lt;/span>, &lt;span style="color:#b452cd">19&lt;/span>, &lt;span style="color:#b452cd">29&lt;/span>, &lt;span style="color:#b452cd">91&lt;/span>, &lt;span style="color:#b452cd">85&lt;/span>, &lt;span style="color:#b452cd">12&lt;/span>, &lt;span style="color:#b452cd">41&lt;/span>, &lt;span style="color:#b452cd">21&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>insertSort2(&lt;span style="color:#00688b">$arr&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>print_r(&lt;span style="color:#00688b">$arr&lt;/span>);
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="5-效率分析">5 效率分析&lt;/h2>
 &lt;p>1、时间复杂度：O(n²)
 最好的情况：待排序记录按关键字从小到大排列（正序），需要比较n-1次，不需要交换元素，时间复杂度为O(n);
 最坏的情况：待排序记录按关键字从大到小排列（逆序），时间复杂度为O(n²)。
@@ -105,35 +112,36 @@ print_r(&lt;span style="color:#00688b">$arr&lt;/span>);
 &lt;p>
 &lt;p class="md__image">
 &lt;img
-src="https://img.codiy.net/algorithm/2020-04/select.gif"
+src="https://img.codiy.net/algorithm/2020/04/select.gif"
 alt="算法图解"
 />
 &lt;/p>&lt;/p>
 &lt;h2 id="4-php代码实现">4 PHP代码实现&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-php" data-lang="php">&lt;span style="color:#cd5555">/**
-&lt;/span>&lt;span style="color:#cd5555"> * 选择排序: 选一个假定的最小, 找到比他小的, 交换位置
-&lt;/span>&lt;span style="color:#cd5555"> * 时间复杂度: O(n2)
-&lt;/span>&lt;span style="color:#cd5555"> * 空间复杂度: O(2)
-&lt;/span>&lt;span style="color:#cd5555"> * 稳定排序
-&lt;/span>&lt;span style="color:#cd5555"> */&lt;/span>
-&lt;span style="color:#8b008b;font-weight:bold">function&lt;/span> &lt;span style="color:#008b45">selectSort&lt;/span>(&amp;amp;&lt;span style="color:#00688b">$arr&lt;/span>) {
-&lt;span style="color:#00688b">$length&lt;/span> = count(&lt;span style="color:#00688b">$arr&lt;/span>);
-&lt;span style="color:#8b008b;font-weight:bold">for&lt;/span>(&lt;span style="color:#00688b">$i&lt;/span> = &lt;span style="color:#b452cd">0&lt;/span>; &lt;span style="color:#00688b">$i&lt;/span> &amp;lt; &lt;span style="color:#00688b">$length&lt;/span>; ++&lt;span style="color:#00688b">$i&lt;/span>) {
-&lt;span style="color:#00688b">$minIdx&lt;/span> = &lt;span style="color:#00688b">$i&lt;/span>;
-&lt;span style="color:#8b008b;font-weight:bold">for&lt;/span>(&lt;span style="color:#00688b">$j&lt;/span> = &lt;span style="color:#00688b">$i&lt;/span> + &lt;span style="color:#b452cd">1&lt;/span>; &lt;span style="color:#00688b">$j&lt;/span> &amp;lt; &lt;span style="color:#00688b">$length&lt;/span>; ++&lt;span style="color:#00688b">$j&lt;/span>) {
-&lt;span style="color:#8b008b;font-weight:bold">if&lt;/span> (&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>] &amp;lt; &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$minIdx&lt;/span>]) {
-&lt;span style="color:#00688b">$minIdx&lt;/span> = &lt;span style="color:#00688b">$j&lt;/span>;
-}
-}
-&lt;span style="color:#8b008b;font-weight:bold">if&lt;/span> (&lt;span style="color:#00688b">$minIdx&lt;/span> != &lt;span style="color:#00688b">$i&lt;/span>) {
-&lt;span style="color:#8b008b;font-weight:bold">list&lt;/span>(&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$minIdx&lt;/span>], &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>]) = [&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>], &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$minIdx&lt;/span>]];
-}
-}
-}
-&lt;span style="color:#00688b">$arr&lt;/span> = [&lt;span style="color:#b452cd">38&lt;/span>, &lt;span style="color:#b452cd">19&lt;/span>, &lt;span style="color:#b452cd">29&lt;/span>, &lt;span style="color:#b452cd">91&lt;/span>, &lt;span style="color:#b452cd">85&lt;/span>, &lt;span style="color:#b452cd">12&lt;/span>, &lt;span style="color:#b452cd">41&lt;/span>, &lt;span style="color:#b452cd">21&lt;/span>];
-selectSort(&lt;span style="color:#00688b">$arr&lt;/span>);
-print_r(&lt;span style="color:#00688b">$arr&lt;/span>);
-&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="5-效率分析">5 效率分析&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-php" data-lang="php">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555"> * 选择排序: 选一个假定的最小, 找到比他小的, 交换位置
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555"> * 时间复杂度: O(n2)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555"> * 空间复杂度: O(2)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555"> * 稳定排序
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555"> */&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8b008b;font-weight:bold">function&lt;/span> &lt;span style="color:#008b45">selectSort&lt;/span>(&amp;amp;&lt;span style="color:#00688b">$arr&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00688b">$length&lt;/span> = count(&lt;span style="color:#00688b">$arr&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8b008b;font-weight:bold">for&lt;/span>(&lt;span style="color:#00688b">$i&lt;/span> = &lt;span style="color:#b452cd">0&lt;/span>; &lt;span style="color:#00688b">$i&lt;/span> &amp;lt; &lt;span style="color:#00688b">$length&lt;/span>; ++&lt;span style="color:#00688b">$i&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00688b">$minIdx&lt;/span> = &lt;span style="color:#00688b">$i&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8b008b;font-weight:bold">for&lt;/span>(&lt;span style="color:#00688b">$j&lt;/span> = &lt;span style="color:#00688b">$i&lt;/span> + &lt;span style="color:#b452cd">1&lt;/span>; &lt;span style="color:#00688b">$j&lt;/span> &amp;lt; &lt;span style="color:#00688b">$length&lt;/span>; ++&lt;span style="color:#00688b">$j&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8b008b;font-weight:bold">if&lt;/span> (&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>] &amp;lt; &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$minIdx&lt;/span>]) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00688b">$minIdx&lt;/span> = &lt;span style="color:#00688b">$j&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8b008b;font-weight:bold">if&lt;/span> (&lt;span style="color:#00688b">$minIdx&lt;/span> != &lt;span style="color:#00688b">$i&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8b008b;font-weight:bold">list&lt;/span>(&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$minIdx&lt;/span>], &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>]) = [&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>], &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$minIdx&lt;/span>]];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00688b">$arr&lt;/span> = [&lt;span style="color:#b452cd">38&lt;/span>, &lt;span style="color:#b452cd">19&lt;/span>, &lt;span style="color:#b452cd">29&lt;/span>, &lt;span style="color:#b452cd">91&lt;/span>, &lt;span style="color:#b452cd">85&lt;/span>, &lt;span style="color:#b452cd">12&lt;/span>, &lt;span style="color:#b452cd">41&lt;/span>, &lt;span style="color:#b452cd">21&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>selectSort(&lt;span style="color:#00688b">$arr&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>print_r(&lt;span style="color:#00688b">$arr&lt;/span>);
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="5-效率分析">5 效率分析&lt;/h2>
 &lt;p>1、时间复杂度O(n2)
 (n-1) + (n-2) + &amp;hellip; + 1 ==&amp;gt; n(n-1)/2&lt;/p>
 &lt;p>2、空间复杂度O(1)&lt;/p></description></item><item><title>Docs: 04-快速排序</title><link>https://note.codiy.net/docs/2020/04/04-%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/</link><pubDate>Wed, 22 Apr 2020 21:29:26 +0800</pubDate><guid>https://note.codiy.net/docs/2020/04/04-%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/</guid><description>
@@ -147,53 +155,54 @@ print_r(&lt;span style="color:#00688b">$arr&lt;/span>);
 &lt;p>
 &lt;p class="md__image">
 &lt;img
-src="https://img.codiy.net/algorithm/2020-04/quick.gif"
+src="https://img.codiy.net/algorithm/2020/04/quick.gif"
 alt="算法图解"
 />
 &lt;/p>&lt;/p>
 &lt;h2 id="4-php代码实现">4 PHP代码实现&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-php" data-lang="php">&lt;span style="color:#cd5555">/**
-&lt;/span>&lt;span style="color:#cd5555"> * 快速排序: 每次选最左边的点, 将数组划分为左右两部分, 保证右边的比选点大,左边的都比选点小, 对左右两边递归
-&lt;/span>&lt;span style="color:#cd5555"> * 时间复杂度: 最好 O(nlogn) 最差 O(n2)
-&lt;/span>&lt;span style="color:#cd5555"> * 空间复杂度: O(1)
-&lt;/span>&lt;span style="color:#cd5555"> * 不稳定排序
-&lt;/span>&lt;span style="color:#cd5555"> */&lt;/span>
-&lt;span style="color:#8b008b;font-weight:bold">function&lt;/span> &lt;span style="color:#008b45">quickSort&lt;/span>(&amp;amp;&lt;span style="color:#00688b">$arr&lt;/span>, &lt;span style="color:#00688b">$start&lt;/span>, &lt;span style="color:#00688b">$end&lt;/span>) {
-&lt;span style="color:#00688b">$i&lt;/span> = &lt;span style="color:#00688b">$start&lt;/span>;
-&lt;span style="color:#00688b">$j&lt;/span> = &lt;span style="color:#00688b">$end&lt;/span>;
-&lt;span style="color:#00688b">$pivot&lt;/span> = &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$start&lt;/span>];
-&lt;span style="color:#8b008b;font-weight:bold">while&lt;/span> (&lt;span style="color:#00688b">$j&lt;/span> &amp;gt; &lt;span style="color:#00688b">$i&lt;/span>) {
-&lt;span style="color:#228b22">// 右边有比选点小的, 扔到左边, 让下一while得以继续
-&lt;/span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">while&lt;/span> (&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>] &amp;gt;= &lt;span style="color:#00688b">$pivot&lt;/span> &amp;amp;&amp;amp; &lt;span style="color:#00688b">$j&lt;/span> &amp;gt; &lt;span style="color:#00688b">$i&lt;/span>) {
-&lt;span style="color:#00688b">$j&lt;/span>--;
-}
-&lt;span style="color:#8b008b;font-weight:bold">if&lt;/span> (&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>] &amp;lt;= &lt;span style="color:#00688b">$pivot&lt;/span>) {
-&lt;span style="color:#00688b">$temp&lt;/span> = &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>];
-&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>] = &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>];
-&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>] = &lt;span style="color:#00688b">$temp&lt;/span>;
-}
-&lt;span style="color:#228b22">// 左边的有比选点大的就,扔到右边, 让上一while得以继续
-&lt;/span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">while&lt;/span> (&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>] &amp;lt;= &lt;span style="color:#00688b">$pivot&lt;/span> &amp;amp;&amp;amp; &lt;span style="color:#00688b">$j&lt;/span> &amp;gt; &lt;span style="color:#00688b">$i&lt;/span>) {
-&lt;span style="color:#00688b">$i&lt;/span>++;
-}
-&lt;span style="color:#8b008b;font-weight:bold">if&lt;/span> (&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>] &amp;gt;= &lt;span style="color:#00688b">$pivot&lt;/span>) {
-&lt;span style="color:#00688b">$temp&lt;/span> = &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>];
-&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>] = &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>];
-&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>] = &lt;span style="color:#00688b">$temp&lt;/span>;
-}
-}
-&lt;span style="color:#228b22">// 循环结束后，i,j都指向选点
-&lt;/span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">if&lt;/span> (&lt;span style="color:#00688b">$i&lt;/span> &amp;gt; &lt;span style="color:#00688b">$start&lt;/span>) {
-quickSort(&lt;span style="color:#00688b">$arr&lt;/span>, &lt;span style="color:#00688b">$start&lt;/span>, &lt;span style="color:#00688b">$i&lt;/span> - &lt;span style="color:#b452cd">1&lt;/span>);
-}
-&lt;span style="color:#8b008b;font-weight:bold">if&lt;/span> (&lt;span style="color:#00688b">$j&lt;/span> &amp;lt; &lt;span style="color:#00688b">$end&lt;/span>) {
-quickSort(&lt;span style="color:#00688b">$arr&lt;/span>, &lt;span style="color:#00688b">$j&lt;/span> + &lt;span style="color:#b452cd">1&lt;/span>, &lt;span style="color:#00688b">$end&lt;/span>);
-}
-}
-&lt;span style="color:#00688b">$arr&lt;/span> = [&lt;span style="color:#b452cd">38&lt;/span>, &lt;span style="color:#b452cd">19&lt;/span>, &lt;span style="color:#b452cd">29&lt;/span>, &lt;span style="color:#b452cd">91&lt;/span>, &lt;span style="color:#b452cd">85&lt;/span>, &lt;span style="color:#b452cd">12&lt;/span>, &lt;span style="color:#b452cd">41&lt;/span>, &lt;span style="color:#b452cd">21&lt;/span>];
-quickSort(&lt;span style="color:#00688b">$arr&lt;/span>, &lt;span style="color:#b452cd">0&lt;/span>, count(&lt;span style="color:#00688b">$arr&lt;/span>) - &lt;span style="color:#b452cd">1&lt;/span>);
-print_r(&lt;span style="color:#00688b">$arr&lt;/span>);
-&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="5-效率分析">5 效率分析&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-php" data-lang="php">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555"> * 快速排序: 每次选最左边的点, 将数组划分为左右两部分, 保证右边的比选点大,左边的都比选点小, 对左右两边递归
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555"> * 时间复杂度: 最好 O(nlogn) 最差 O(n2)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555"> * 空间复杂度: O(1)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555"> * 不稳定排序
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555"> */&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8b008b;font-weight:bold">function&lt;/span> &lt;span style="color:#008b45">quickSort&lt;/span>(&amp;amp;&lt;span style="color:#00688b">$arr&lt;/span>, &lt;span style="color:#00688b">$start&lt;/span>, &lt;span style="color:#00688b">$end&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00688b">$i&lt;/span> = &lt;span style="color:#00688b">$start&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00688b">$j&lt;/span> = &lt;span style="color:#00688b">$end&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00688b">$pivot&lt;/span> = &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$start&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8b008b;font-weight:bold">while&lt;/span> (&lt;span style="color:#00688b">$j&lt;/span> &amp;gt; &lt;span style="color:#00688b">$i&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#228b22">// 右边有比选点小的, 扔到左边, 让下一while得以继续
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">while&lt;/span> (&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>] &amp;gt;= &lt;span style="color:#00688b">$pivot&lt;/span> &amp;amp;&amp;amp; &lt;span style="color:#00688b">$j&lt;/span> &amp;gt; &lt;span style="color:#00688b">$i&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00688b">$j&lt;/span>--;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8b008b;font-weight:bold">if&lt;/span> (&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>] &amp;lt;= &lt;span style="color:#00688b">$pivot&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00688b">$temp&lt;/span> = &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>] = &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>] = &lt;span style="color:#00688b">$temp&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#228b22">// 左边的有比选点大的就,扔到右边, 让上一while得以继续
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">while&lt;/span> (&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>] &amp;lt;= &lt;span style="color:#00688b">$pivot&lt;/span> &amp;amp;&amp;amp; &lt;span style="color:#00688b">$j&lt;/span> &amp;gt; &lt;span style="color:#00688b">$i&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00688b">$i&lt;/span>++;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8b008b;font-weight:bold">if&lt;/span> (&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>] &amp;gt;= &lt;span style="color:#00688b">$pivot&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00688b">$temp&lt;/span> = &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>] = &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>] = &lt;span style="color:#00688b">$temp&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#228b22">// 循环结束后，i,j都指向选点
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">if&lt;/span> (&lt;span style="color:#00688b">$i&lt;/span> &amp;gt; &lt;span style="color:#00688b">$start&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> quickSort(&lt;span style="color:#00688b">$arr&lt;/span>, &lt;span style="color:#00688b">$start&lt;/span>, &lt;span style="color:#00688b">$i&lt;/span> - &lt;span style="color:#b452cd">1&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8b008b;font-weight:bold">if&lt;/span> (&lt;span style="color:#00688b">$j&lt;/span> &amp;lt; &lt;span style="color:#00688b">$end&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> quickSort(&lt;span style="color:#00688b">$arr&lt;/span>, &lt;span style="color:#00688b">$j&lt;/span> + &lt;span style="color:#b452cd">1&lt;/span>, &lt;span style="color:#00688b">$end&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00688b">$arr&lt;/span> = [&lt;span style="color:#b452cd">38&lt;/span>, &lt;span style="color:#b452cd">19&lt;/span>, &lt;span style="color:#b452cd">29&lt;/span>, &lt;span style="color:#b452cd">91&lt;/span>, &lt;span style="color:#b452cd">85&lt;/span>, &lt;span style="color:#b452cd">12&lt;/span>, &lt;span style="color:#b452cd">41&lt;/span>, &lt;span style="color:#b452cd">21&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>quickSort(&lt;span style="color:#00688b">$arr&lt;/span>, &lt;span style="color:#b452cd">0&lt;/span>, count(&lt;span style="color:#00688b">$arr&lt;/span>) - &lt;span style="color:#b452cd">1&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>print_r(&lt;span style="color:#00688b">$arr&lt;/span>);
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="5-效率分析">5 效率分析&lt;/h2>
 &lt;p>1、时间复杂度：O(nlogn)
 最好的情况：当分区选取的基准元素为待排序元素中的&amp;quot;中值&amp;quot;，时间复杂度为O(nlogn);
 最坏的情况：当分区选取的基准元素为待排序元素中的最大或最小值，时间复杂度为O(n²)。
@@ -207,54 +216,60 @@ print_r(&lt;span style="color:#00688b">$arr&lt;/span>);
 &lt;p>
 &lt;p class="md__image">
 &lt;img
-src="https://img.codiy.net/algorithm/2020-04/merge.gif"
+src="https://img.codiy.net/algorithm/2020/04/merge.gif"
 alt="算法图解"
 />
 &lt;/p>&lt;/p>
 &lt;h2 id="4-php代码实现">4 PHP代码实现&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-php" data-lang="php">&lt;span style="color:#cd5555">/**
-&lt;/span>&lt;span style="color:#cd5555"> * 归并排序: 对半拆分元素, 拆到底后, 比较左右两边元素, 让其有序后, 回归
-&lt;/span>&lt;span style="color:#cd5555"> * 时间复杂度: O(nlogn)
-&lt;/span>&lt;span style="color:#cd5555"> * 空间复杂度: O(n)
-&lt;/span>&lt;span style="color:#cd5555"> * 稳定排序(相等元素的顺序不会改变)
-&lt;/span>&lt;span style="color:#cd5555"> */&lt;/span>
-&lt;span style="color:#8b008b;font-weight:bold">function&lt;/span> &lt;span style="color:#008b45">mergeSort&lt;/span>(&amp;amp;&lt;span style="color:#00688b">$arr&lt;/span>, &lt;span style="color:#00688b">$start&lt;/span>, &lt;span style="color:#00688b">$end&lt;/span>) {
-&lt;span style="color:#8b008b;font-weight:bold">if&lt;/span> (&lt;span style="color:#00688b">$start&lt;/span> &amp;lt; &lt;span style="color:#00688b">$end&lt;/span>) {
-&lt;span style="color:#00688b">$mid&lt;/span> = floor((&lt;span style="color:#00688b">$start&lt;/span> + &lt;span style="color:#00688b">$end&lt;/span>) / &lt;span style="color:#b452cd">2&lt;/span>);
-mergeSort(&lt;span style="color:#00688b">$arr&lt;/span>, &lt;span style="color:#00688b">$start&lt;/span>, &lt;span style="color:#00688b">$mid&lt;/span>);
-mergeSort(&lt;span style="color:#00688b">$arr&lt;/span>, &lt;span style="color:#00688b">$mid&lt;/span> + &lt;span style="color:#b452cd">1&lt;/span>, &lt;span style="color:#00688b">$end&lt;/span>);
-merge(&lt;span style="color:#00688b">$arr&lt;/span>, &lt;span style="color:#00688b">$start&lt;/span>, &lt;span style="color:#00688b">$mid&lt;/span>, &lt;span style="color:#00688b">$end&lt;/span>);
-}
-}
-&lt;span style="color:#8b008b;font-weight:bold">function&lt;/span> &lt;span style="color:#008b45">merge&lt;/span>(&amp;amp;&lt;span style="color:#00688b">$arr&lt;/span>, &lt;span style="color:#00688b">$start&lt;/span>, &lt;span style="color:#00688b">$mid&lt;/span>, &lt;span style="color:#00688b">$end&lt;/span>) {
-&lt;span style="color:#00688b">$i&lt;/span> = &lt;span style="color:#00688b">$start&lt;/span>;
-&lt;span style="color:#00688b">$j&lt;/span> = &lt;span style="color:#00688b">$mid&lt;/span> + &lt;span style="color:#b452cd">1&lt;/span>;
-&lt;span style="color:#00688b">$temp&lt;/span> = [];
-&lt;span style="color:#8b008b;font-weight:bold">while&lt;/span>( &lt;span style="color:#00688b">$i&lt;/span> &amp;lt;= &lt;span style="color:#00688b">$mid&lt;/span> &amp;amp;&amp;amp; &lt;span style="color:#00688b">$j&lt;/span> &amp;lt;= &lt;span style="color:#00688b">$end&lt;/span>) {
-&lt;span style="color:#8b008b;font-weight:bold">if&lt;/span>(&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>] &amp;lt; &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>]) {
-&lt;span style="color:#00688b">$temp&lt;/span>[] = &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>];
-++&lt;span style="color:#00688b">$i&lt;/span>;
-} &lt;span style="color:#8b008b;font-weight:bold">else&lt;/span> {
-&lt;span style="color:#00688b">$temp&lt;/span>[] = &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>];
-++&lt;span style="color:#00688b">$j&lt;/span>;
-}
-}
-&lt;span style="color:#8b008b;font-weight:bold">while&lt;/span>(&lt;span style="color:#00688b">$i&lt;/span> &amp;lt;= &lt;span style="color:#00688b">$mid&lt;/span>) {
-&lt;span style="color:#00688b">$temp&lt;/span>[] = &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>];
-++&lt;span style="color:#00688b">$i&lt;/span>;
-}
-&lt;span style="color:#8b008b;font-weight:bold">while&lt;/span>(&lt;span style="color:#00688b">$j&lt;/span> &amp;lt;= &lt;span style="color:#00688b">$end&lt;/span>) {
-&lt;span style="color:#00688b">$temp&lt;/span>[] = &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>];
-++&lt;span style="color:#00688b">$j&lt;/span>;
-}
-&lt;span style="color:#8b008b;font-weight:bold">for&lt;/span> (&lt;span style="color:#00688b">$k&lt;/span> = &lt;span style="color:#b452cd">0&lt;/span>; &lt;span style="color:#00688b">$k&lt;/span> &amp;lt; count(&lt;span style="color:#00688b">$temp&lt;/span>); ++&lt;span style="color:#00688b">$k&lt;/span>) {
-&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$k&lt;/span> + &lt;span style="color:#00688b">$start&lt;/span>] = &lt;span style="color:#00688b">$temp&lt;/span>[&lt;span style="color:#00688b">$k&lt;/span>];
-}
-}
-&lt;span style="color:#00688b">$arr&lt;/span> = [&lt;span style="color:#b452cd">38&lt;/span>, &lt;span style="color:#b452cd">19&lt;/span>, &lt;span style="color:#b452cd">29&lt;/span>, &lt;span style="color:#b452cd">91&lt;/span>, &lt;span style="color:#b452cd">85&lt;/span>, &lt;span style="color:#b452cd">12&lt;/span>, &lt;span style="color:#b452cd">41&lt;/span>, &lt;span style="color:#b452cd">21&lt;/span>];
-mergeSort(&lt;span style="color:#00688b">$arr&lt;/span>, &lt;span style="color:#b452cd">0&lt;/span>, count(&lt;span style="color:#00688b">$arr&lt;/span>) - &lt;span style="color:#b452cd">1&lt;/span>);
-print_r(&lt;span style="color:#00688b">$arr&lt;/span>);
-&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="5-效率分析">5 效率分析&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-php" data-lang="php">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555"> * 归并排序: 对半拆分元素, 拆到底后, 比较左右两边元素, 让其有序后, 回归
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555"> * 时间复杂度: O(nlogn)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555"> * 空间复杂度: O(n)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555"> * 稳定排序(相等元素的顺序不会改变)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555"> */&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8b008b;font-weight:bold">function&lt;/span> &lt;span style="color:#008b45">mergeSort&lt;/span>(&amp;amp;&lt;span style="color:#00688b">$arr&lt;/span>, &lt;span style="color:#00688b">$start&lt;/span>, &lt;span style="color:#00688b">$end&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8b008b;font-weight:bold">if&lt;/span> (&lt;span style="color:#00688b">$start&lt;/span> &amp;lt; &lt;span style="color:#00688b">$end&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00688b">$mid&lt;/span> = floor((&lt;span style="color:#00688b">$start&lt;/span> + &lt;span style="color:#00688b">$end&lt;/span>) / &lt;span style="color:#b452cd">2&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> mergeSort(&lt;span style="color:#00688b">$arr&lt;/span>, &lt;span style="color:#00688b">$start&lt;/span>, &lt;span style="color:#00688b">$mid&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> mergeSort(&lt;span style="color:#00688b">$arr&lt;/span>, &lt;span style="color:#00688b">$mid&lt;/span> + &lt;span style="color:#b452cd">1&lt;/span>, &lt;span style="color:#00688b">$end&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> merge(&lt;span style="color:#00688b">$arr&lt;/span>, &lt;span style="color:#00688b">$start&lt;/span>, &lt;span style="color:#00688b">$mid&lt;/span>, &lt;span style="color:#00688b">$end&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8b008b;font-weight:bold">function&lt;/span> &lt;span style="color:#008b45">merge&lt;/span>(&amp;amp;&lt;span style="color:#00688b">$arr&lt;/span>, &lt;span style="color:#00688b">$start&lt;/span>, &lt;span style="color:#00688b">$mid&lt;/span>, &lt;span style="color:#00688b">$end&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00688b">$i&lt;/span> = &lt;span style="color:#00688b">$start&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00688b">$j&lt;/span> = &lt;span style="color:#00688b">$mid&lt;/span> + &lt;span style="color:#b452cd">1&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00688b">$temp&lt;/span> = [];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8b008b;font-weight:bold">while&lt;/span>( &lt;span style="color:#00688b">$i&lt;/span> &amp;lt;= &lt;span style="color:#00688b">$mid&lt;/span> &amp;amp;&amp;amp; &lt;span style="color:#00688b">$j&lt;/span> &amp;lt;= &lt;span style="color:#00688b">$end&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8b008b;font-weight:bold">if&lt;/span>(&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>] &amp;lt; &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>]) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00688b">$temp&lt;/span>[] = &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ++&lt;span style="color:#00688b">$i&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> } &lt;span style="color:#8b008b;font-weight:bold">else&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00688b">$temp&lt;/span>[] = &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ++&lt;span style="color:#00688b">$j&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8b008b;font-weight:bold">while&lt;/span>(&lt;span style="color:#00688b">$i&lt;/span> &amp;lt;= &lt;span style="color:#00688b">$mid&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00688b">$temp&lt;/span>[] = &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ++&lt;span style="color:#00688b">$i&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8b008b;font-weight:bold">while&lt;/span>(&lt;span style="color:#00688b">$j&lt;/span> &amp;lt;= &lt;span style="color:#00688b">$end&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00688b">$temp&lt;/span>[] = &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ++&lt;span style="color:#00688b">$j&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8b008b;font-weight:bold">for&lt;/span> (&lt;span style="color:#00688b">$k&lt;/span> = &lt;span style="color:#b452cd">0&lt;/span>; &lt;span style="color:#00688b">$k&lt;/span> &amp;lt; count(&lt;span style="color:#00688b">$temp&lt;/span>); ++&lt;span style="color:#00688b">$k&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$k&lt;/span> + &lt;span style="color:#00688b">$start&lt;/span>] = &lt;span style="color:#00688b">$temp&lt;/span>[&lt;span style="color:#00688b">$k&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00688b">$arr&lt;/span> = [&lt;span style="color:#b452cd">38&lt;/span>, &lt;span style="color:#b452cd">19&lt;/span>, &lt;span style="color:#b452cd">29&lt;/span>, &lt;span style="color:#b452cd">91&lt;/span>, &lt;span style="color:#b452cd">85&lt;/span>, &lt;span style="color:#b452cd">12&lt;/span>, &lt;span style="color:#b452cd">41&lt;/span>, &lt;span style="color:#b452cd">21&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>mergeSort(&lt;span style="color:#00688b">$arr&lt;/span>, &lt;span style="color:#b452cd">0&lt;/span>, count(&lt;span style="color:#00688b">$arr&lt;/span>) - &lt;span style="color:#b452cd">1&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>print_r(&lt;span style="color:#00688b">$arr&lt;/span>);
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="5-效率分析">5 效率分析&lt;/h2>
 &lt;p>1、时间复杂度：O(nlogn)
 最好情况、最坏情况和平均时间复杂度均为O(nlogn);
 2、空间复杂度：O(n)
@@ -279,49 +294,52 @@ print_r(&lt;span style="color:#00688b">$arr&lt;/span>);
 &lt;p>
 &lt;p class="md__image">
 &lt;img
-src="https://img.codiy.net/algorithm/2020-04/heap.gif"
+src="https://img.codiy.net/algorithm/2020/04/heap.gif"
 alt="算法图解"
 />
 &lt;/p>&lt;/p>
 &lt;h2 id="4-php代码实现">4 PHP代码实现&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-php" data-lang="php">&lt;span style="color:#cd5555">/**
-&lt;/span>&lt;span style="color:#cd5555"> * 堆排序: 将元素看成完全二叉树, 先从(n/2-1)号元素到0号元素调整为大顶堆, 然后交换首尾值, 继续从0号元素调整
-&lt;/span>&lt;span style="color:#cd5555"> * 时间复杂度: O(nlogn)
-&lt;/span>&lt;span style="color:#cd5555"> * 空间复杂度: O(1)
-&lt;/span>&lt;span style="color:#cd5555"> * 不稳定排序
-&lt;/span>&lt;span style="color:#cd5555"> */&lt;/span>
-&lt;span style="color:#8b008b;font-weight:bold">function&lt;/span> &lt;span style="color:#008b45">heapSort&lt;/span>(&amp;amp;&lt;span style="color:#00688b">$arr&lt;/span>) {
-&lt;span style="color:#00688b">$length&lt;/span> = count(&lt;span style="color:#00688b">$arr&lt;/span>);
-&lt;span style="color:#228b22">// 调整为大顶堆
-&lt;/span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">for&lt;/span>(&lt;span style="color:#00688b">$i&lt;/span> = floor(&lt;span style="color:#00688b">$length&lt;/span>/&lt;span style="color:#b452cd">2&lt;/span> -&lt;span style="color:#b452cd">1&lt;/span>); &lt;span style="color:#00688b">$i&lt;/span> &amp;gt;= &lt;span style="color:#b452cd">0&lt;/span>; --&lt;span style="color:#00688b">$i&lt;/span>) {
-adjustHeap(&lt;span style="color:#00688b">$arr&lt;/span>, &lt;span style="color:#00688b">$i&lt;/span>, &lt;span style="color:#00688b">$length&lt;/span>);
-}
-&lt;span style="color:#228b22">// 循环交换首尾元素并调整为大顶堆, 直到所有元素有序
-&lt;/span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">for&lt;/span>(&lt;span style="color:#00688b">$j&lt;/span> = &lt;span style="color:#00688b">$length&lt;/span> - &lt;span style="color:#b452cd">1&lt;/span>; &lt;span style="color:#00688b">$j&lt;/span> &amp;gt;= &lt;span style="color:#b452cd">0&lt;/span>; --&lt;span style="color:#00688b">$j&lt;/span>) {
-&lt;span style="color:#8b008b;font-weight:bold">list&lt;/span>(&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#b452cd">0&lt;/span>], &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>]) = [&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>], &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#b452cd">0&lt;/span>]];
-adjustHeap(&lt;span style="color:#00688b">$arr&lt;/span>, &lt;span style="color:#b452cd">0&lt;/span>, &lt;span style="color:#00688b">$j&lt;/span>);
-}
-}
-&lt;span style="color:#8b008b;font-weight:bold">function&lt;/span> &lt;span style="color:#008b45">adjustHeap&lt;/span>(&amp;amp;&lt;span style="color:#00688b">$arr&lt;/span>, &lt;span style="color:#00688b">$i&lt;/span>, &lt;span style="color:#00688b">$length&lt;/span>) {
-&lt;span style="color:#00688b">$temp&lt;/span> = &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>];
-&lt;span style="color:#228b22">// 从当前元素开始遍历左右子节点, 默认从左子节点开始遍历
-&lt;/span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">for&lt;/span>(&lt;span style="color:#00688b">$j&lt;/span> = &lt;span style="color:#b452cd">2&lt;/span> * &lt;span style="color:#00688b">$i&lt;/span> + &lt;span style="color:#b452cd">1&lt;/span>; &lt;span style="color:#00688b">$j&lt;/span> &amp;lt; &lt;span style="color:#00688b">$length&lt;/span>; &lt;span style="color:#00688b">$j&lt;/span> = &lt;span style="color:#b452cd">2&lt;/span> * &lt;span style="color:#00688b">$j&lt;/span> + &lt;span style="color:#b452cd">1&lt;/span>) {
-&lt;span style="color:#228b22">// 如果右子节点比左子节点大,则遍历右子树
-&lt;/span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">if&lt;/span> (&lt;span style="color:#00688b">$j&lt;/span> + &lt;span style="color:#b452cd">1&lt;/span> &amp;lt; &lt;span style="color:#00688b">$length&lt;/span> &amp;amp;&amp;amp; &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>] &amp;lt; &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span> + &lt;span style="color:#b452cd">1&lt;/span>]) {
-&lt;span style="color:#00688b">$j&lt;/span>++;
-}
-&lt;span style="color:#228b22">// 如果当前遍历元素比当前所在子树的根大, 则将其父节点设为当前遍历元素的值
-&lt;/span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">if&lt;/span> (&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>] &amp;gt; &lt;span style="color:#00688b">$temp&lt;/span>) {
-&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>] = &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>];
-&lt;span style="color:#00688b">$i&lt;/span> = &lt;span style="color:#00688b">$j&lt;/span>;
-}
-}
-&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>] = &lt;span style="color:#00688b">$temp&lt;/span>;
-}
-&lt;span style="color:#00688b">$arr&lt;/span> = [&lt;span style="color:#b452cd">38&lt;/span>, &lt;span style="color:#b452cd">19&lt;/span>, &lt;span style="color:#b452cd">29&lt;/span>, &lt;span style="color:#b452cd">91&lt;/span>, &lt;span style="color:#b452cd">85&lt;/span>, &lt;span style="color:#b452cd">12&lt;/span>, &lt;span style="color:#b452cd">41&lt;/span>, &lt;span style="color:#b452cd">21&lt;/span>];
-heapSort(&lt;span style="color:#00688b">$arr&lt;/span>);
-print_r(&lt;span style="color:#00688b">$arr&lt;/span>);
-&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="5-效率分析">5 效率分析&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-php" data-lang="php">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555">/**
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555"> * 堆排序: 将元素看成完全二叉树, 先从(n/2-1)号元素到0号元素调整为大顶堆, 然后交换首尾值, 继续从0号元素调整
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555"> * 时间复杂度: O(nlogn)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555"> * 空间复杂度: O(1)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555"> * 不稳定排序
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#cd5555"> */&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8b008b;font-weight:bold">function&lt;/span> &lt;span style="color:#008b45">heapSort&lt;/span>(&amp;amp;&lt;span style="color:#00688b">$arr&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00688b">$length&lt;/span> = count(&lt;span style="color:#00688b">$arr&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#228b22">// 调整为大顶堆
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">for&lt;/span>(&lt;span style="color:#00688b">$i&lt;/span> = floor(&lt;span style="color:#00688b">$length&lt;/span>/&lt;span style="color:#b452cd">2&lt;/span> -&lt;span style="color:#b452cd">1&lt;/span>); &lt;span style="color:#00688b">$i&lt;/span> &amp;gt;= &lt;span style="color:#b452cd">0&lt;/span>; --&lt;span style="color:#00688b">$i&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> adjustHeap(&lt;span style="color:#00688b">$arr&lt;/span>, &lt;span style="color:#00688b">$i&lt;/span>, &lt;span style="color:#00688b">$length&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#228b22">// 循环交换首尾元素并调整为大顶堆, 直到所有元素有序
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">for&lt;/span>(&lt;span style="color:#00688b">$j&lt;/span> = &lt;span style="color:#00688b">$length&lt;/span> - &lt;span style="color:#b452cd">1&lt;/span>; &lt;span style="color:#00688b">$j&lt;/span> &amp;gt;= &lt;span style="color:#b452cd">0&lt;/span>; --&lt;span style="color:#00688b">$j&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#8b008b;font-weight:bold">list&lt;/span>(&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#b452cd">0&lt;/span>], &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>]) = [&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>], &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#b452cd">0&lt;/span>]];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> adjustHeap(&lt;span style="color:#00688b">$arr&lt;/span>, &lt;span style="color:#b452cd">0&lt;/span>, &lt;span style="color:#00688b">$j&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8b008b;font-weight:bold">function&lt;/span> &lt;span style="color:#008b45">adjustHeap&lt;/span>(&amp;amp;&lt;span style="color:#00688b">$arr&lt;/span>, &lt;span style="color:#00688b">$i&lt;/span>, &lt;span style="color:#00688b">$length&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00688b">$temp&lt;/span> = &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#228b22">// 从当前元素开始遍历左右子节点, 默认从左子节点开始遍历
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">for&lt;/span>(&lt;span style="color:#00688b">$j&lt;/span> = &lt;span style="color:#b452cd">2&lt;/span> * &lt;span style="color:#00688b">$i&lt;/span> + &lt;span style="color:#b452cd">1&lt;/span>; &lt;span style="color:#00688b">$j&lt;/span> &amp;lt; &lt;span style="color:#00688b">$length&lt;/span>; &lt;span style="color:#00688b">$j&lt;/span> = &lt;span style="color:#b452cd">2&lt;/span> * &lt;span style="color:#00688b">$j&lt;/span> + &lt;span style="color:#b452cd">1&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#228b22">// 如果右子节点比左子节点大,则遍历右子树
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">if&lt;/span> (&lt;span style="color:#00688b">$j&lt;/span> + &lt;span style="color:#b452cd">1&lt;/span> &amp;lt; &lt;span style="color:#00688b">$length&lt;/span> &amp;amp;&amp;amp; &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>] &amp;lt; &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span> + &lt;span style="color:#b452cd">1&lt;/span>]) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00688b">$j&lt;/span>++;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#228b22">// 如果当前遍历元素比当前所在子树的根大, 则将其父节点设为当前遍历元素的值
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#228b22">&lt;/span> &lt;span style="color:#8b008b;font-weight:bold">if&lt;/span> (&lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>] &amp;gt; &lt;span style="color:#00688b">$temp&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>] = &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$j&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00688b">$i&lt;/span> = &lt;span style="color:#00688b">$j&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#00688b">$arr&lt;/span>[&lt;span style="color:#00688b">$i&lt;/span>] = &lt;span style="color:#00688b">$temp&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#00688b">$arr&lt;/span> = [&lt;span style="color:#b452cd">38&lt;/span>, &lt;span style="color:#b452cd">19&lt;/span>, &lt;span style="color:#b452cd">29&lt;/span>, &lt;span style="color:#b452cd">91&lt;/span>, &lt;span style="color:#b452cd">85&lt;/span>, &lt;span style="color:#b452cd">12&lt;/span>, &lt;span style="color:#b452cd">41&lt;/span>, &lt;span style="color:#b452cd">21&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>heapSort(&lt;span style="color:#00688b">$arr&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>print_r(&lt;span style="color:#00688b">$arr&lt;/span>);
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="5-效率分析">5 效率分析&lt;/h2>
 &lt;p>1、时间复杂度：O(nlogn)
 最坏，最好，平均时间复杂度均为O(nlogn)。
 2、空间复杂度：堆排序仅需一个记录大小的供交换用的辅助存储空间，因此空间复杂度为O(1)，是不稳定排序。&lt;/p></description></item></channel></rss>
