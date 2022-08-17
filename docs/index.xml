@@ -534,7 +534,561 @@ alt="算法图解"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="5-效率分析">5 效率分析&lt;/h2>
 &lt;p>1、时间复杂度：O(nlogn)
 最坏，最好，平均时间复杂度均为O(nlogn)。
-2、空间复杂度：堆排序仅需一个记录大小的供交换用的辅助存储空间，因此空间复杂度为O(1)，是不稳定排序。&lt;/p></description></item><item><title>Docs: R6.1.1 AUSTRALIA’S SPORTING SUCCESS</title><link>https://note.codiy.net/ielts/r6.1.1/</link><pubDate>Tue, 16 Aug 2022 15:59:12 +0800</pubDate><guid>https://note.codiy.net/ielts/r6.1.1/</guid><description>
+2、空间复杂度：堆排序仅需一个记录大小的供交换用的辅助存储空间，因此空间复杂度为O(1)，是不稳定排序。&lt;/p></description></item><item><title>Docs: 4.2.1</title><link>https://note.codiy.net/ielts/l4.2.1/</link><pubDate>Wed, 17 Aug 2022 23:01:52 +0800</pubDate><guid>https://note.codiy.net/ielts/l4.2.1/</guid><description>
+&lt;p>W: Oh, Peter, there you are. You&amp;rsquo;ve been ages. What kept you so long?&lt;/p>
+&lt;p>M: I&amp;rsquo;m Sorry I&amp;rsquo;m so late, Sally. Have you been waiting long?&lt;/p>
+&lt;p>W: Oh, half an hour. But it doesn&amp;rsquo;t matter. I&amp;rsquo;ve had a coffee and I have been reading this guidebook for tourists.&lt;/p>
+&lt;p>Sally has been waiting half an hour for Peter, so C has been circled.&lt;/p>
+&lt;p>Now we shall begin.&lt;/p>
+&lt;p>You should answer the questions as you listen, because you will not hear the recording a second time.&lt;/p>
+&lt;p>Listen carefully and answer questions 1 to 5.&lt;/p>
+&lt;p>W: Oh, Peter, there you&amp;rsquo;re. You&amp;rsquo;ve been ages. What kept you so long?&lt;/p>
+&lt;p>M: I&amp;rsquo;m Sorry, I&amp;rsquo;m so late, Sally. Have you been waiting long?&lt;/p>
+&lt;p>W: Oh, half an hour. But it doesn&amp;rsquo;t matter.&lt;/p>
+&lt;p>I&amp;rsquo;ve had a coffee and I&amp;rsquo;ve been reading this guidebook for tourists. Sit down.&lt;/p>
+&lt;p>W: You look very hot and tired. What would you like to drink?&lt;/p>
+&lt;p>M: I&amp;rsquo;d love a really chilled mineral water or something. Will you have another coffee?&lt;/p>
+&lt;p>W: Yes, I will. The waitress will be back in a moment. Why were you so late? Did something happen?&lt;/p>
+&lt;p>M: Yes. You know I went to the bank to cash some travellers cheques?&lt;/p>
+&lt;p>Well, the exchange rate was looking healthy, but when I went to the teller, they told me the computer system was temporarily down, so they couldn&amp;rsquo;t do any transactions.&lt;/p>
+&lt;p>They said the problem would be fixed in a few minutes, so I waited.&lt;/p>
+&lt;p>And then I started talking to another guy in the bank, and I forgot the time.&lt;/p>
+&lt;p>W: Oh, really? Someone you met in the bank? Does he work there?&lt;/p>
+&lt;p>M: No, he was a tourist, from New York. His name is Henry, and he&amp;rsquo;s been here for a week, but he&amp;rsquo;s moving on to Germany tomorrow.&lt;/p>
+&lt;p>He&amp;rsquo;s an architect, and he&amp;rsquo;s spending four weeks travelling around Europe.&lt;/p>
+&lt;p>W: Just like us!&lt;/p>
+&lt;p>M: Yeah, just like us. He told me the names of some places where we should eat.&lt;/p>
+&lt;p>Great food, and not too expensive, he said.&lt;/p>
+&lt;p>Oh, and he also gave me this map of the bus system. He said he didn&amp;rsquo;t need it anymore.&lt;/p>
+&lt;p>W: That&amp;rsquo;s useful. Pity he&amp;rsquo;s moving on tomorrow.&lt;/p>
+&lt;p>Ah, here&amp;rsquo;s the waitress. Let&amp;rsquo;s order.&lt;/p>
+&lt;p>Do you want anything to eat, or shall we just have a drink?&lt;/p>
+&lt;p>M: Well. I&amp;rsquo;m hungry, and we&amp;rsquo;ve got a lot of sightseeing to do, so let&amp;rsquo;s just have a snack and a drink.&lt;/p>
+&lt;p>W: Sounds good to me.&lt;/p>
+&lt;p>Before you hear the rest of the conversation you&amp;rsquo;ll have some time to look at questions 6 to 10.&lt;/p>
+&lt;p>Now listen, and answer questions 6 to 10.&lt;/p>
+&lt;p>M: Well. Let&amp;rsquo;s decide what we&amp;rsquo;ll see today.&lt;/p>
+&lt;p>I guess the best place to start is the Cathedral, and then the Castle.&lt;/p>
+&lt;p>What are the opening times for those two?&lt;/p>
+&lt;p>W: Well, according to this guidebook, the Cathedral is only open from 9.30 in the morning until midday.&lt;/p>
+&lt;p>Oh, no, hang on. That&amp;rsquo;s the Cathedral Museum.&lt;/p>
+&lt;p>The Cathedral itself is open morning and afternoon.&lt;/p>
+&lt;p>The Castle is just open from 1 to 5, so we can&amp;rsquo;t go there until after lunch.&lt;/p>
+&lt;p>I really want to spend some time in the Art Gallery, because they&amp;rsquo;ve got this wonderful painting by Rembrandt that I&amp;rsquo;ve always wanted to see.&lt;/p>
+&lt;p>M: What else should we see?&lt;/p>
+&lt;p>W: Well the guidebook says the Botanical Gardens are worth spending some time in.&lt;/p>
+&lt;p>And they&amp;rsquo;re open all day from 8 to 6 so we can go there anytime.&lt;/p>
+&lt;p>I&amp;rsquo;d like to go to the Markets near the river too, but&amp;hellip;Oh&amp;hellip;no, wait, that&amp;rsquo;s only in the mornings, too.&lt;/p>
+&lt;p>M: As well as today and tomorrow, we can see some other places on Monday you know.&lt;/p>
+&lt;p>But I don&amp;rsquo;t think the Markets will be open then; they only open on Thursdays, so we&amp;rsquo;ve missed them for this week.&lt;/p>
+&lt;p>Maybe we should go to the Cathedral today because it&amp;rsquo;s Sunday tomorrow.&lt;/p>
+&lt;p>And even though it&amp;rsquo;s open every day, it might be more difficult to get in tomorrow because of the church services.&lt;/p>
+&lt;p>W: Em, that&amp;rsquo;s true, but the Art Gallery isn&amp;rsquo;t open on Sundays at all, so we&amp;rsquo;ll have to go there today.&lt;/p>
+&lt;p>The Castle&amp;rsquo;s open every day except Monday, so we&amp;rsquo;re OK there, and the Gardens of course only close at night.&lt;/p>
+&lt;p>M: Are all these places free or do we have to pay to go in? What does the guidebook say?&lt;/p>
+&lt;p>W: I think there&amp;rsquo;s a charge for all of them except the Botanical Gardens. Oh, and the markets, of course you don&amp;rsquo;t pay to go in.&lt;/p>
+&lt;p>M: Okay, well, it looks like our plan is this: we&amp;rsquo;ll go to see the painting you like first, the Rembrandt, then have lunch and go on to the Castle after that, and then the Cathedral.&lt;/p>
+&lt;p>W: Okay. It says here that the roof of the Cathedral is really beautiful.&lt;/p>
+&lt;p>M: Is that right? What I really want to do at the Cathedral is climb the tower.&lt;/p>
+&lt;p>The view is supposed to be spectacular!&lt;/p>
+&lt;p>W: Okay, well, that&amp;rsquo;ll be more than enough for today.&lt;/p>
+&lt;p>Then, tomorrow, let&amp;rsquo;s go to the Botanical Gardens and have a picnic.&lt;/p>
+&lt;p>I want to sit by the river and watch the swans. This city&amp;rsquo;s famous for them.&lt;/p>
+&lt;p>That is the end of section one, you now have half a minute to check your answers.&lt;/p>
+&lt;p>Now turn to section two.&lt;/p></description></item><item><title>Docs: 4.2.2</title><link>https://note.codiy.net/ielts/l4.2.2/</link><pubDate>Wed, 17 Aug 2022 23:01:52 +0800</pubDate><guid>https://note.codiy.net/ielts/l4.2.2/</guid><description>
+&lt;p>So the counselling services we offer deal with any problems arising from your studies or in your life outside the university.&lt;/p>
+&lt;p>Let&amp;rsquo;s take academic counselling.&lt;/p>
+&lt;p>If you&amp;rsquo;re confused about subjects or how to combine them in your degree, then we can advise you and discuss the career you are aiming for, so that you can see it all in context.&lt;/p>
+&lt;p>We can also chase up your tutor if you&amp;rsquo;re not getting proper feedback on how you are getting on in your subject.&lt;/p>
+&lt;p>Besides help with academic problems, you may also need personal counselling.&lt;/p>
+&lt;p>If you think you&amp;rsquo;re already under stress, well, just wait till classes begin next week.&lt;/p>
+&lt;p>You&amp;rsquo;ll have to start adjusting to teaching and learning methods that may be unfamiliar to you, as well as the mounting pressure as the deadline for that first assignment creeps up on you.&lt;/p>
+&lt;p>And of course, you&amp;rsquo;ll have to cope with all this without your usual social network, you know, the social contacts, family and friends you could normally rely on for help.&lt;/p>
+&lt;p>All of this causes anxiety. Studying overseas can trigger a personal crisis.&lt;/p>
+&lt;p>You may have left a lot of what you might call &amp;lsquo;unfinished business&amp;rsquo; back in your own country.&lt;/p>
+&lt;p>Or you may have interrupted personal relationships or even sometimes broken them off to come overseas.&lt;/p>
+&lt;p>And so the student often feels lonely, unhappy, unmotivated and unable to concentrate on studying. Or there may be other things bothering you.&lt;/p>
+&lt;p>Our resident chaplain can offer you spiritual guidance if that&amp;rsquo;s what you want or we can put you in touch with community groups that can provide you with social contacts and friendship.&lt;/p>
+&lt;p>Before you hear the rest of the talk, you have some time to look at questions 15 to 20.&lt;/p>
+&lt;p>Now listen and answer questions 15 to 20.&lt;/p>
+&lt;p>What about exam stress?&lt;/p>
+&lt;p>It affects nearly everyone to some extent, but especially overseas students like yourselves.&lt;/p>
+&lt;p>There may be a huge amount of family pressure on you to succeed.&lt;/p>
+&lt;p>And if you fail a subject or drop out of a course because it&amp;rsquo;s too difficult, then your self-esteem can suffer. But it&amp;rsquo;s not the end of the world if you don&amp;rsquo;t pass an exam.&lt;/p>
+&lt;p>I had to resit First Year Anthropology, so I can certainly offer you a sympathetic ear!&lt;/p>
+&lt;p>Anyway, exam failure can lead to worrying changes in the way you normally behave.&lt;/p>
+&lt;p>You may also be off your food, or you may have dietary problems because the local food is not to your liking and upsets you, and this can affect your health and studies.&lt;/p>
+&lt;p>Glenda Roberts is our dietician in the Health Service and we can put you on to her.&lt;/p>
+&lt;p>And we all have money problems, don&amp;rsquo;t we?&lt;/p>
+&lt;p>But remember, full-time students can get a low-interest loan of up to six hundred dollars to buy books and for similar study-related expenses.&lt;/p>
+&lt;p>That&amp;rsquo;s right, and you can get double that amount if you can&amp;rsquo;t afford an item of equipment you need for your course - a musical instrument, for example.&lt;/p>
+&lt;p>And it doesn&amp;rsquo;t stop there.&lt;/p>
+&lt;p>When you move into a flat, starting-up expenses, including furniture for it, can be covered by a loan through the Welfare Service. See Jill Freeman for details.&lt;/p>
+&lt;p>Can we help you? Well, last academic year in spite of staff cuts, we counselled two hundred and forty international students for a total of twenty-six hundred hours counselling.&lt;/p>
+&lt;p>And finally we won all but just one of the twelve appeals that we launched on behalf of students.&lt;/p>
+&lt;p>Not too bad for an understaffed service, don&amp;rsquo;t you think?&lt;/p>
+&lt;p>That&amp;rsquo;s all from me. Thank you.&lt;/p>
+&lt;p>That is the end of section two. You now have half a minute to check your answers.&lt;/p>
+&lt;p>Now turn to section three.&lt;/p></description></item><item><title>Docs: 4.2.3</title><link>https://note.codiy.net/ielts/l4.2.3/</link><pubDate>Wed, 17 Aug 2022 23:01:52 +0800</pubDate><guid>https://note.codiy.net/ielts/l4.2.3/</guid><description>
+&lt;p>W: Oh, there you are, good.&lt;/p>
+&lt;p>Sorry I&amp;rsquo;m a bit late. There was a long queue.&lt;/p>
+&lt;p>So have you worked out how to deal with this assignment then?&lt;/p>
+&lt;p>M1: Not yet. We&amp;rsquo;ve only been here a couple of minutes ourselves.&lt;/p>
+&lt;p>W: Can you just remind me what the task is exactly?&lt;/p>
+&lt;p>M2: Well, there are two, err, no, three parts to it.&lt;/p>
+&lt;p>First we&amp;rsquo;ve got to write an essay about ways of collecting data. Then&amp;hellip;&lt;/p>
+&lt;p>W: What&amp;rsquo;s the title of the essay exactly?&lt;/p>
+&lt;p>M1: I&amp;rsquo;ve got it here: &amp;lsquo;Assess the two main methods of collecting data in social science research&amp;rsquo;.&lt;/p>
+&lt;p>W: And how much do we need to write?&lt;/p>
+&lt;p>M1: Fifteen hundred words. That&amp;rsquo;s for the essay.&lt;/p>
+&lt;p>Then, for the second part of the assignment, we have to choose one method of data collection, and carry out a small-scale study, making appropriate use of the method chosen to gather data from at least five subjects.&lt;/p>
+&lt;p>W: And then we have to write a report on the study?&lt;/p>
+&lt;p>M2: That&amp;rsquo;s right, of three to four thousand words.&lt;/p>
+&lt;p>W: Did you get as far as discussing which form of data collection we should go for - questionnaire or interview, isn&amp;rsquo;t it?&lt;/p>
+&lt;p>M1: Yeah, I think we should use a questionnaire. It&amp;rsquo;ll be so much less time-consuming than organising interviews, I reckon.&lt;/p>
+&lt;p>Once we&amp;rsquo;ve agreed on the wording of it, we only have to send it out and wait for the responses.&lt;/p>
+&lt;p>W: Yes, I think it probably would be quicker.&lt;/p>
+&lt;p>But what did that article he gave us last week say about the quality of data from questionnaires?&lt;/p>
+&lt;p>M1: I&amp;rsquo;m pretty sure it recommended questionnaires as a source of &amp;lsquo;highly reliable data&amp;rsquo;. As long as you design the questionnaire properly in the first place, the data will be fine.&lt;/p>
+&lt;p>W: No. I&amp;rsquo;m sure it talked about drawbacks as well, didn&amp;rsquo;t it? something about the response rate and the problems you get if it&amp;rsquo;s too low.&lt;/p>
+&lt;p>M1: Yeah, but we only need data from five subjects, anyway.&lt;/p>
+&lt;p>W: Oh, I suppose so. Another drawback I remember it mentioned was that questionnaire data tends not to reveal anything unexpected, because it is limited to the questions fixed in advance by the researcher.&lt;/p>
+&lt;p>M1: Come on, Rosa. This is only a practice. It&amp;rsquo;s not meant to be a real research, is it?&lt;/p>
+&lt;p>W: Well, I&amp;rsquo;m not sure about that.&lt;/p>
+&lt;p>Before you hear the rest of the conversation, you have some time to look at questions twenty-seven to thirty.&lt;/p>
+&lt;p>Now listen and answer questions twenty-seven to thirty.&lt;/p>
+&lt;p>W: Maybe I&amp;rsquo;d better go through the article again, just to be sure. Can you remember what it was called?&lt;/p>
+&lt;p>M: &amp;lsquo;Sample Surveys and Social Science Research&amp;rsquo;, I think. By Mehta.&lt;/p>
+&lt;p>W: M-E-H-T-A?&lt;/p>
+&lt;p>M: Yeah. And he also recommended a more recent book called Survey Research by Bell, I think.It&amp;rsquo;s in that series published by London University.&lt;/p>
+&lt;p>M2: And if we tried to use interviews instead, I saw a book in the departmental library that will be helpful: it&amp;rsquo;s called &amp;lsquo;Interviews that work&amp;rsquo;, by Wilson, published in Oxford in nineteen eighty-eight.&lt;/p>
+&lt;p>W: Right. Oh, I have got a tutorial now. Can we meet up again later this week?&lt;/p>
+&lt;p>What about Friday morning?&lt;/p>
+&lt;p>M: Suits me. Eleven o&amp;rsquo;clock?&lt;/p>
+&lt;p>W: Fine.&lt;/p>
+&lt;p>M: Before Friday, I think we should all look through the reading list.&lt;/p>
+&lt;p>That is the end of section three. You now have half a minute to check your answers.&lt;/p>
+&lt;p>Now turn to section four.&lt;/p></description></item><item><title>Docs: 4.2.4</title><link>https://note.codiy.net/ielts/l4.2.4/</link><pubDate>Wed, 17 Aug 2022 23:01:52 +0800</pubDate><guid>https://note.codiy.net/ielts/l4.2.4/</guid><description>
+&lt;p>So far, in these lectures, we&amp;rsquo;ve been looking at crimes like robbery and murder - both from a historical viewpoint and also in contemporary society.&lt;/p>
+&lt;p>And we&amp;rsquo;ve seen that the preoccupation in Western society with crime and with lawlessness is part of a long and continuous tradition, rather than something which is new and unique to modern society.&lt;/p>
+&lt;p>But over the past seventy years or so, there has been a massive increase in one type of crime which is what&amp;rsquo;s known as &amp;lsquo;corporate crime&amp;rsquo;.&lt;/p>
+&lt;p>Corporate crime is crime which, as the name suggests, is connected with companies, with business organisations.&lt;/p>
+&lt;p>It includes illegal acts of either individuals or a group within the company.&lt;/p>
+&lt;p>But what is important is that these acts are normally in accordance with the goals of the company.&lt;/p>
+&lt;p>They&amp;rsquo;re for the good of the company rather than the individual.&lt;/p>
+&lt;p>It&amp;rsquo;s been defined as, quote, &amp;lsquo;crime which is committed for the corporate organization&amp;rsquo; - the company - &amp;rsquo;not against it&amp;rsquo;, unquote.&lt;/p>
+&lt;p>So crimes like theft by employees - things like&amp;hellip;err&amp;hellip;embezzlement or fraud against one&amp;rsquo;s actual employer are excluded according to this definition.&lt;/p>
+&lt;p>The employees may be involved but they&amp;rsquo;re acting in the first place for the company.&lt;/p>
+&lt;p>They may not even realize that they are committing a crime, or they may realise but they feel it&amp;rsquo;s excusable because it&amp;rsquo;s policy, or because otherwise they may lose their jobs.&lt;/p>
+&lt;p>So here, really, we&amp;rsquo;re talking about the links between power and crime.&lt;/p>
+&lt;p>Now, this is one area that much less is generally known about than conventional or traditional crime.&lt;/p>
+&lt;p>It has been relatively ignored by the mass media.&lt;/p>
+&lt;p>For example, it tends to be underreported in comparison with conventional crime in news broadcasts, and in crime serials and films and so on.&lt;/p>
+&lt;p>They very rarely deal with corporate crime.&lt;/p>
+&lt;p>And it also tends to be ignored in academic circles, there&amp;rsquo;s been far more research on conventional crime and far more data is available.&lt;/p>
+&lt;p>There are several reasons for this lack of interest in corporate crime, compared with other types of crime.&lt;/p>
+&lt;p>It&amp;rsquo;s often very complex, whereas with conventional crime, it&amp;rsquo;s usually possible to follow what&amp;rsquo;s going on without specialist knowledge.&lt;/p>
+&lt;p>As well as this, whereas conventional crime usually has a lot of human interest, corporate crime often has much less.&lt;/p>
+&lt;p>The third reason, and possibly the most significant one, is that very often the victims are unaware.&lt;/p>
+&lt;p>They think their misfortune is an accident, or that is the fault of no-one in particular.&lt;/p>
+&lt;p>They&amp;rsquo;re unaware that they&amp;rsquo;ve been victims of a crime.&lt;/p>
+&lt;p>So when we look at the effects of corporate crime, we may find it&amp;rsquo;s very difficult to assess the costs, but these costs can be very considerable in both their economic and social aspects.&lt;/p>
+&lt;p>Let&amp;rsquo;s look at the economic costs first.&lt;/p>
+&lt;p>For example, if a company is producing fruit juice, and it dilutes its product, so that it&amp;rsquo;s just a little below the concentration it should be, many millions of people may be paying a small amount extra​ for their carton of orange juice.&lt;/p>
+&lt;p>Now small amounts like this may seem insignificant for individual customers, too small to worry about.&lt;/p>
+&lt;p>But for the company, this deception might result in massive illegal profit.&lt;/p>
+&lt;p>However, all studies of corporate crime agree that the individuals are in fact deprived of far more money by such crime than they are by conventional crime like robbery and theft.&lt;/p>
+&lt;p>In addition to this we have to consider the social costs of corporate crime, and these are again very difficult to assess, but they are considerable.&lt;/p>
+&lt;p>They&amp;rsquo;re important because they can undermine the faith of the public in the business world.&lt;/p>
+&lt;p>And also, more importantly, because the main group of people they affect are, in fact, not the richer sections of the society but the poorer.&lt;/p>
+&lt;p>So here, companies are robbing the poor to benefit the rich.&lt;/p>
+&lt;p>There are two more points to do with corporate crime that I&amp;rsquo;d like to illustrate with the reference to a specific event which occurred several years ago.&lt;/p>
+&lt;p>This was an explosion of a large oil tanker which caused the loss of more than fifty lives of the crew.&lt;/p>
+&lt;p>It was an explosion which never should have happened, and a subsequent inquiry laid the blame not on anyone who had actually been on the tanker at the time, but on the owners of the tanker.&lt;/p>
+&lt;p>They had deliberately decided not to carry out necessary repair work on the tanker as it was due to be sold.&lt;/p>
+&lt;p>And it was this lack of repair work which was directly responsible for the explosion.&lt;/p>
+&lt;p>Now this illustrates two points to do with corporate crime.&lt;/p>
+&lt;p>First of all, that it does not have to be intentional.&lt;/p>
+&lt;p>The owners of the tanker certainly did not intend it to explode but very serious consequences can result from people or organisations not considering the possible results of their actions seriously enough.&lt;/p>
+&lt;p>The main crime here was indifference to the human results rather than actual intention to harm anyone.&lt;/p>
+&lt;p>But that didn&amp;rsquo;t make the results any less tragic. And this leads me to my second point that corporate crime can have very severe consequences.&lt;/p>
+&lt;p>It&amp;rsquo;s not just a matter of companies making bigger profits than they should do, but of events which may affect the lives of innocent people.&lt;/p>
+&lt;p>And yet very often companies, because they say they didn&amp;rsquo;t intend to harm anyone, can avoid taking responsibility for the results of their actions, and that has been a very dangerous loophole in the law.&lt;/p>
+&lt;p>A further example of corporate crime was fade out&amp;hellip;&amp;hellip;&lt;/p>
+&lt;p>That is the end of section four, you now have half a minute to check your answers.&lt;/p>
+&lt;p>That is the end of the listening test.&lt;/p>
+&lt;p>In the IELTS test, you would now have ten minutes to transfer your answers to the listening answer sheet.&lt;/p></description></item><item><title>Docs: 4.3.1</title><link>https://note.codiy.net/ielts/l4.3.1/</link><pubDate>Wed, 17 Aug 2022 23:01:52 +0800</pubDate><guid>https://note.codiy.net/ielts/l4.3.1/</guid><description>
+&lt;p>W: Sara, I&amp;rsquo;ve heard that you want to move into a home-stay family, is that correct?&lt;/p>
+&lt;p>S: Yes, that&amp;rsquo;s right. I&amp;rsquo;ve been staying with my aunt and now my cousin is arriving from Singapore and my aunt needs the room for him.&lt;/p>
+&lt;p>W: Oh, that&amp;rsquo;s bad luck. Well, I&amp;rsquo;ll need to get some particulars first. Err, Sara, what&amp;rsquo;s your full name?&lt;/p>
+&lt;p>S: Sara Lim, and that&amp;rsquo;s Sarah without the h at the end.&lt;/p>
+&lt;p>Linda asks for Sara&amp;rsquo;s full name Sara Lim, so this has been written in the notes.&lt;/p>
+&lt;p>Now we shall begin.&lt;/p>
+&lt;p>You should answer the questions as you listen, because you will not hear the recording a second time.&lt;/p>
+&lt;p>Listen carefully and answer questions 1 to 4.&lt;/p>
+&lt;p>W: Sara, I&amp;rsquo;ve heard that you want to move into a home-stay family, is that correct?&lt;/p>
+&lt;p>S: Yes, that&amp;rsquo;s right. I&amp;rsquo;ve been staying with my aunt and now my cousin is arriving from Singapore and my aunt needs the room for him.&lt;/p>
+&lt;p>W: Oh, that&amp;rsquo;s bad luck. Well I&amp;rsquo;ll need to get some particulars first. Err, Sara, what&amp;rsquo;s your full name?&lt;/p>
+&lt;p>S: Sara Lim, and that&amp;rsquo;s Sara without the h at the end.&lt;/p>
+&lt;p>W: En, how old are you Sara?&lt;/p>
+&lt;p>S: 23, only just. It was my birthday on the 21st of August.&lt;/p>
+&lt;p>W: Ah, happy birthday for yesterday. How long have you been in Australia?&lt;/p>
+&lt;p>S: A year in Adelaide and 6 months in Sydney. I prefer Sydney. I&amp;rsquo;ve got more friends here.&lt;/p>
+&lt;p>W: What&amp;rsquo;s your address at your aunt&amp;rsquo;s house?&lt;/p>
+&lt;p>S: Flat 1,539 Forest Rd. Canterbury and the post code is 2036.&lt;/p>
+&lt;p>W: Okay. What are you studying now?&lt;/p>
+&lt;p>S: I was studying general English in Adelaide. And now I&amp;rsquo;m doing academic English because I&amp;rsquo;m trying to get into medicine next year.&lt;/p>
+&lt;p>W: That sounds good, but it&amp;rsquo;ll take you a long time. When would you like to move out from your aunt&amp;rsquo;s?&lt;/p>
+&lt;p>S: My cousin arrives on Friday morning. So I&amp;rsquo;d better be out on Thursday.&lt;/p>
+&lt;p>W: What&amp;hellip;the 7th of September.&lt;/p>
+&lt;p>S: Yes, that&amp;rsquo;s right.&lt;/p>
+&lt;p>W: That doesn&amp;rsquo;t leave us much time. Right, okay.&lt;/p>
+&lt;p>I need to know what kind of accommodation you&amp;rsquo;d like, so I can get you something suitable.&lt;/p>
+&lt;p>S: Can I share a room with someone else.&lt;/p>
+&lt;p>I&amp;rsquo;ve been alone in my room at my aunt&amp;rsquo;s and I&amp;rsquo;ve always shared with my sister and I like that.&lt;/p>
+&lt;p>W: Yes. Fine. That&amp;rsquo;ll save you money too.&lt;/p>
+&lt;p>Would you like to live with the family or do you think that a single person will be better for you.&lt;/p>
+&lt;p>I have lots of very nice single people on my books.&lt;/p>
+&lt;p>S: Do you have any women living alone, retired women?&lt;/p>
+&lt;p>W: Yes, I have quite a few whose children have grown up and left home.&lt;/p>
+&lt;p>In fact, I have some really lovely retired ladies living by themselves who just love the company of students.&lt;/p>
+&lt;p>Most of them live in flats but that&amp;rsquo;s not a problem for you, is it?&lt;/p>
+&lt;p>S: Not at all. I&amp;rsquo;m used to that. My aunt lives in a flat too, remember?&lt;/p>
+&lt;p>I&amp;rsquo;m not used to a big house with a garden, swimming pool, pets and all that.&lt;/p>
+&lt;p>W: Okay fine. I know quite a bit about what you want now.&lt;/p>
+&lt;p>I should let you know that your rent will be 160 dollars per week.&lt;/p>
+&lt;p>You&amp;rsquo;ll have to pay me 320 dollars as a deposit before you move in.&lt;/p>
+&lt;p>The deposit is as insurance in case you break something.&lt;/p>
+&lt;p>You need to pay monthly to me by cash or cheque, I don&amp;rsquo;t mind.&lt;/p>
+&lt;p>You don&amp;rsquo;t need to pay for gas, electricity or water. But you&amp;rsquo;ll need to pay your proportion of the phone bill.&lt;/p>
+&lt;p>Most families do that on an honor system but you&amp;rsquo;ll have to wait and see.&lt;/p>
+&lt;p>En, Have you got any more questions for me?&lt;/p>
+&lt;p>S: When will you know where I can go?&lt;/p>
+&lt;p>W: I&amp;rsquo;ll work on it now. So come and see me tomorrow and I should have some news for you then.&lt;/p>
+&lt;p>S: Thanks a lot.&lt;/p>
+&lt;p>W: Goodbye, see you tomorrow. After lunch will be better for me.&lt;/p>
+&lt;p>S: Okay, see you then. Bye.&lt;/p>
+&lt;p>That is the end of section one, you now have half a minute to check your answers.&lt;/p>
+&lt;p>Now turn to section two.&lt;/p></description></item><item><title>Docs: 4.3.2</title><link>https://note.codiy.net/ielts/l4.3.2/</link><pubDate>Wed, 17 Aug 2022 23:01:52 +0800</pubDate><guid>https://note.codiy.net/ielts/l4.3.2/</guid><description>
+&lt;p>GEOFFREY: Good evening, and in this week&amp;rsquo;s edition of &amp;lsquo;Focus on the Arts&amp;rsquo;, Jane Hemmington is going to fill us in on what&amp;rsquo;s in store for us at this year&amp;rsquo;s Summer Festival. Over to you, Jane.&lt;/p>
+&lt;p>Jane: Thank you, Geoffrey. This year, the Summer Festival is the biggest we&amp;rsquo;ve ever seen, so there should be something for everybody.&lt;/p>
+&lt;p>This is the third year they&amp;rsquo;ve run it and the timing&amp;rsquo;s slightly different: for the last couple of years it&amp;rsquo;s been around the fifth to seventeenth, but this year they wanted to allow everyone enough time to recover from the first of January celebrations and they&amp;rsquo;ve put it at the end of the month.&lt;/p>
+&lt;p>The programme has sensational theatre, dance and also a large number of art exhibitions, but the thing the Festival is most famous for is its great street music.&lt;/p>
+&lt;p>For today&amp;rsquo;s report though, Geoffrey, I&amp;rsquo;m looking at some of the theatrical events that you might like to see; in particular, at this year&amp;rsquo;s theme - circuses.&lt;/p>
+&lt;p>I&amp;rsquo;m going to tell you about two circus performances, but there&amp;rsquo;re plenty of others in the program.&lt;/p>
+&lt;p>I&amp;rsquo;ve chosen these because they represent distinct movements within circus performance.&lt;/p>
+&lt;p>The first is the Circus Romano from Italy.&lt;/p>
+&lt;p>As this is a traveling circus, it follows a long tradition by performing in a marquee, which is really like a canvas portable building, usually put up in a green space or car park, rather than in a theatre or stadium.&lt;/p>
+&lt;p>In spite of this, Circus Romano isn&amp;rsquo;t at all like the traditional circuses I grew up with.&lt;/p>
+&lt;p>There are no animals, just very talented clown and acrobatic routines.&lt;/p>
+&lt;p>The show has a lot of very funny moments, especially at the beginning, but the best part is the music and lighting. They&amp;rsquo;re magical.&lt;/p>
+&lt;p>At forty-five dollars it&amp;rsquo;s very expensive anyway. It&amp;rsquo;s really for adult tastes.&lt;/p>
+&lt;p>In fact, much of it would be wasted on children, so I suggest you leave them at home.&lt;/p>
+&lt;p>The second circus performance is Circus Electrica at the Studio Theatre.&lt;/p>
+&lt;p>The purists are suggesting that this isn&amp;rsquo;t a circus at all.&lt;/p>
+&lt;p>It&amp;rsquo;s a showcase for skills in dance and magic, rather than the usual ones you expect in a circus.&lt;/p>
+&lt;p>With only six performers, it&amp;rsquo;s a small production, which suits the venue well - the Studio only seats about two hundred people.&lt;/p>
+&lt;p>For my money it&amp;rsquo;s the aerial displays which are outstanding as well as the magical tricks - features which are missing from Circus Romano.&lt;/p>
+&lt;p>An interesting feature of the show is the performers are so young - the youngest is only fourteen.&lt;/p>
+&lt;p>But it&amp;rsquo;s still well worth seeing, a good one for the whole family.&lt;/p>
+&lt;p>And finally, as it&amp;rsquo;s summer, you may wish to see some of the Festival performances that are being presented outdoors.&lt;/p>
+&lt;p>Like the famous Mekong Water Puppet Troupe, performing in the City Gardens this week.&lt;/p>
+&lt;p>Now water puppetry is amazing.&lt;/p>
+&lt;p>It&amp;rsquo;s large puppets on long sticks, controlled by puppeteers standing waist deep in the lake.&lt;/p>
+&lt;p>The puppets do comedy routines and there is some terrific formation dancing.&lt;/p>
+&lt;p>This is a fantastic show and the best moment comes at the end -seeing the puppeteers.&lt;/p>
+&lt;p>When the troupe walks up out of water, you get this amazing feeling.&lt;/p>
+&lt;p>It&amp;rsquo;s really hard to believe that what you&amp;rsquo;ve been watching is lifeless wood and cloth.&lt;/p>
+&lt;p>As an adult, I had a great time, but I did note that other older people in the audience weren&amp;rsquo;t quite as taken with it as I was.&lt;/p>
+&lt;p>It&amp;rsquo;s a must for young children though, and that&amp;rsquo;s the audience it&amp;rsquo;s really aimed at.&lt;/p>
+&lt;p>Well, that&amp;rsquo;s all I&amp;rsquo;ve time for today, but I&amp;rsquo;ll be back next week with more news of what&amp;rsquo;s worth seeing and what is best to miss.&lt;/p>
+&lt;p>That is the end of section two. You now have half a minute to check your answers.&lt;/p>
+&lt;p>Now turn to section three.&lt;/p></description></item><item><title>Docs: 4.3.3</title><link>https://note.codiy.net/ielts/l4.3.3/</link><pubDate>Wed, 17 Aug 2022 23:01:52 +0800</pubDate><guid>https://note.codiy.net/ielts/l4.3.3/</guid><description>
+&lt;p>Officer: Hello. Er, I&amp;rsquo;m Dawn Matthews.&lt;/p>
+&lt;p>Student: Yes, hello. I&amp;rsquo;ve been referred to you because I&amp;rsquo;m enquiring about the refresher courses that you run. I&amp;rsquo;d like to find out a bit more about them.&lt;/p>
+&lt;p>Officer: OK. Well, we run quite a few different short courses for students who are either returning to study or studying part-time. Um, tell me about your situation.&lt;/p>
+&lt;p>Student: Well, I think that I really need some help in preparing for the coming semester, especially to build up my confidence a bit and help me study effectively because you see, I&amp;rsquo;ve been out in the work-force for nearly twelve years now, so it really is a long time since I was last a student.&lt;/p>
+&lt;p>Officer: Yes, it can seem like a long time, can&amp;rsquo;t it?&lt;/p>
+&lt;p>Um, well, let me start by telling you what courses we have that might suit you.&lt;/p>
+&lt;p>Are you an undergraduate or a postgraduate? Arts or Sciences?&lt;/p>
+&lt;p>Student: Undergraduate, and I&amp;rsquo;m in the business faculty.&lt;/p>
+&lt;p>Officer: Right then. First of all, there&amp;rsquo;s our intensive &amp;lsquo;Study for Success&amp;rsquo; seminar on the first and second of February.&lt;/p>
+&lt;p>It&amp;rsquo;s aimed at students like you who are uncertain about what to expect at college, and looks at a fairly wide range of approaches to university learning, to motivate you to begin your study and build on your own learning strategies.&lt;/p>
+&lt;p>Student: Mm, that sounds good. Um, what&amp;rsquo;re some of the strategies that are presented?&lt;/p>
+&lt;p>Officer: Well, we try to cover all aspects of study.&lt;/p>
+&lt;p>Some of the strategies in writing, for example, would be improving your planning for writing, organizing your thinking and building some techniques to help you write more clearly.&lt;/p>
+&lt;p>With reading, there will be sessions aimed at getting into the habit of analysing material as you read it, and tips to help you record and remember what you&amp;rsquo;ve read.&lt;/p>
+&lt;p>It really is very important to begin reading confidently right from the beginning.&lt;/p>
+&lt;p>Officer: There&amp;rsquo;s also advice on how to get the most from your lectures and practice in giving confident presentations as well as how to prepare for exams.&lt;/p>
+&lt;p>Student: What about the motivational side of things?&lt;/p>
+&lt;p>Officer: Ah, well, there&amp;rsquo;s a range of motivational exercises that we do to help the students feel positive and enthusiastic about their study.&lt;/p>
+&lt;p>The process of learning and exploring a subject can lead to a whole new way of looking at the world and the study skills and techniques you build up can be applied in all sorts of different ways.&lt;/p>
+&lt;p>Student: Actually, I&amp;hellip;I&amp;rsquo;m very excited about the whole thing of taking up study again but, you know, I&amp;rsquo;m a little nervous about whether I&amp;rsquo;ll manage to get everything done.&lt;/p>
+&lt;p>Er, I suppose it&amp;rsquo;s the same for all mature students?&lt;/p>
+&lt;p>Officer: Of course, it is. Two of the key components of the course are time management and overcoming procrastination.&lt;/p>
+&lt;p>People discover that, once they learn to plan their days, all the work can be accomplished and there&amp;rsquo;ll still be time for leisure.&lt;/p>
+&lt;p>Student: Is there an enrolment fee?&lt;/p>
+&lt;p>Officer: Well, er, oh, just a minute, let&amp;rsquo;s see&amp;hellip;Ah, the cost is 30 pounds, which includes all course materials and morning tea. You have to arrange your own lunch.&lt;/p>
+&lt;p>Student: Em, that wouldn&amp;rsquo;t be a problem. Er, I already make sandwiches for my three kids and my wife and myself everyday. I won&amp;rsquo;t have to change my routine.&lt;/p>
+&lt;p>Officer: No. Now, I need to tell you that this is a very popular course and it&amp;rsquo;s essential that you book well ahead of time.&lt;/p>
+&lt;p>In fact, the Course Convenor tells me that there&amp;rsquo;re only five places left.&lt;/p>
+&lt;p>Student: Er, what other course might be good for me?&lt;/p>
+&lt;p>Officer: There&amp;rsquo;s one other that you could benefit from. It&amp;rsquo;s simply called &amp;lsquo;Learning Skills for University Study&amp;rsquo; and is on three consecutive mornings starting on a Monday from 9 to 12 and costs 25 pounds.&lt;/p>
+&lt;p>This is aimed at upgrading the study skills most school-leavers have and help them cope with the increased demands of university study.&lt;/p>
+&lt;p>It focuses mainly on making students more responsible for their own success.&lt;/p>
+&lt;p>Student: What sort of things are covered in this course?&lt;/p>
+&lt;p>Officer: Well, basically, it&amp;rsquo;s more advanced thinking, note taking, reading and writing strategies but also some input about stress management.&lt;/p>
+&lt;p>Student: Um, I think I&amp;rsquo;d be better off starting from the basics and looking at all the strategies, don&amp;rsquo;t you?&lt;/p>
+&lt;p>Officer: Yes, from what you&amp;rsquo;ve told me, I think that&amp;rsquo;s more in line with your situation.&lt;/p>
+&lt;p>Student: All right then, um, can I book a place on the &amp;lsquo;Study for Success&amp;rsquo; seminar course now?&lt;/p>
+&lt;p>Officer: Yes, let me just get out a registration form and take down your details.&lt;/p>
+&lt;p>That is the end of section three. You now have half a minute to check your answers.&lt;/p>
+&lt;p>Now turn to section four.&lt;/p></description></item><item><title>Docs: 4.3.4</title><link>https://note.codiy.net/ielts/l4.3.4/</link><pubDate>Wed, 17 Aug 2022 23:01:52 +0800</pubDate><guid>https://note.codiy.net/ielts/l4.3.4/</guid><description>
+&lt;p>We&amp;rsquo;re very grateful that the Committee has agreed that a representative for the Students&amp;rsquo; Union can present students&amp;rsquo; suggestions about the design for the proposed new Union Building.&lt;/p>
+&lt;p>We appreciate that some of our ideas may not be feasible in the circumstances.&lt;/p>
+&lt;p>But we do feel that it is important that the ultimate beneficiaries of the facilities should have some say in its design.&lt;/p>
+&lt;p>If I could start by briefly explaining what steps were taken to find out student opinion, and how we have arrived at conclusions.&lt;/p>
+&lt;p>Firstly, a meeting was held in the current Union for our SU committee to explain the options.&lt;/p>
+&lt;p>Then we invited all students to submit written suggestions for the design, placing cards in a suggestion box.&lt;/p>
+&lt;p>These suggestions then provided the basis for the design of a questionnaire which was completed by approximately two thousand of the College students over a period of three weeks.&lt;/p>
+&lt;p>Finally, the SU Committee collated the results and drew up a report.&lt;/p>
+&lt;p>If I can just hand around the copy of that report.&lt;/p>
+&lt;p>This presentation is essentially a summary and discussion of the key points of this report.&lt;/p>
+&lt;p>So, in broad terms, the consensus was as follows.&lt;/p>
+&lt;p>Firstly, regarding the crucial matter of the site, we presented the three options that you have proposed. One: in the city centre, near the Faculty of Education; two: on the outskirts of the city, near the park, and three: out of town, near the halls of residence.&lt;/p>
+&lt;p>We ask students to cite reasons for and against these sites, and&amp;hellip;. and there was remarkable agreement on all three.&lt;/p>
+&lt;p>Site One was unpopular because of traffic and parking problems.&lt;/p>
+&lt;p>Site Two had a number of supporters, mainly because it was close to most lecture rooms.&lt;/p>
+&lt;p>And Site Three, out of town, near the halls of residence, was clearly the most popular because of access from living quarters.&lt;/p>
+&lt;p>It was clear that the Union was mainly to be used after lectures.&lt;/p>
+&lt;p>It was also felt the larger site would allow more room for a choice of facilities.&lt;/p>
+&lt;p>Our second area of interest was obviously the facilities.&lt;/p>
+&lt;p>There was minimal interest in having a library on the premises. But one option seemed to be a reading room instead, more useful.&lt;/p>
+&lt;p>We would like the current table games room to be replaced with a small gym and if possible, small swimming pool, not, of course, Olympic size.&lt;/p>
+&lt;p>There was a large number of respondents in favour of a travel agent&amp;rsquo;s and insurance centre.&lt;/p>
+&lt;p>We also request that there be the offices of the Student Counselling Centre, moving this from the Refectory.&lt;/p>
+&lt;p>There was however much disagreement about whether to build a drama theatre.&lt;/p>
+&lt;p>Just over forty percent of the respondents were in favour, but a largish minority were strongly against it, claiming that it is elitist and a waste of funds.&lt;/p>
+&lt;p>Essentially the jury is out on that.&lt;/p>
+&lt;p>Finally, given the number of unfortunate incidents in the current Union over the past few months, a strong point was repeatedly made about security.&lt;/p>
+&lt;p>The recommendations would be at least video surveillance and security personnel who would check Student Union cards on request.&lt;/p>
+&lt;p>We doubt if it would be feasible to have a check at reception of all people coming in.&lt;/p>
+&lt;p>Well, this is the summary of the views of the student population.&lt;/p>
+&lt;p>As I say, fuller details are given in our report but I&amp;rsquo;m happy to take any questions if you have them&amp;hellip;&lt;/p>
+&lt;p>That is the end of section four, you now have half a minute to check your answers.&lt;/p>
+&lt;p>That is the end of the listening test.&lt;/p>
+&lt;p>In the IELTS test, you would now have ten minutes to transfer your answers to the listening answer sheet.&lt;/p></description></item><item><title>Docs: 4.4.1</title><link>https://note.codiy.net/ielts/l4.4.1/</link><pubDate>Wed, 17 Aug 2022 23:01:52 +0800</pubDate><guid>https://note.codiy.net/ielts/l4.4.1/</guid><description>
+&lt;p>W: Hi, Tony. Thanks ever so much for coming. You know we&amp;rsquo;ve been asked to organise something for John&amp;rsquo;s farewell?&lt;/p>
+&lt;p>M: Yeah, sure. It&amp;rsquo;s about time we started working out details.&lt;/p>
+&lt;p>W: Exactly. We don&amp;rsquo;t want to leave it so late that it&amp;rsquo;s double the work.&lt;/p>
+&lt;p>M: Mmm, mm, right, do you want me to take notes?&lt;/p>
+&lt;p>W: That&amp;rsquo;d be great, thanks.&lt;/p>
+&lt;p>M: Right, first thing is when is the best time to hold it?&lt;/p>
+&lt;p>W: Well, he leaves on the twenty-fourth of December. -M: So what about the twenty-second?&lt;/p>
+&lt;p>W: Yeah, I think that&amp;rsquo;s about right. We want it quite near the time, don&amp;rsquo;t we?&lt;/p>
+&lt;p>The date of the goodbye party is the 22nd of December, so 22nd December has been written in the space.&lt;/p>
+&lt;p>Now we shall begin.&lt;/p>
+&lt;p>You should answer the questions as you listen, because you will not hear the recording a second time.&lt;/p>
+&lt;p>Listen carefully and answer questions 1 to 4.&lt;/p>
+&lt;p>W: Hi, Tony. Thanks ever so much for coming. You know we&amp;rsquo;ve been asked to organise something for John&amp;rsquo;s farewell?&lt;/p>
+&lt;p>M: Yes, sure. It&amp;rsquo;s about time we started working out details.&lt;/p>
+&lt;p>W: Exactly, We don&amp;rsquo;t want to leave it so late that it&amp;rsquo;s double the work.&lt;/p>
+&lt;p>M: Em, right. Do you want me to take notes? -W: That will be great. Thanks.&lt;/p>
+&lt;p>M: Right, first thing is when is the best time to hold it?&lt;/p>
+&lt;p>W: Well, he leaves on the twenty-fourth of December. -M: So what about the twenty-second?&lt;/p>
+&lt;p>W: Yeah, I think that&amp;rsquo;s about right. We want it quite near the time, don&amp;rsquo;t we?&lt;/p>
+&lt;p>M: Sure, and what about a venue? In college? A hotel?&lt;/p>
+&lt;p>W: I think a hotel will probably work out rather expensive and I&amp;rsquo;ve been looking at the College Dining Room: that seems pretty reasonable.&lt;/p>
+&lt;p>M: Fine, yeah, why not?&lt;/p>
+&lt;p>W: And then we ought to be thinking about invitations&amp;hellip;Who mustn&amp;rsquo;t we forget to invite?&lt;/p>
+&lt;p>M: Well, obviously, John and his wife.&lt;/p>
+&lt;p>W: Right.&lt;/p>
+&lt;p>M: And the Director. The office staff. -W: Ah ha. Yep, and all the teachers and all the students?&lt;/p>
+&lt;p>M: Anyone else?&lt;/p>
+&lt;p>W: Faculty Heads?&lt;/p>
+&lt;p>M: No, better draw the line, I don&amp;rsquo;t think it&amp;rsquo;s necessary.&lt;/p>
+&lt;p>W: Yeah, you&amp;rsquo;re right.&lt;/p>
+&lt;p>M: I don&amp;rsquo;t mind writing the invitations. When shall we get them out for?&lt;/p>
+&lt;p>W: Em, enough time, but not too early. What about the fifteenth of December?&lt;/p>
+&lt;p>M: Well, there are exams on the sixteenth, better avoid them.&lt;/p>
+&lt;p>W: Em, tenth?&lt;/p>
+&lt;p>M: Yeah, that should do it.&lt;/p>
+&lt;p>Before you hear the rest of the conversation you&amp;rsquo;ll have some time to look at questions 5 to 10.&lt;/p>
+&lt;p>Now listen, and answer questions 5 to 10.&lt;/p>
+&lt;p>W: So, what does that leave? Oh, yes, a present.&lt;/p>
+&lt;p>M: Em, would you mind doing that?&lt;/p>
+&lt;p>W: No, not at all; we usually go round with an envelope during coffee break, don&amp;rsquo;t we?&lt;/p>
+&lt;p>M: Yeah, coffee break&amp;rsquo;s always the best time, cos people have got their money handy.&lt;/p>
+&lt;p>W: Yeah, exactly. Do we suggest an amount? Or does it seem a bit unfair?&lt;/p>
+&lt;p>M: No, I think people welcome it. We suggested six dollars last time. Is that Ok?&lt;/p>
+&lt;p>W: Yeah, plenty I would have thought, which should leave us with about ninety dollars?&lt;/p>
+&lt;p>M: Em, have you any ideas for presents?&lt;/p>
+&lt;p>W: Well, I&amp;rsquo;ve been having a little think. I thought, you know, he loves music.&lt;/p>
+&lt;p>M: Em, yeah, and books.&lt;/p>
+&lt;p>W: So, I thought I&amp;rsquo;d check on prices for, well, perhaps CD players?&lt;/p>
+&lt;p>M: Em, yeah. That&amp;rsquo;s a good idea and also I thought maybe, you know, a set of dictionaries. I heard him say he needed a good one.&lt;/p>
+&lt;p>W: The other thing he was saying last week was that his computer printer had broken.&lt;/p>
+&lt;p>M: Umm. No, I&amp;rsquo;d be really frightened about getting the wrong type.&lt;/p>
+&lt;p>W: Ok, yeah.&lt;/p>
+&lt;p>M: The other thing is something for the home. Jill suggested a coffee maker.&lt;/p>
+&lt;p>W: Oh, yeah, I&amp;rsquo;ll certainly find out what they cost. Ok, have you got all that down?&lt;/p>
+&lt;p>M: Yes.&lt;/p>
+&lt;p>W: Now, we need to think a little more about the money. I know we&amp;rsquo;ve got a set amount from the Social Fund.&lt;/p>
+&lt;p>M: Right, what does that cover?&lt;/p>
+&lt;p>W: It&amp;rsquo;s meant to cover the cost of the room.&lt;/p>
+&lt;p>M: Yeah.&lt;/p>
+&lt;p>W: And a certain amount for food.&lt;/p>
+&lt;p>M: And also drinks?&lt;/p>
+&lt;p>W: Oh yeah, certainly.&lt;/p>
+&lt;p>M: But will it be enough?&lt;/p>
+&lt;p>W: What we&amp;rsquo;ve done in the past is to ask guests to bring some snacks.&lt;/p>
+&lt;p>M: Right.&lt;/p>
+&lt;p>W: We don&amp;rsquo;t ask them to bring more drinks, because we figure that&amp;rsquo;s&amp;hellip;that should come from the Social Fund.&lt;/p>
+&lt;p>M: Ok. Anything else for the guests to bring?&lt;/p>
+&lt;p>W: Well, oh some music, because there&amp;rsquo;ll be a tape deck there in the room, and we can have some dancing later on.&lt;/p>
+&lt;p>M: Anything else?&lt;/p>
+&lt;p>W: Well, it&amp;rsquo;s just a thought, but a couple of years ago, that we had a really good party where we set up, you know, some simple games.&lt;/p>
+&lt;p>M: Yeah, great. Wasn&amp;rsquo;t it based on photos from the students and teachers?&lt;/p>
+&lt;p>W: That&amp;rsquo;s right.&lt;/p>
+&lt;p>M: So we should ask the guests to bring photos. Ok, I&amp;rsquo;ll put it on the invitations.&lt;/p>
+&lt;p>W: Now the last thing is, who shall we ask to do the speech?&lt;/p>
+&lt;p>M: Don&amp;rsquo;t you think it might be nice to have one of the students?&lt;/p>
+&lt;p>W: Well then, the Student Leader?&lt;/p>
+&lt;p>M: Yeah, much better than the Director giving speeches again.&lt;/p>
+&lt;p>W: Ok then, I&amp;rsquo;ll ask her. Lovely, so is that all?&lt;/p>
+&lt;p>M: Looks like it.&lt;/p>
+&lt;p>W: Great. Thanks ever so much.&lt;/p>
+&lt;p>That is the end of section one, you now have half a minute to check your answers.&lt;/p>
+&lt;p>Now turn to section two.&lt;/p></description></item><item><title>Docs: 4.4.2</title><link>https://note.codiy.net/ielts/l4.4.2/</link><pubDate>Wed, 17 Aug 2022 23:01:52 +0800</pubDate><guid>https://note.codiy.net/ielts/l4.4.2/</guid><description>
+&lt;p>Speaker 1: Thank you for calling the free Travelite Travel Agency Information Line. You will not be charged for this call.&lt;/p>
+&lt;p>In order to deal with all calls effectively, we offer you a number of options.&lt;/p>
+&lt;p>Please listen carefully and press your required number at the appropriate time, or dial a new number.&lt;/p>
+&lt;p>If you want to hear about special offers, please press one.&lt;/p>
+&lt;p>If you want to hear our latest price lists, please press two.&lt;/p>
+&lt;p>If you want to make a complaint, please press three.&lt;/p>
+&lt;p>If you want information about our new walking holidays, please press four now.&lt;/p>
+&lt;p>Speaker 2: Thank you for calling our Travelite Walking Holidays Line.&lt;/p>
+&lt;p>We have been offering a wide variety of walking holidays to suit all tastes for just three years, but already we have won two awards for excellence in this field.&lt;/p>
+&lt;p>We offer guided walking tours to suit the discerning traveller in twelve different centres throughout the whole of Western Europe.&lt;/p>
+&lt;p>We are planning to open our first centre outside this area in the coming year, so watch out for developments.&lt;/p>
+&lt;p>But the pride of Travelite is the level of guidance and support we offer on our walks.&lt;/p>
+&lt;p>All are planned in detail by our highly trained guides, who all work in a variety of different Travelite locations, so we can guarantee standards.&lt;/p>
+&lt;p>Each day we offer three separate walks catering for all skills and fitness levels.&lt;/p>
+&lt;p>We also pride ourselves on our friendly service, particularly important for the increasing numbers of people who choose to holiday alone.&lt;/p>
+&lt;p>Unlike almost all travel operators who happily charge large supplements for single rooms, we guarantee that no single client will pay more, even when only double rooms are available for them.&lt;/p>
+&lt;p>And the day doesn&amp;rsquo;t end with the return to base&amp;hellip;after our dinner at communal tables designed to make all our guests feel part of a family atmosphere&amp;hellip;Entertainment is laid on nearly every night with tour leaders on hand to organise lectures, games, quizzes and respond to any special requests from guests.&lt;/p>
+&lt;p>Before you hear the rest of the message, you have some time to look at questions 16 to 20.&lt;/p>
+&lt;p>Now listen and answer questions 16 to 20.&lt;/p>
+&lt;p>The following is a summary of costs and special inclusive offers on holidays for the coming summer.&lt;/p>
+&lt;p>We have three lengths of holiday: three-day, seven-day and fourteen-day.&lt;/p>
+&lt;p>The three-day holiday costs one hundred and eighty dollars for all accommodation, food and walking, and for the first time this year we are including in that price&amp;hellip;the cost of picking you up from the nearest station.&lt;/p>
+&lt;p>The seven-day holiday costs three hundred and fifty dollars per person and, as well as including the offers of the three-day holiday, also includes a magnificent book giving the local history.&lt;/p>
+&lt;p>On top of that, we are able to include free maps&amp;hellip;for you to better enjoy the walking and even plan in advance, if you wish.&lt;/p>
+&lt;p>For the fourteen-day holiday, our special price is six hundred and ninety dollars per person and that includes all the offers for the three and seven-day holidays plus&amp;hellip;membership of a local walking club&amp;hellip;so you can better enjoy the full flavour of the local life.&lt;/p>
+&lt;p>For further information, please contact your local travel agent. Thank you for calling the Travelite Travel Agency Information Line&amp;hellip;&lt;/p>
+&lt;p>That is the end of section two. You now have half a minute to check your answers.&lt;/p>
+&lt;p>Now turn to section three.&lt;/p></description></item><item><title>Docs: 4.4.3</title><link>https://note.codiy.net/ielts/l4.4.3/</link><pubDate>Wed, 17 Aug 2022 23:01:52 +0800</pubDate><guid>https://note.codiy.net/ielts/l4.4.3/</guid><description>
+&lt;p>MIKE: Hi Sue.&lt;/p>
+&lt;p>SUE: Hi Mike, so what happened to you last week?&lt;/p>
+&lt;p>MIKE: Oh, I was sick with the flu. What&amp;rsquo;s this I hear about a big assignment we&amp;rsquo;ve got to do?&lt;/p>
+&lt;p>SUE: Well, basically, we&amp;rsquo;ve got to find two science experiments to do with a group of eight-year-old children at the local primary school, and we&amp;rsquo;ve got to complete it by the end of the week.&lt;/p>
+&lt;p>MIKE: Oh, that sounds like hard work. Where are we supposed to get the ideas for these experiments from?&lt;/p>
+&lt;p>SUE: Well, I managed to get hold of two books from the library.&lt;/p>
+&lt;p>MIKE: Oh, well done!&lt;/p>
+&lt;p>SUE: How about if we take a look at the experiments in this book first and see if anything looks suitable?&lt;/p>
+&lt;p>I can make notes as we go, about equipment and the purpose of the experiments.&lt;/p>
+&lt;p>MIKE: OK, let&amp;rsquo;s see, um, the first experiment is called &amp;lsquo;Make your own hovercraft &amp;lsquo;, which sounds very ambitious!&lt;/p>
+&lt;p>Mind you, you only need twenty balloons and a table-you don&amp;rsquo;t need any special engines or anything like that.&lt;/p>
+&lt;p>SUE: What do you do with it all?&lt;/p>
+&lt;p>MIKE: Er, you blow up the balloons and you balance the table on them, upside down of course, and the kids get to ride around on it.&lt;/p>
+&lt;p>You know, the other kids sort of push them around the room.&lt;/p>
+&lt;p>The main purpose is to show how hovercrafts work, and how things hover around on just a cushion of air.&lt;/p>
+&lt;p>SUE: OK, that doesn&amp;rsquo;t sound too bad.&lt;/p>
+&lt;p>MIKE: OK, ready for number two?&lt;/p>
+&lt;p>SUE: Uh-huh.&lt;/p>
+&lt;p>MIKE: Now this one is called &amp;lsquo;Unusual Measures of Lengths&amp;rsquo;, and you basically use lots of paperclips.&lt;/p>
+&lt;p>The kids go around the class measuring things - you know, how long the desk is, and that sort of thing, um, and then they all compare their answers, Er, and, basically, because not all paperclips are the same lengths, they should come up with some strange answers.&lt;/p>
+&lt;p>It&amp;rsquo;s supposed to demonstrate the importance of having fixed units of measurement.&lt;/p>
+&lt;p>SUE: Hmm, yes, that&amp;rsquo;s not bad.&lt;/p>
+&lt;p>MIKE: OK, now for number three you need rock salt or copper sulphate.&lt;/p>
+&lt;p>SUE: Oh, I&amp;rsquo;m not sure about that.&lt;/p>
+&lt;p>MIKE: Well, just put down the rock salt then. Um, apart from that you only need a jar of water.&lt;/p>
+&lt;p>Um, and basically you dissolve lots of salt into the water and watch the crystals form, so it basically teaches the kids about growing crystals.&lt;/p>
+&lt;p>SUE: Yeah, I suppose it would be nice to grow something. Hmm, let&amp;rsquo;s move on and have a look at number four.&lt;/p>
+&lt;p>MIKE: OK, this one is called &amp;lsquo;Spinning colour wheel&amp;rsquo;.&lt;/p>
+&lt;p>It looks like you get some cardboard and draw a circle on it, divide it into six equal segments and colour each one in using different colours, then you thread a piece of string through the middle.&lt;/p>
+&lt;p>SUE: So we&amp;rsquo;d need some string as well.&lt;/p>
+&lt;p>MIKE: Yes, sorry&amp;hellip;um&amp;hellip;and you spin the wheel around and if you can get it spinning fast enough, hopefully the colours all merge and show up as white.&lt;/p>
+&lt;p>SUE: Oh, I didn&amp;rsquo;t know that. What&amp;rsquo;s the principle behind it?&lt;/p>
+&lt;p>MIKE: Well it&amp;rsquo;s pretty elementary physics, really. It teaches them about how white light or ordinary light is made up.&lt;/p>
+&lt;p>SUE: Hmm, well that doesn&amp;rsquo;t sound too bad. Now there&amp;rsquo;s only one more left in this book, isn&amp;rsquo;t there? What does that one say?&lt;/p>
+&lt;p>MIKE: Um, well it&amp;rsquo;s another one where they&amp;rsquo;d get to make something.&lt;/p>
+&lt;p>SUE: Sounds very interesting.&lt;/p>
+&lt;p>MIKE: You need quite a lot of equipment actually -a hand drill, an old record, a pin or needle, some paper and a bolt.&lt;/p>
+&lt;p>SUE: Hmm, go on, what do they have to do?&lt;/p>
+&lt;p>MIKE: Well, they basically make a record player. The main idea is to teach them about recording sound, but hopefully they&amp;rsquo;d also see that you need motion and an amplifier to make the sound heard.&lt;/p>
+&lt;p>SUE: OK, well it does sound interesting. Shall we go through all of those again and decide if any of them are going to be suitable?&lt;/p>
+&lt;p>Before you hear the rest of the conversation, you have some time to look at questions 27 to 30.&lt;/p>
+&lt;p>Now listen and answer questions 27 to 30.&lt;/p>
+&lt;p>MIKE: Right, number one. I thought this one sounded nice: there&amp;rsquo;d be lots of activity and it doesn&amp;rsquo;t need too much in the way of equipment.&lt;/p>
+&lt;p>SUE: Yes, that&amp;rsquo;s true. But don&amp;rsquo;t you think it&amp;rsquo;s a bit risky to get a group of eight-year-olds pushing each other around a classroom like that?&lt;/p>
+&lt;p>Someone could get hurt. Now I don&amp;rsquo;t like the sound of that one at all.&lt;/p>
+&lt;p>MIKE: Maybe you&amp;rsquo;re right.&lt;/p>
+&lt;p>SUE: What about number two, with the paperclips? It sounds tame enough.&lt;/p>
+&lt;p>MIKE: Yes, a bit too tame if you ask me. I think it needs to be something a bit more active and interesting than that, don&amp;rsquo;t you?&lt;/p>
+&lt;p>SUE: Yes, I suppose you&amp;rsquo;re right. We won&amp;rsquo;t get a very good mark if the children don&amp;rsquo;t actually enjoy the experiments.&lt;/p>
+&lt;p>And I suppose we could turn them off science for good! Well, what about the next one, number three?&lt;/p>
+&lt;p>MIKE: Now, I quite like the idea of this one.&lt;/p>
+&lt;p>SUE: Yes, so do I, but I seem to remember when we did it at high school we had to wait up to a fortnight before we saw any halfway decent results.&lt;/p>
+&lt;p>MIKE: Oh, yes. Well, that won&amp;rsquo;t be any good then. We&amp;rsquo;ll only see the kids for one or two hours at the most.&lt;/p>
+&lt;p>SUE: Yes, and we have to do the experiments and write up our results within a week, so that one won&amp;rsquo;t do at all.&lt;/p>
+&lt;p>MIKE: OK, well, what did you think of number four?&lt;/p>
+&lt;p>SUE: I like the idea of it. But do you think it will be a bit elementary for them?&lt;/p>
+&lt;p>MIKE: Well, they are only eight you know!&lt;/p>
+&lt;p>SUE: I know, but you know what I mean. Don&amp;rsquo;t you think the activity itself is a bit babyish?&lt;/p>
+&lt;p>MIKE: Hmm, maybe you&amp;rsquo;re right.&lt;/p>
+&lt;p>SUE: They might have fun but, I mean, cutting out a circle and colouring it in?&lt;/p>
+&lt;p>MIKE: OK, well, what about number five?&lt;/p>
+&lt;p>SUE: I thought this one sounded a bit too good to be true-great equipment!&lt;/p>
+&lt;p>MIKE: Yeah.&lt;/p>
+&lt;p>SUE: But don&amp;rsquo;t you think it&amp;rsquo;s a bit ambitious for this age group?&lt;/p>
+&lt;p>I mean, I don&amp;rsquo;t want to start off something and then have to abandon it if they just can&amp;rsquo;t cope with it.&lt;/p>
+&lt;p>I could see us ending up doing just about all of the work for them.&lt;/p>
+&lt;p>MIKE: I guess you&amp;rsquo;re right. Oh well, maybe we could store that idea away for later.&lt;/p>
+&lt;p>SUE: Yep, let&amp;rsquo;s hope this second book has something better!&lt;/p>
+&lt;p>That is the end of section three. You now have half a minute to check your answers.&lt;/p>
+&lt;p>Now turn to section four.&lt;/p></description></item><item><title>Docs: 4.4.4</title><link>https://note.codiy.net/ielts/l4.4.4/</link><pubDate>Wed, 17 Aug 2022 23:01:52 +0800</pubDate><guid>https://note.codiy.net/ielts/l4.4.4/</guid><description>
+&lt;p>Today we are going to look at one of my favourite fish -the shark.&lt;/p>
+&lt;p>As you know, sharks have a reputation for being very dangerous creatures capable of injuring or killing humans, and I&amp;rsquo;d like to talk about sharks in Australia.&lt;/p>
+&lt;p>Sharks are rather large fish, often growing to over ten metres and the longest sharks caught in Australia have reached sixteen metres.&lt;/p>
+&lt;p>Sharks vary in weight with size and breed, of course, but the heaviest shark caught in Australia was a White Pointer -that weighed seven hundred and ninety-five kilograms-quite a size!&lt;/p>
+&lt;p>Sharks have a different structure to most fish: instead of skeleton made of bone, they have a tough elastic skeleton of cartilage.&lt;/p>
+&lt;p>Unlike bone, this firm, pliable material is rather like your nose, and allows the shark to bend easily as it swims.&lt;/p>
+&lt;p>The shark&amp;rsquo;s skin isn&amp;rsquo;t covered with scales, like other fish: instead the skin&amp;rsquo;s covered with barbs, giving it a rough texture like sandpaper.&lt;/p>
+&lt;p>As you know​, sharks are very quick swimmers.&lt;/p>
+&lt;p>This is made possible by their fins, one set at the side and another set underneath the body, and the tail also helps the shark move forward quickly.&lt;/p>
+&lt;p>Unlike other fish, sharks have to keep swimming if they want to stay at a particular depth, and they rarely swim at the surface.&lt;/p>
+&lt;p>Mostly, they swim at the bottom of the ocean, scavenging and picking up food that&amp;rsquo;s lying on the ocean floor.&lt;/p>
+&lt;p>While most other animals, including fish, hunt their prey by means of their eyesight, sharks hunt essentially by smell.&lt;/p>
+&lt;p>They have a very acute sense of smell-and can sense the presence of food long before they can see it.&lt;/p>
+&lt;p>In Australia, where people spend a lot of time at the beach, the government has realised that it must prevent sharks from swimming near its beaches.&lt;/p>
+&lt;p>As a result, they have introduced a beach-netting program.&lt;/p>
+&lt;p>Beach-netting, or meshing, involves setting large nets parallel to the shore; this means that the nets on New South Wale beaches are set on one day, and then lifted and taken out to sea on the next day.&lt;/p>
+&lt;p>When shark-netting first began in 1939, only the sydney metropolitan beaches were meshed, these beaches were chosen because beaches near the city are usually the most crowded with swimmers.&lt;/p>
+&lt;p>Ten years later, in 1949, systematic meshing was extended to include the beaches to the south of Sydney.&lt;/p>
+&lt;p>As a result of the general success of the program in Sydney, shark-meshing was introduced to the state of Queensland around 1970.&lt;/p>
+&lt;p>The New Zealand authorities also looked at it, but considered meshing uneconomical - as did Tahiti in the Pacific.&lt;/p>
+&lt;p>At around the same time, South Africa introduced meshing to some of its most popular swimming beaches.&lt;/p>
+&lt;p>When meshing began, approximately fifteen hundred sharks were caught in the first year.&lt;/p>
+&lt;p>However, this declined in the year that followed, and since that time, the average annual catch has been only about a hundred and fifty a year.&lt;/p>
+&lt;p>The majority of sharks are caught during the warmest months, from November to February, when sharks are most active and when both the air and the ocean are at their maximum temperature.&lt;/p>
+&lt;p>Despite quite large catches, some people believe that the shark meshing is not the best way to catch sharks.&lt;/p>
+&lt;p>It&amp;rsquo;s not that they think sharks are afraid of nets, or because they eat holes in them, because neither of these is true.&lt;/p>
+&lt;p>But meshing does appear to be less effective than some other methods, especially when there are big seas with high rolling waves and strong currents and anything that lets the sand move - the sand that&amp;rsquo;s holding the nets down.&lt;/p>
+&lt;p>When this moves the nets will also become less effective.&lt;/p>
+&lt;p>That is the end of section four, you now have half a minute to check your answers.&lt;/p>
+&lt;p>That is the end of the listening test.&lt;/p>
+&lt;p>In the IELTS test, you would now have ten minutes to transfer your answers to the listening answer sheet.&lt;/p></description></item><item><title>Docs: R6.1.1 AUSTRALIA’S SPORTING SUCCESS</title><link>https://note.codiy.net/ielts/r6.1.1/</link><pubDate>Tue, 16 Aug 2022 15:59:12 +0800</pubDate><guid>https://note.codiy.net/ielts/r6.1.1/</guid><description>
 &lt;h4 id="a">A&lt;/h4>
 &lt;p>They play hard, they play often, and they play to win. Australian sports teams win more than their fair share of titles, demolishing rivals with seeming ease. How do they do it? A big part of the secret is an extensive and expensive network of sporting academies underpinned by science and medicine. At the Australian Institute of Sport (AIS), hundreds of youngsters and pros live and train under the eyes of coaches. Another body, the Australian Sports Commission (ASC), finances programmes of excellence in a total of 96 sports for thousands of sportsmen and women. Both provide intensive coaching, training facilities and nutritional advice.&lt;/p>
 &lt;h4 id="b">B&lt;/h4>
@@ -617,14 +1171,153 @@ concrete jungles, pollution, overcrowded&lt;/p>
 &lt;p>Cities are often seen as places of opportunity, but there are also some major drawbacks of living in a large metropolis. In my opinion, governments could do much more to improve city life for the average inhabitant.&lt;/p>
 &lt;p>The main problem for anyone who hopes to migrate to a large city is that the cost of living is likely to be much higher than it is in a small town or village. Inhabitants of cities have to pay higher prices for housing, transport, and even food. Another issue is that urban areas tent to suffer from social problems such as high crime and poverty rates in comparison with rural areas. Furthermore, the air quality in cities is often poor, due to pollution from traffic, and the streets and public transport systems are usually overcrowded. As a result, city life can be unhealthy and stressful.&lt;/p>
 &lt;p>However, there are various steps that governments could take to tackle these problems. Firstly, they could invest money in the building of affordable or social housing to reduce the cost of living. Secondly, politicians have the power to ban vehicles from city centres and promote the use of cleaner public transport, which would help to reduce both air pollution and traffic congestion. In London, for example, the introduction of a congestion charge for drivers has helped to curb the traffic problem. A third option would be to develop provincial towns and rural areas, by moving industry and jobs to those regions, in order to reduce the pressure on major cities.&lt;/p>
-&lt;p>In conclusion, governments could certainly implement a range of measures to enhance the quality of life for all city residents.&lt;/p></description></item><item><title>Docs: Internet vs Newspaper</title><link>https://note.codiy.net/docs/2022/08/ielts/writing/internet/newspaper/</link><pubDate>Tue, 16 Aug 2022 10:01:12 +0800</pubDate><guid>https://note.codiy.net/docs/2022/08/ielts/writing/internet/newspaper/</guid><description>
+&lt;p>In conclusion, governments could certainly implement a range of measures to enhance the quality of life for all city residents.&lt;/p></description></item><item><title>Docs: Internet</title><link>https://note.codiy.net/docs/2022/08/ielts/writing/internet/</link><pubDate>Tue, 16 Aug 2022 10:01:12 +0800</pubDate><guid>https://note.codiy.net/docs/2022/08/ielts/writing/internet/</guid><description>
+&lt;h3 id="观点表达">观点/表达&lt;/h3>
+&lt;ul>
+&lt;li>xxx has many benefits. However, it can be addictive.&lt;/li>
+&lt;li>Criminals increasingly use the Internet to steal people&amp;rsquo;s money.&lt;/li>
+&lt;li>Many people are involved in online gaming, playing with people who they have never met.&lt;/li>
+&lt;li>You can share links to things you find interesting&lt;/li>
+&lt;li>It’s important to think about who can see your personal information&lt;/li>
+&lt;/ul>
+&lt;p>优点:&lt;/p>
+&lt;ul>
+&lt;li>立即获得信息 -&amp;gt; 方便&lt;/li>
+&lt;li>有大量信息 -&amp;gt; 让我们获得知识, 了解世界&lt;/li>
+&lt;li>有趣的图片, 视频 -&amp;gt; 娱乐休闲&lt;/li>
+&lt;li>交朋友，来自世界各地的，不同语言的有趣的人&lt;/li>
+&lt;li>有许多线上商店和服务 -&amp;gt; 足不出户就可以买到东西等&lt;/li>
+&lt;li>instant access to information on almost any subject&lt;/li>
+&lt;/ul>
+&lt;p>缺点:&lt;/p>
+&lt;ul>
+&lt;li>充斥着没有经过筛选的海量信息 -&amp;gt; 无用信息/虚假信息 -&amp;gt; 错误的认知&lt;/li>
+&lt;li>含有暴力/色情内容 -&amp;gt; 对孩子不好&lt;/li>
+&lt;li>在网上社交而不是线下 -&amp;gt; 缺乏社区意识,&lt;/li>
+&lt;li>网络游戏吸引 -&amp;gt; 沉迷 -&amp;gt; 孩子学习&lt;/li>
+&lt;li>网络安全: 个人信息暴露在网上 -&amp;gt; 被坏人利用 -&amp;gt; 造成损失&lt;/li>
+&lt;/ul>
+&lt;p>冲击:&lt;/p>
+&lt;ul>
+&lt;li>对传统产业如报纸, 线下商店等的冲击&lt;/li>
+&lt;li>对娱乐/交流方式的冲击&lt;/li>
+&lt;/ul>
+&lt;p>行动:&lt;/p>
+&lt;ul>
+&lt;li>家长控制小孩能看到的内容&lt;/li>
+&lt;li>自身学会辨识网上信息&lt;/li>
+&lt;li>政府/公司，严格限制发布内容&lt;/li>
+&lt;li>鼓励人们线下社交&lt;/li>
+&lt;/ul>
+&lt;h3 id="词汇词伙">词汇/词伙&lt;/h3>
+&lt;ul>
+&lt;li>xxxx are available online.&lt;/li>
+&lt;li>convenient, conveniently.&lt;/li>
+&lt;li>instant messaging, video messaging&lt;/li>
+&lt;li>it has revolutionised communication.&lt;/li>
+&lt;li>violence or sexual videos.&lt;/li>
+&lt;li>contain offensive content.&lt;/li>
+&lt;li>surfing the net&lt;/li>
+&lt;li>browse, browser&lt;/li>
+&lt;li>subscribe to a site / video channel&lt;/li>
+&lt;li>contact list&lt;/li>
+&lt;li>interactive programs&lt;/li>
+&lt;li>social networking sites like twitter, facebook&lt;/li>
+&lt;li>keep in touch with their friends&lt;/li>
+&lt;li>post a video, update your status&lt;/li>
+&lt;li>profile&lt;/li>
+&lt;li>share links&lt;/li>
+&lt;li>notifications&lt;/li>
+&lt;li>personal information&lt;/li>
+&lt;li>check privacy settings&lt;/li>
+&lt;/ul>
+&lt;h3 id="参考">参考&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="">Vocabulary in Use Upper-intermediate&lt;/a> Unit33-37&lt;/li>
+&lt;li>&lt;a href="">跟着 Simon 学写作&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Internet vs Newspaper</title><link>https://note.codiy.net/docs/2022/08/ielts/writing/internet/newspaper/</link><pubDate>Tue, 16 Aug 2022 10:01:12 +0800</pubDate><guid>https://note.codiy.net/docs/2022/08/ielts/writing/internet/newspaper/</guid><description>
+&lt;h3 id="主题">主题&lt;/h3>
+&lt;p>internet, newspaper&lt;/p>
+&lt;h3 id="观点表达">观点/表达&lt;/h3>
+&lt;ul>
+&lt;li>xxx has many benefits. However, it can be addictive.&lt;/li>
+&lt;/ul>
+&lt;h3 id="词汇">词汇&lt;/h3>
+&lt;ul>
+&lt;li>digital edition&lt;/li>
+&lt;/ul>
+&lt;h3 id="题目">题目&lt;/h3>
 &lt;blockquote>
 &lt;p>Although more and more people read news on the Internet, newspapers will remain the most important source of news. Do you agree or disagree?&lt;/p>
 &lt;/blockquote>
-&lt;p>The Internet is beginning to rival newspapers as the best place to find information about what is happening in the world. I believe that this trend will continue, and the Internet will soon be just as important as the traditional press.&lt;/p>
+&lt;p>范文:
+The Internet is beginning to rival newspapers as the best place to find information about what is happening in the world. I believe that this trend will continue, and the Internet will soon be just as important as the traditional press.&lt;/p>
 &lt;p>On the one hand, I believe that newspapers will continue to be a vital source of information, even in the Internet age. Firstly, newspapers are the most traditional means of communicating the news, and not everyone wants to or is able to use the Internet instead. For example, old people or those in rural areas might not have the ability or opportunity to get online, while many of us simply prefer newspapers even if we do have Internet access. Secondly, newspapers can be trusted as reliable sources of news because they employ professional journalists and editors. Finally, many people like the experience of holding and reading a paper rather than looking at a computer screen.&lt;/p>
 &lt;p>However, the Internet is likely to become just as popular as newspapers for a variety of reasons. The main reason is that it allows us much faster access to news in real time and wherever we are, on different gadgets and mobile devices. Another key benefit of online news compared to newspapers is the ability to share articles, discuss them with other people, give our views, and even contribute with our own updates on social media. For example, there has been an explosion in the use of platforms like Twitter and YouTube where anyone can share their news and views. A final point is that this source of news is less damaging to the environment.&lt;/p>
-&lt;p>In conclusion, I disagree with the view that newspapers will continue to be the main source of news, because I believe that the Internet will soon be equally important.&lt;/p></description></item><item><title>Docs: Traditional cultures vs technology develop</title><link>https://note.codiy.net/docs/2022/08/ielts/writing/traditional/technology/</link><pubDate>Tue, 16 Aug 2022 10:01:12 +0800</pubDate><guid>https://note.codiy.net/docs/2022/08/ielts/writing/traditional/technology/</guid><description>
+&lt;p>In conclusion, I disagree with the view that newspapers will continue to be the main source of news, because I believe that the Internet will soon be equally important.&lt;/p>
+&lt;p>练习:&lt;/p>
+&lt;p>With the development of technology, People can easily access the Internet to find information about what is happening in the world using their smartphones or computers, rather than read the newspaper. I believe that the Internet will finally replace the traditional newspaper in the future.&lt;/p>
+&lt;p>Instead of reading the newspaper, people now can easily use their laptops or smartphones to access the Internet and find out what is happening in the world. I think that eventually, the traditional newspaper will be replaced by tthe Internet.&lt;/p>
+&lt;p>In conclusion, I disagree with the view that newspapers could still remain its importance with the impact of the development of the Internet.&lt;/p></description></item><item><title>Docs: Phones</title><link>https://note.codiy.net/docs/2022/08/ielts/writing/phones/</link><pubDate>Tue, 16 Aug 2022 10:01:12 +0800</pubDate><guid>https://note.codiy.net/docs/2022/08/ielts/writing/phones/</guid><description>
+&lt;h3 id="观点表达">观点/表达&lt;/h3>
+&lt;p>优点:&lt;/p>
+&lt;ul>
+&lt;li>最流行的设备, 可以上网,发短信,照相,听音乐,玩游戏&amp;hellip;&lt;/li>
+&lt;li>与朋友随时随地联系 -&amp;gt; 很方便, 维持友谊/关系&lt;/li>
+&lt;li>将网络装进口袋, 随时触及&lt;/li>
+&lt;/ul>
+&lt;p>缺点:&lt;/p>
+&lt;ul>
+&lt;li>长时间盯着手机 -&amp;gt; 对眼睛有害&lt;/li>
+&lt;li>包含暴力/色情内容 -&amp;gt; 对还是不友好&lt;/li>
+&lt;li>线上社交 -&amp;gt; 缺乏社区意识&lt;/li>
+&lt;li>有研究称手机辐射对人体健康有害&lt;/li>
+&lt;/ul>
+&lt;h3 id="参考">参考&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="">Vocabulary in Use Upper-intermediate&lt;/a> Unit33-37&lt;/li>
+&lt;li>&lt;a href="">跟着 Simon 学写作&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Television</title><link>https://note.codiy.net/docs/2022/08/ielts/writing/television/</link><pubDate>Tue, 16 Aug 2022 10:01:12 +0800</pubDate><guid>https://note.codiy.net/docs/2022/08/ielts/writing/television/</guid><description>
+&lt;h3 id="主题">主题&lt;/h3>
+&lt;p>Television&lt;/p>
+&lt;h3 id="观点表达">观点/表达&lt;/h3>
+&lt;ul>
+&lt;li>Television has many benefits. However, it can be addictive.&lt;/li>
+&lt;li>Children should not be exposed to violence, swearing or sexual images.&lt;/li>
+&lt;li>Many channels depend on (TV) commercials to make money.&lt;/li>
+&lt;/ul>
+&lt;p>优点:&lt;/p>
+&lt;ul>
+&lt;li>娱乐方式 -&amp;gt; 工作劳累一天后的放松&lt;/li>
+&lt;li>各种类型的节目, 喜剧, 电影, 新闻, 纪录片 -&amp;gt; 增长见识, 了解世界&lt;/li>
+&lt;/ul>
+&lt;p>缺点:&lt;/p>
+&lt;ul>
+&lt;li>长时间盯着屏幕 -&amp;gt; 对眼睛有害&lt;/li>
+&lt;li>包含暴力/色情内容 -&amp;gt; 对孩子不友好 -&amp;gt; 儿童可能会模仿里面的行为&lt;/li>
+&lt;li>很多节目没有经过深思熟虑 -&amp;gt; 对社会有消极影响&lt;/li>
+&lt;li>浪费时间&lt;/li>
+&lt;/ul>
+&lt;p>行动:&lt;/p>
+&lt;ul>
+&lt;li>Advertising during children&amp;rsquo;s programs should be strictly controlled.&lt;/li>
+&lt;li>TV companies should make more positive and educational programmes.&lt;/li>
+&lt;/ul>
+&lt;h3 id="词汇词伙">词汇/词伙&lt;/h3>
+&lt;ul>
+&lt;li>wind down, relax, exhausted&lt;/li>
+&lt;li>viewers&lt;/li>
+&lt;li>entertainment channels,&lt;/li>
+&lt;li>comedian, documentaries, talk shows, Cartoons,&lt;/li>
+&lt;li>advertising, advertisement&lt;/li>
+&lt;li>negative impact&lt;/li>
+&lt;li>waste of time&lt;/li>
+&lt;/ul>
+&lt;h3 id="参考">参考&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="">Vocabulary in Use Upper-intermediate&lt;/a> Unit33-37&lt;/li>
+&lt;li>&lt;a href="">跟着 Simon 学写作&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Traditional cultures vs technology develop</title><link>https://note.codiy.net/docs/2022/08/ielts/writing/traditional/technology/</link><pubDate>Tue, 16 Aug 2022 10:01:12 +0800</pubDate><guid>https://note.codiy.net/docs/2022/08/ielts/writing/traditional/technology/</guid><description>
 &lt;h3 id="参考范文">参考范文&lt;/h3>
 &lt;blockquote>
 &lt;p>It is inevitable that traditional cultures will be lost as technology develops. Technology and traditional cultures are incompatible. To what extent do you agree or disagree with this view?&lt;/p>
@@ -786,7 +1479,38 @@ and we can cancel if necessary which for refund of cause.&lt;/p>
 &lt;p>And the separate building in front of them is the Works Office, and that still has some of the old accounts on display.&lt;/p>
 &lt;p>Right, if anyone wants a guided tour then I&amp;rsquo;m starting at the Engine Room. If you&amp;rsquo;d like to come along, this way please, ladies and gentlemen.&lt;/p>
 &lt;p>That is the end of section two, you now have half a minute to check your answers.&lt;/p>
-&lt;p>Now turn to section three.&lt;/p></description></item><item><title>Docs: 4.1.3</title><link>https://note.codiy.net/ielts/l4.1.3/</link><pubDate>Mon, 15 Aug 2022 21:01:52 +0800</pubDate><guid>https://note.codiy.net/ielts/l4.1.3/</guid><description>
+&lt;p>Now turn to section three.&lt;/p></description></item><item><title>Docs: 4.1.2</title><link>https://note.codiy.net/ielts/l4.1.2@/</link><pubDate>Mon, 15 Aug 2022 21:01:52 +0800</pubDate><guid>https://note.codiy.net/ielts/l4.1.2@/</guid><description>
+&lt;p>good afternoon everybody, and welcome to riverside industrial village&lt;/p>
+&lt;p>to start your visit, I am just going to give you a brief &lt;code>kan&lt;/code> of the history of the museum before letting you run about on your own, I won&amp;rsquo;t keep you long ok ?&lt;/p>
+&lt;p>now from where we are standing, you go view of the river over there.&lt;/p>
+&lt;p>and it was because this is far flowing water, this side was natural place for manufacture works.&lt;/p>
+&lt;p>the water and the availability of raw materials in the areas like mineral and iron all and also the abundance of local fuels like coal and fire woods, all make this side suitable for industry from very early time.&lt;/p>
+&lt;p>Water was the main source of power for the early industries. and some of water will first established in the 12 century will you believe.&lt;/p>
+&lt;p>at that time, local craftsmen first built icon forge just behind the village here on the band in the river.&lt;/p>
+&lt;p>By the seventeenth and eighteenth centuries the region&amp;rsquo;s rivers supported more than a handured and sixty water milks and many of this contiune to operate where into the nineteenth century.&lt;/p>
+&lt;p>but then, the still engagine was invented, and then the rallways came, and the centre of the industry was able to move away from the rivers of the countryside and into the towns, so industrial villages like this one became very rare.&lt;/p>
+&lt;p>so that&amp;rsquo;s the history for you. if you like any more information, you can ask me some questions. or you can read further in our excellent guide book.&lt;/p>
+&lt;hr>
+&lt;p>Now I am going to give you a plan of the side and I just like to point out where everything is and then you can take a look everything for yourself.&lt;/p>
+&lt;p>I already point out the river which is on the left,&lt;/p>
+&lt;p>and of course runing on the bottom is woodside road.&lt;/p>
+&lt;p>got it ? ok. Now we are standing at the entrance.&lt;/p>
+&lt;p>see it at the bottom. and immediately to our right is the ticket office.&lt;/p>
+&lt;p>you will need that because you&amp;rsquo;ve got your group booking.&lt;/p>
+&lt;p>that just passed other toilets. always good to know where they are.&lt;/p>
+&lt;p>in front of us is the car park as you can see, and the left, by the entry gate is the gift shop.&lt;/p>
+&lt;p>that&amp;rsquo;s where you can get copies of the guide like this one here.&lt;/p>
+&lt;p>now, beyond the car park, all the buildings are range in a half circle with a yard in the middle.&lt;/p>
+&lt;p>the big stone building at the top is the main work shop.&lt;/p>
+&lt;p>that&amp;rsquo;is where the furnishs, and where all the matel were smell, and the tour was cast as you will be able to see.&lt;/p>
+&lt;p>now in the top right hand corner, that building with big windows is the show room where some of all tools ages were on this place&lt;/p>
+&lt;p>in the top left corner, is the grinding shop where the tool were sharpened and finished.&lt;/p>
+&lt;p>and on one side of that, you can see the engine room and on the other is the cafe. which isn&amp;rsquo;t antik you please to know that they do serve very old fashion teas.&lt;/p>
+&lt;p>the lower buiding as you can see on the left are the cottages,&lt;/p>
+&lt;p>this were built for the workers towards the end of the eighteenth century and they still furnish from that period so you can get a good ideas of ordinary people living conditions&lt;/p>
+&lt;p>across the yard from them, you can see the stables where the horses were kept for transporting the products.&lt;/p>
+&lt;p>and the separate building in front of them is the worker&amp;rsquo;s office and that still have some old account on display.&lt;/p>
+&lt;p>right, if anyone wants guided tour that I&amp;rsquo;ve started in the engine room if you like come along this way ladys and gentlemen&lt;/p></description></item><item><title>Docs: 4.1.3</title><link>https://note.codiy.net/ielts/l4.1.3/</link><pubDate>Mon, 15 Aug 2022 21:01:52 +0800</pubDate><guid>https://note.codiy.net/ielts/l4.1.3/</guid><description>
 &lt;p>You&amp;rsquo;ll hear Melanie a student, talking to one of her lecturers about her studies.&lt;/p>
 &lt;p>First, you have some time to look at questions twenty-one to twenty-seven.&lt;/p>
 &lt;p>Now listen carefully, and answer questions twenty-one to twenty-seven.&lt;/p>
@@ -1044,219 +1768,4 @@ and we can cancel if necessary which for refund of cause.&lt;/p>
 &lt;p>So what of global warming? As we know, carbon dioxide emissions are causing the planet to warm. The best estimates are that the temperatures will rise by 2-3℃ in this century, causing considerable problems, at a total cost of US $5,000 billion.&lt;/p>
 &lt;p>Despite the intuition that something drastic needs to be done about such a costly problem, economic analyses clearly show it will be far more expensive to cut carbon dioxide emissions radically than to pay the costs of adaptation to the increased temperatures. A model by one of the main authors of the United Nations Climate Change Panel shows how an expected temperature increase of 2.1 degrees in 2100 would only be diminished to an increase of 1.9 degrees. Or to put it another way, the temperature increase that the planet would have experienced in 2094 would be postponed to 2100.&lt;/p>
 &lt;p>So this does not prevent global warming, but merely buys the world six years. Yet the cost of reducing carbon dioxide emissions, for the United States alone, will be higher than the cost of solving the world&amp;rsquo;s single, most pressing health problem: providing universal access to clean drinking water and sanitation. Such measures would avoid 2 million deaths every year, and prevent half a billion people from becoming seriously ill.&lt;/p>
-&lt;p>It is crucial that we look at the facts if we want to make the best possible decisions for the future. It may be costly to be overly optimistic - but more costly still to be too pessimistic.&lt;/p></description></item><item><title>Docs: R.OG1.1 The Dover Bronze-Age Boat</title><link>https://note.codiy.net/ielts/r.og1.1/</link><pubDate>Tue, 09 Aug 2022 13:11:52 +0800</pubDate><guid>https://note.codiy.net/ielts/r.og1.1/</guid><description>
-&lt;blockquote>
-&lt;p>A beautifully preserved boat, made around 3,000 years ago and discovered by chance in a muddy hole, has had a profound impact on archaeological research.&lt;/p>
-&lt;/blockquote>
-&lt;p>It was 1992. In England, workmen were building a new road through the heart of Dover, to connect the ancient port and the Channel Tunnel, which, when it opened just two years later, was to be the first land link between Britain and Europe for over 10,000 years. A small team from the Canterbury Archaeological Trust (CAT) worked alongside the workmen, recording new discoveries brought to light by the machines.&lt;/p>
-&lt;p>At the base of a deep shaft six metres below the modern streets a wooden structure was revealed. Cleaning away the waterlogged site overlying the timbers, archaeologists realised its true nature. They had found a prehistoric boat, preserved by the type of sediment in which it was buried. It was then named the Dover Bronze-Age Boat.&lt;/p>
-&lt;p>About nine metres of the boat’s length was recovered; one end lay beyond the excavation and had to be left. What survived consisted essentially of four intricately carved oak planks: two on the bottom, joined along a central seam by a complicated system of wedges and timbers, and two at the side, curved and stitched to the others. The seams had been made watertight by pads of moss, fixed by wedges and yew stitches.&lt;/p>
-&lt;p>The timbers that closed the recovered end of the boat had been removed in antiquity when it was abandoned, but much about its original shape could be deduced. There was also evidence for missing upper side planks. The boat was not a wreck, but had been deliberately discarded, dismantled and broken. Perhaps it had been &amp;lsquo;ritually killed, at the end of its life, like other Bronze-Age objects.&lt;/p>
-&lt;p>With hindsight, it was significant that the boat was found and studied by mainstream archaeologists who naturally focused on its cultural context. At the time, ancient boats were often considered only from a narrower technological perspective, but news about the Dover boat reached a broad audience. In 2002, on the tenth anniversary of the discovery, the Dover Bronze-Age Boat Trust hosted a conference, where this meeting of different traditions became apparent. Alongside technical papers about the boat, other speakers explored its social and economic contexts, and the religious perceptions of boats in Bronze-Age societies. Many speakers came from overseas, and debate about cultural connections was renewed.&lt;/p>
-&lt;p>Within seven years of excavation, the Dover boat had been conserved and displayed, but it was apparent that there were issues that could not be resolved simply by studying the old wood. Experimental archaeology seemed to be the solution: a boat reconstruction, half-scale or full-sized, would permit assessment of the different hypotheses regarding its build and the missing end. The possibility of returning to Dover to search for the boat&amp;rsquo;s unexcavated northern end was explored, but practical and financial difficulties were insurmountable 一 and there was no guarantee that the timbers had survived the previous decade in the changed environment.&lt;/p>
-&lt;p>Detailed proposals to reconstruct the boat were drawn up in 2004. Archaeological evidence was beginning to suggest a Bronze-Age community straddling the Channel, brought together by the sea, rather than separated by it. In a region today divided by languages and borders, archaeologists had a duty to inform the general public about their common cultural heritage.&lt;/p>
-&lt;p>The boat project began in England but it was conceived from the start as a European collaboration. Reconstruction was only part of a scheme that would include a major exhibition and an extensive educational and outreach programme. Discussions began early in 2005 with archaeological bodies, universities and heritage organisations either side of the Channel. There was much enthusiasm and support, and an official launch of the project was held at an international seminar in France in 2007. Financial support was confirmed in 2008 and the project then named BOAT 1550BC got under way in June 2011.&lt;/p>
-&lt;p>A small team began to make the boat at the start of 2012 on the Roman Lawn outside Dover museum. A full-scale reconstruction of a mid-section had been made in 1996, primarily to see how Bronze- Age replica tools performed. In 2012, however, the hull shape was at the centre of the work, so modem power tools were used to carve the oak planks, before turning to prehistoric tools for finishing. It was decided to make the replica half-scale for reasons of cost and time, and synthetic materials were used for the stitching, owing to doubts about the scaling and tight timetable.&lt;/p>
-&lt;p>Meanwhile, the exhibition was being prepared ready for opening in July 2012 at the Castle Museum in Boulogne-sur-Mer. Entitled &amp;lsquo;Beyond the Horizon: Societies of the Channel &amp;amp; North Sea 3,500 years ago&amp;rsquo;, it brought together for the first time a remarkable collection of Bronze-Age objects, including many new discoveries for commercial archaeology and some of the great treasure of the past. The reconstructed boat, as a symbol of the maritime connections that bound together the communities either side of the Channel, was the centrepiece.&lt;/p></description></item><item><title>Docs: R.OG1.2 The changing role of airports</title><link>https://note.codiy.net/ielts/r.og1.2/</link><pubDate>Tue, 09 Aug 2022 13:11:52 +0800</pubDate><guid>https://note.codiy.net/ielts/r.og1.2/</guid><description>
-&lt;blockquote>
-&lt;p>Airports continue to diversify their role in an effort to generate income. Are business meeting facilities the next step? Nigel Halpern, Anne Graham and Rob Davidson investigate.&lt;/p>
-&lt;/blockquote>
-&lt;h4 id="a">A&lt;/h4>
-&lt;p>In recent times developing commercial revenues has become more challenging for airports due to a combination of factors, such as increased competition from Internet shopping, restrictions on certain sales, such as tobacco, and new security procedures that have had an impact on the dwell time of passengers. Moreover, the global economic downturn has caused a reduction in passenger numbers while those that are travelling generally have less money to spend. This has meant that the share of revenue from non-aeronautical revenues actually peaked at 54% at the turn of the century and has subsequently declined slightly. Meanwhile, the pressures to control the level of aeronautical revenues are as strong as ever due to the poor financial health of many airlines and the rapid rise of the low-cost carrier sector.&lt;/p>
-&lt;h4 id="b">B&lt;/h4>
-&lt;p>Some of the more obvious solutions to growing commercial revenues, such as extending the merchandising space or expanding the variety of shopping opportunities, have already been tried to their limit at many airports. A more radical solution is to find new sources of commercial revenue within the terminal, and this has been explored by many airports over the last decade or so. As a result, many terminals are now much more than just shopping malls and offer an array of entertainment, leisure, and beauty and wellness facilities. At this stage of facilities provision, the airport also has the possibility of taking on the role of the final destination rather than merely a facilitator of access.&lt;/p>
-&lt;h4 id="c">C&lt;/h4>
-&lt;p>At the same time, airports have been developing and expanding the range of services that they provide specifically for the business traveller in the terminal. This includes offering business centres that supply support services, meeting or conference rooms and other space for special events. Within this context, Jarach (2001 ] discusses how dedicated meetings facilities located within the terminal and managed directly by the airport operator may be regarded as an expansion of the concept of airline lounges or as a way to reconvert abandoned or underused areas of terminal buildings. Previously it was primarily airport hotels and other facilities offered in the surrounding area of the airport that had the potential to take on this role and become active as a business space (McNeill, 2009).&lt;/p>
-&lt;h4 id="d">D&lt;/h4>
-&lt;p>When an airport location can be promoted as a business venue, this may increase the overall appeal of the airport and help it become more competitive in both attracting and retaining airlines and their passengers. In particular, the presence of meeting facilities could become one of the determining factors taken into consideration when business people are choosing airlines and where they change their planes. This enhanced attractiveness itself may help to improve the airport operator^ financial position and future prospects, but clearly this will be dependent on the competitive advantage that the airport is able to achieve in comparison with other venues.&lt;/p>
-&lt;h4 id="e">E&lt;/h4>
-&lt;p>In 2011, an online airport survey was conducted and some of the areas investigated included the provision and use of meeting facilities at airports and the perceived role and importance of these facilities in generating income and raising passenger numbers. In total, there were responses from staff at 154 airports and 68% of these answered yes* to the question: Does your airport own and have meetings facilities available for hire? The existence of meeting facilities therefore seems high at airports. In addition, 28% of respondents that did not have meeting facilities stated that they were likely to invest in them during the next five years. The survey also asked to what extent respondents agreed or disagreed with a number of statements about the meeting facilities at their airport. 49% of respondents agreed that they have put more investment into them during recent years; 41% agreed that they would invest more in the immediate future. These are fairly high proportions considering the recent economic climate.&lt;/p>
-&lt;h4 id="f">F&lt;/h4>
-&lt;p>The survey also asked airports with meeting facilities to estimate what proportion of users are from the local area, i.e. within a 90-minute drive from the airport, or from abroad. Their findings show that meeting facilities provided by the majority of respondents tend to serve local versus non-local or foreign needs. 63% of respondents estimated that over 60% of users are from the local area. Only 3% estimated that over 80% of users are from abroad. It is therefore not surprising that the facilities are of limited importance when it comes to increasing use of flights at the airport: 16% of respondents estimated that none of the users of their meeting facilities use flights when travelling to or from them, while 56% estimated that 20% or fewer of the users of their facilities use flights.&lt;/p>
-&lt;h4 id="g">G&lt;/h4>
-&lt;p>The survey asked respondents with meeting facilities to estimate how much revenue their airport earned from its meeting facilities during the last financial year. Average revenue per airport was just $12,959. Meeting facilities are effectively a non-aeronautical source of airport revenue. Only 1% of respondents generated more than 20% non-aeronautical revenue from their meetings facilities; none generated more than 40%. Given the focus on local demand, it is not surprising that less than a third of respondents agreed that their meeting facilities support business and tourism development in their home region or country.&lt;/p>
-&lt;h4 id="h">H&lt;/h4>
-&lt;p>The findings of this study suggest that few airports provide meetings facilities as a serious commercial venture. It may be that, as owners of large property, space is available for meeting facilities at airports and could play an important role in serving the needs of the airport, its partners, and stakeholders such as government and the local community. Thus, while the local orientation means that competition with other airports is likely to be minimal, competition with local providers of meetings facilities is likely to be much greater.&lt;/p></description></item><item><title>Docs: R.OG1.3 IS PHOTOGRAPHY ART?</title><link>https://note.codiy.net/ielts/r.og1.3/</link><pubDate>Tue, 09 Aug 2022 13:11:52 +0800</pubDate><guid>https://note.codiy.net/ielts/r.og1.3/</guid><description>
-&lt;p>This may seem a pointless question today. Surrounded as we are by thousands of photographs, most of us take for granted that, in addition to supplying information and seducing customers, camera images also serve as decoration, afford spiritual enrichment, and provide significant insights into the passing scene. But in the decades following the discovery of photography, this question reflected the search for ways to fit the mechanical medium into the traditional schemes of artistic expression.&lt;/p>
-&lt;p>The much-publicized pronouncement by painter Paul Delaroche that the daguerreotype* signalled the end of painting is perplexing because this clever artist also forecast the usefulness of the medium for graphic artists in a letter written in 1839. Nevertheless, it is symptomatic of the swing between the outright rejection and qualified acceptance of the medium that was fairly typical of the artistic establishment. Discussion of the role of photography in art was especially spirited in France, where the internal policies of the time had created a large pool of artists, but it was also taken up by important voices in England. In both countries, public interest in this topic was a reflection of the belief that national stature and achievement in the arts were related.&lt;/p>
-&lt;p>From the maze of conflicting statements and heated articles on the subject, three main positions about the potential of camera art emerged. The simplest, entertained by many painters and a section of the public, was that photographs should not be considered &amp;lsquo;art&amp;rsquo; because they were made with a mechanical device and by physical and chemical phenomena instead of by human hand and spirit； to some, camera images seemed to have more in common with fabric produced by machinery in a mill than with handmade creations fired by inspiration. The second widely held view, shared by painters, some photographers, and some critics, was that photographs would be useful to art but should not be considered equal in creativeness to drawing and painting. Lastly, by assuming that the process was comparable to other techniques such as etching and lithography, a fair number of individuals realized that camera images were or could be as significant as handmade works of art and that they might have a positive influence on the arts and on culture in general.&lt;/p>
-&lt;p>Artists reacted to photography in various ways. Many portrait painters 一 miniaturists in particular - who realized that photography represented the ‘handwriting on the wall’ became involved with daguerreotyping or 60 paper photography in an effort to save their careers； some incorporated it with painting, while others renounced painting altogether. Still other painters, the most prominent among them the French painter, Jean- Auguste-Dominique Ingres, began almost immediately to use photography to make a record of their own output and also to provide themselves with source material for poses and backgrounds, vigorously denying at the same time its influence on their vision or its claims as art.&lt;/p>
-&lt;p>The view that photographs might be worthwhile to artists was enunciated in considerable detail by Lacan and Francis Wey. The latter, an art and literary critic, who eventually recognised that camera images could be inspired as well as informative, suggested that they would lead to greater naturalness in the graphic depiction of anatomy, clothing, likeness, expression, and landscape. By studying photographs, true artists, he claimed, would be relieved of menial tasks and become free to devote themselves to the more important spiritual aspects of their work.&lt;/p>
-&lt;p>Wey left unstated what the incompetent artist might do as an alternative, but according to the influential French critic and poet Charles Baudelaire, writing in response to an exhibition of photography in 1859, lazy and untalented painters would become photographers. Fired by a belief in art as an imaginative embodiment of cultivated ideas and dreams, Baudelaire regarded photography as &amp;lsquo;a very humble servant of art and science,； a medium largely unable to transcend &amp;rsquo;external reality&amp;rsquo;. For this critic, photography was linked with &amp;rsquo;the great industrial madness&amp;rsquo; of the time, which in his eyes exercised disastrous consequences on the spiritual qualities of life and art.&lt;/p>
-&lt;p>Eugene Delacroix was the most prominent of the French artists who welcomed photography as help-mate but recognized its limitations. Regretting that &amp;lsquo;such a wonderful invention&amp;rsquo; had arrived so late in his lifetime, he still took lessons in daguerreotyping, and both commissioned and collected photographs. Delacroix&amp;rsquo;s enthusiasm for the medium can be sensed in a journal entry noting that if photographs were used as they should be, an artist might &amp;lsquo;raise himself to heights that we do not yet know&amp;rsquo;.&lt;/p>
-&lt;p>The question of whether the photograph was document or art aroused interest in England also. The most important statement on this matter was an unsigned article that concluded that while photography had a role to play, it should not be &amp;lsquo;constrained&amp;rsquo; into &amp;lsquo;competition&amp;rsquo; with art； a more stringent viewpoint led critic Philip Gilbert Hamerton to dismiss camera images as &amp;rsquo;narrow in range, emphatic in assertion, telling one truth for ten falsehoods5.&lt;/p>
-&lt;p>These writers reflected the opposition of a section of the cultural elite in England and France to the &amp;lsquo;cheapening of art&amp;rsquo; which the growing acceptance and purchase of camera pictures by the middle class represented. Technology made photographic images a common sight in the shop windows of Regent Street and Piccadilly in London and the commercial boulevards of Paris. In London, for example, there were at the time some commercial establishments where portraits, landscapes, and photographic reproductions of works of art could be bought. This appeal to the middle class convinced the elite that photographs would foster a desire for realism instead of idealism, even though some critics recognized that the work of individual photographers might display an uplifting style and substance that was consistent with the defining characteristics of art.&lt;/p>
-&lt;ul>
-&lt;li>the name given to the first commercially successful photographic images&lt;/li>
-&lt;/ul></description></item><item><title>Docs: R.OG2.1 The Flavor of Pleasure</title><link>https://note.codiy.net/ielts/r.og2.1/</link><pubDate>Tue, 09 Aug 2022 13:11:52 +0800</pubDate><guid>https://note.codiy.net/ielts/r.og2.1/</guid><description>
-&lt;blockquote>
-&lt;p>When it comes to celebrating the flavor of food, our mouth gets all the credit But in truth, it is the nose that knows.&lt;/p>
-&lt;/blockquote>
-&lt;p>No matter how much we talk about tasting our favorite flavors, relishing them really depends on a combined input from our senses that we experience through mouth, tongue and nose. The taste, texture, and feel of food are what we tend to focus on, but most important are the slight puffs of air as we chew our food - what scientists call &amp;lsquo;retronasal smell&amp;rsquo;.&lt;/p>
-&lt;p>Certainly, our mouths and tongues have taste buds, which are receptors for the five basic flavors: sweet, salty, sour, bitter, and umami, or what is more commonly referred to as savory. But our tongues are inaccurate instruments as far as flavor is concerned. They evolved to recognise only a few basic tastes in order to quickly identify toxins, which in nature are often quite bitter or acidly sour.&lt;/p>
-&lt;p>All the complexity, nuance, and pleasure of flavor come from the sense of smell operating in the back of the nose. It is there that a kind of alchemy occurs when we breathe up and out the passing whiffs of our chewed food. Unlike a hound&amp;rsquo;s skull with its extra long nose, which evolved specifically to detect external smells, our noses have evolved to detect internal scents. Primates specialise in savoring the many millions of flavor combinations that they can create for their mouths.&lt;/p>
-&lt;p>Taste without retronasal smell is not much help in recognising flavor. Smell has been the most poorly understood of our senses, and only recently has neuroscience, led by Yale University&amp;rsquo;s Gordon Shepherd, begun to shed light on its workings. Shepherd has come up with the term &amp;rsquo;neurogastronomy&amp;rsquo; to link the disciplines of food science, neurology, psychology, and anthropology with the savory elements of eating, one of the most enjoyed of human experiences.&lt;/p>
-&lt;p>In many ways, he is discovering that smell is rather like face recognition. The visual system detects patterns of light and dark and, building on experience, the brain creates a spatial map. It uses this to interpret the interrelationship of the patterns and draw conclusions that allow us to identify people and places. In the same way, we use patterns and ratios to detect both new and familiar flavors. As we eat, specialised receptors in the back of the nose detect the air molecules in our meals. From signals sent by the receptors, the brain understands smells as complex spatial patterns. Using these, as well as input from the other senses, it constructs the idea of specific flavors.&lt;/p>
-&lt;p>This ability to appreciate specific aromas turns out to be central to the pleasure we get from food, much as our ability to recognise individuals is central to the pleasures of social life. The process is so embedded in our brains that our sense of smell is critical to our enjoyment of life at large. Recent studies show that people who lose the ability to smell become socially insecure, and their overall level of happiness plummets.&lt;/p>
-&lt;p>Working out the role of smell in flavor interests food scientists, psychologists, and cooks alike. The relatively new discipline of molecular gastronomy, especially, relies on understanding the mechanics of aroma to manipulate flavor for maximum impact. In this discipline, chefs use their knowledge of the chemical changes that take place during cooking to produce eating pleasures that go beyond the &amp;lsquo;ordinary&amp;rsquo;.&lt;/p>
-&lt;p>However, whereas molecular gastronomy is concerned primarily with the food or &amp;lsquo;smell, molecules, neurogastronomy is more focused on the receptor molecules and the brain&amp;rsquo;s spatial images for smell. Smell stimuli form what Shepherd terms *odor objects&amp;rsquo;, stored as memories, and these have a direct link with our emotions. The brain creates images of unfamiliar smells by relating them to other more familiar smells. Go back in history and this was part of our survival repertoire; like most animals, we drew on our sense of smell, when visual information was scarce, to single out prey.&lt;/p>
-&lt;p>Thus the brain&amp;rsquo;s flavor-recognition system is a highly complex perceptual mechanism that puts all five senses to work in various combinations. Visual and sound cues contribute, such as crunching, as does touch, including the texture and feel of food on our lips and in our mouths. Then there are the taste receptors, and finally, the smell, activated when we inhale. The engagement of our emotions can be readily illustrated when we picture some of the wide- ranging facial expressions that are elicited by various foods - many of them hard-wired into our brains at birth. Consider the response to the sharpness of a lemon and compare that with the face that is welcoming the smooth wonder of chocolate.&lt;/p>
-&lt;p>The flavor-sensing system, ever receptive to new combinations, helps to keep our brains active and flexible. It also has the power to shape our desires and ultimately our bodies. On the horizon we have the positive application of neurogastronomy: manipulating flavor to curb our appetites.&lt;/p></description></item><item><title>Docs: R.OG2.2 Dawn of the robots</title><link>https://note.codiy.net/ielts/r.og2.2/</link><pubDate>Tue, 09 Aug 2022 13:11:52 +0800</pubDate><guid>https://note.codiy.net/ielts/r.og2.2/</guid><description>
-&lt;blockquote>
-&lt;p>They’re already here 一 driving cars, vacuuming carpets and feeding hospital patients. They may not be walking, talking, human-like sentient beings, but they are clever&amp;hellip; and a little creepy.&lt;/p>
-&lt;/blockquote>
-&lt;h4 id="a">A&lt;/h4>
-&lt;p>At first sight it looked like a typical suburban road accident. A Land Rover approached a Chevy Tahoe estate car that had stopped at a kerb; the Land Rover pulled out and tried to pass the Tahoe just as it started off again. There was a crack of fenders and the sound of paintwork being scraped, the kind of minor mishap that occurs on roads thousands of times every day. Normally drivers get out, gesticulate, exchange insurance details and then drive off. But not on this occasion. No one got out of the cars for the simple reason that they had no humans inside them; the Tahoe and Land Rover were being controlled by computers competing in November&amp;rsquo;s DARPA (the U.S. Defence Advanced Research Projects Agency) Urban Challenge.&lt;/p>
-&lt;h4 id="b">B&lt;/h4>
-&lt;p>The idea that machines could perform to such standards is startling. Driving is a complex task that takes humans a long time to perfect. Yet here, each car had its on-board computer loaded with a digital map and route plans, and was instructed to negotiate busy roads; differentiate between pedestrians and stationary objects; determine whether other vehicles were parked or moving off; and handle various parking manoeuvres, which robots turn out to be unexpectedly adept at. Even more striking was the fact that the collision between the robot Land Rover, built by researchers at the Massachusetts Institute of Technology, and the Tahoe, fitted out by Cornell University Artificial Intelligence (Al) experts, was the only scrape in the entire competition. Yet only three years earlier, at DARPA&amp;rsquo;s previous driverless car race, every robot competitor 一 directed to navigate across a stretch of open desert 一 either crashed or seized up before getting near the finishing line.&lt;/p>
-&lt;h4 id="c">C&lt;/h4>
-&lt;p>It is a remarkable transition that has clear implications for the car of the future. More importantly, it demonstrates how robotics sciences and Artificial Intelligence have progressed in the past few years 一 a point stressed by Bill Gates, the Microsoft boss who is a convert to these causes. ‘The robotics industry is developing in much the same way the computer business did 30 years ago,&amp;rsquo; he argues. As he points out, electronics companies make toys that mimic pets and children with increasing sophistication. ‘I can envision a future in which robotic devices will become a nearly ubiquitous part of our day-to-day lives/ says Gates. ‘We may be on the verge of a new era, when the PC will get up off the desktop and allow us to see, hear, touch and manipulate objects in places where we are not physically present.'&lt;/p>
-&lt;h4 id="d">D&lt;/h4>
-&lt;p>What is the potential for robots and computers in the near future? ‘The fact is we still have a way to go before real robots catch up with their science fiction counterparts,&amp;rsquo; Gates says. So what are the stumbling blocks? One key difficulty is getting robots to know their place. This has nothing to do with class or etiquette, but concerns the simple issue of positioning. Humans orient themselves with other objects in a room very easily. Robots find the task almost impossible. &amp;ldquo;Even something as simple as telling the difference between an open door and a window can be tricky for a robot,&amp;rsquo; says Gates. This has, until recently, reduced robots to fairly static and cumbersome roles.&lt;/p>
-&lt;h4 id="e">E&lt;/h4>
-&lt;p>For a long time, researchers tried to get round the problem by attempting to re-create the visual processing that goes on in the human cortex. However, that challenge has proved to be singularly exacting and complex. So scientists have turned to simpler alternatives: ‘We have become far more pragmatic in our work,’ says Nello Cristianini, Professor of Artificial Intelligence at the University of Bristol in England and associate editor of the Journal of Artificial Intelligence Research. ‘We are no longer trying to re-create human functions. Instead, we are looking for simpler solutions with basic electronic sensors, for example. &amp;lsquo;This approach is exemplified by vacuuming robots such as the Electrolux Trilobite. The Trilobite scuttles around homes emitting ultrasound signals to create maps of rooms, which are remembered for future cleaning. Technology like this is now changing the face of robotics, says philosopher Ron Chrisley, director of the Centre for Research in Cognitive Science at the University of Sussex in England.&lt;/p>
-&lt;h4 id="f">F&lt;/h4>
-&lt;p>Last year, a new Hong Kong restaurant, Robot Kitchen, opened with a couple of sensor-laden humanoid machines directing customers to their seats. Each possesses a touch-screen on which orders can be keyed in. The robot then returns with the correct dishes. In Japan, University of Tokyo researchers recently unveiled a kitchen zandroid7 that could wash dishes, pour tea and make a few limited meals. The ultimate aim is to provide robot home helpers for the sick and the elderly, a key concern in a country like Japan where 22 percent of the population is 65 or older. Over US$1 billion a year is spent on research into robots that will be able to care for the elderly. &amp;lsquo;Robots first learn basic competence 一 how to move around a house without bumping into things. Then we can think about teaching them how to interact with humans,’ Chrisley said. Machines such as these take researchers into the field of socialised robotics: how to make robots act in a way that does not scare or offend individuals. ‘We need to study how robots should approach people, how they should appear. That is going to be a key area for future research,&amp;rsquo; adds Chrisley.&lt;/p></description></item><item><title>Docs: R.OG2.3 It's your choice! 一 Or is it really?</title><link>https://note.codiy.net/ielts/r.og2.3/</link><pubDate>Tue, 09 Aug 2022 13:11:52 +0800</pubDate><guid>https://note.codiy.net/ielts/r.og2.3/</guid><description>
-&lt;blockquote>
-&lt;p>As we move from the industrial age to the information age, societal demands on our mental capabilities are no less taxing ···&lt;/p>
-&lt;/blockquote>
-&lt;p>We are constantly required to process a wide range of information to make decisions. Sometimes, these decisions are trivial, such as what marmalade to buy. At other times, the stakes are higher, such as deciding which symptoms to report to the doctor. However, the fact that we are accustomed to processing large amounts of information does not mean that we are better at it (Chabris &amp;amp; Simons, 2009). Our sensory and cognitive systems have systematic ways of failing of which we are often, perhaps blissfully, unaware.&lt;/p>
-&lt;p>Imagine that you are taking a walk in your local city park when a tourist approaches you asking for directions. During the conversation, two men carrying a door pass between the two of you. If the person asking for directions had changed places with one of the people carrying the door, would you notice? Research suggests that you might not. Harvard psychologists Simons and Levi (1998) conducted a field study using this exact set-up and found that the change in identity went unnoticed by 7 (46.6%) of the 15 participants. This phenomenon has been termed ‘change blindness&amp;rsquo; and refers to the difficulty that observers have in noticing changes to visual scenes (e.g. the person swap), when the changes are accompanied by some other visual disturbance (e.g. the passing of the door).&lt;/p>
-&lt;p>Over the past decade, the change blindness phenomenon has been replicated many times. Especially noteworthy is an experiment by Davies and Hine (2007) who studied whether change blindness affects eyewitness identification. Specifically, participants were presented with a video enactment of a burglary. In the video, a man entered a house, walking through the different rooms and putting valuables into a knapsack. However, the identity of the burglar changed after the first half of the film while the initial burglar was out of sight. Out of the 80 participants, 49 (61%) did not notice the change of the burglar&amp;rsquo;s identity, suggesting that change blindness may have serious implications for criminal proceedings.&lt;/p>
-&lt;p>To most of us, it seems bizarre that people could miss such obvious changes while they are paying active attention. However, to catch those changes, attention must be targeted to the changing feature. In the study described above, participants were likely not to have been expecting the change to happen, and so their attention may have been focused on the valuables the burglar was stealing, rather than the burglar.&lt;/p>
-&lt;p>Drawing from change blindness research, scientists have come to the conclusion that we perceive the world in much less detail than previously thought (Johansson, Hall, &amp;amp; Sikstrom, 2008). Rather than monitoring all of the visual details that surround us, we seem to focus our attention only on those features that are currently meaningful or important, ignoring those that are irrelevant to our current needs and goals. Thus at any given time, our representation of the world surrounding us is crude and incomplete, making it possible for changes or manipulations to go undetected (Chabris &amp;amp; Simons, 2010).&lt;/p>
-&lt;p>Given the difficulty people have in noticing changes to visual stimuli, one may wonder what would happen if these changes concerned the decisions people make. To examine choice blindness, Hall and colleagues (2010) invited supermarket customers to sample two different kinds of jams and teas. After participants had tasted or smelled both samples, they indicated which one they preferred. Subsequently, they were purportedly given another sample of their preferred choice. On half of the trials, however, these were samples of the non-chosen jam or tea. As expected, only about one-third of the participants detected this manipulation. Based on these findings, Hall and colleagues proposed that choice blindness is a phenomenon that occurs not only for choices involving visual material, but also for choices involving gustatory and olfactory information.&lt;/p>
-&lt;p>Recently, the phenomenon has also been replicated for choices involving auditory stimuli (Sauerland, Sagana, &amp;amp; Otgaar, 2012). Specifically, participants had to listen to three pairs of voices and decide for each pair which voice they found more sympathetic or more criminal. The voice was then presented again; however, the outcome was manipulated for the second voice pair and participants were presented with the non-chosen voice. Replicating the findings by Hall and colleagues, only 29% of the participants detected this change.&lt;/p>
-&lt;p>Merckelbach, Jelicic, and Pieters (2011) investigated choice blindness for intensity ratings of one&amp;rsquo;s own psychological symptoms. Their participants had to rate the frequency with which they experienced 90 common symptoms (e.g. anxiety, lack of concentration, stress, headaches etc.) on a 5-point scale. Prior to a follow-up interview, the researchers inflated ratings for two symptoms by two points. For example, when participants had rated their feelings of shyness, as 2 (i.e. occasionally), it was changed to 4 (i.e. all the time). This time, more than half (57%) of the 28 participants were blind to the symptom rating escalation and accepted it as their own symptom intensity rating. This demonstrates that blindness is not limited to recent preference selections, but can also occur for intensity and frequency.&lt;/p>
-&lt;p>Together, these studies suggest that choice blindness can occur in a wide variety of situations and can have serious implications for medical and judicial outcomes. Future research is needed to determine how, in those situations, choice blindness can be avoided.&lt;/p></description></item><item><title>Docs: R4.1.1 These Misconceptions of Tropical Rainforests</title><link>https://note.codiy.net/ielts/r4.1.1/</link><pubDate>Tue, 09 Aug 2022 13:11:52 +0800</pubDate><guid>https://note.codiy.net/ielts/r4.1.1/</guid><description>
-&lt;p>Adults and children are frequently confronted with statements about the alarming rate of loss of tropical rainforests. For example, one graphic illustration to which children might readily relate is the estimate that rainforests are being destroyed at a rate equivalent to one thousand football fields every forty minutes – about the duration of a normal classroom period. In the face of the frequent and often vivid media coverage,it is likely that children will have formed ideas about rainforests – what and where they are, why they are important, what endangers them – independent of any formal tuition. It is also possible that some of these ideas will be mistaken.&lt;/p>
-&lt;p>Many studies have shown that children harbor misconceptions about ‘pure’,curriculum science. These misconceptions do not remain isolated but become incorporated into a multifaceted, but organized, conceptual framework, making it and the component ideas, some of which are erroneous, more robust but also accessible to modification. These ideas may be developed by children absorbing ideas through the popular media. Sometimes this information may be erroneous. It seems schools may not be providing an opportunity for children to re-express their ideas and so have them tested and refined by teachers and their peers.&lt;/p>
-&lt;p>Despite the extensive coverage in the popular media of the destruction of rainforests, little formal information is available about children’s ideas in this area,the aim of the present study is to start to provide such information, to help teachers design their educational strategies to build upon correct ideas and to displace misconceptions and to plan programs in environmental studies in their schools.&lt;/p>
-&lt;p>The study surveys children’s scientific knowledge and attitudes to rainforests. Secondary school children were asked to complete a questionnaire containing five open-form questions. The most frequent responses to the first question were descriptions which are self-evident from the term ‘rainforest’. Some children described them as damp, wet or hot. The second question concerned the geographical location of rainforests. The commonest responses were continents or countries: Africa(given by 43% of children), South America (30%), Brazil (25%). Some children also gave more general locations, such as being near the Equator.&lt;/p>
-&lt;p>Responses to question three concerned the importance of rainforests. The dominant idea, raised by 64% of the pupils, was that rainforests provide animals with habitats.Fewer students responded that rainforests provide plant habitats, and even fewer mentioned the indigenous populations of rainforests. More girls (70%) than boys (60%) raised the idea of rainforest as animal habitats.&lt;/p>
-&lt;p>Similarly, but at a lower level, more girls (13%) than boys (5%) said that rainforests provided human habitats. These observations are generally consistent with our previous studied of pupils’ views about the use and conservation of rainforests, in which girls were shown to be more sympathetic to animals and expressed views which seem to place an intrinsic value on non-human animal life.&lt;/p>
-&lt;p>The fourth question concerned the causes of the destruction of rainforests. Perhaps encouragingly, more than half of the pupil (59%) identified that it is human activities which are destroying rainforests, some personalizing the responsibility by the use of terms such as ‘we are’. About 18% of the pupils referred specifically to logging activity.&lt;/p>
-&lt;p>One misconception, expressed by some 10% of the pupils, was that acid rain is responsible for rainforest destruction; a similar proportion said that pollution is destroying rainforests. Here, children are confusing rainforest destruction with damage to the forests of Western Europe by these factors. While two fifths of the students provided the information that the rainforests provide oxygen, in some cases this response also embraced the misconception that rainforest destruction would reduce atmospheric oxygen, making the atmosphere incompatible with human life on Earth.&lt;/p>
-&lt;p>In answer to the final question about the importance of rainforest conservation, the majority of children simply said that we need rainforests to survive. Only a few of the pupils (6%) mentioned that rainforest destruction may contribute to global warming. This is surprising considering the high level of media coverage on this issue. Some children expressed the idea that the conservation of rainforests is not important.&lt;/p>
-&lt;p>The results of this study suggest that certain ideas predominate in the thinking of children about rainforests. Pupils’ responses indicate some misconceptions in basic scientific knowledge of rainforests’ ecosystems such as their ideas about rainforests as habitats for animals, plants and humans and the relationship between climatic change and destruction of rainforests.&lt;/p>
-&lt;p>Pupils did not volunteer ideas that suggested that they appreciated the complexity of causes of rainforest destruction. In other words, they gave no indication of an appreciation of either the rage of ways in which rainforests are important or the complex social, economic and political factors which drive the activities which are destroying the rainforests. One encouragement is that the results of similar studies about other environmental issues suggest that older children seem to acquire the ability to appreciate value and evaluate conflicting views. Environmental education offers an arena in which these sills can be developed, which is essential for these children as future decision –makers.&lt;/p></description></item><item><title>Docs: R4.1.2 What Do Whales Feel?</title><link>https://note.codiy.net/ielts/r4.1.2/</link><pubDate>Tue, 09 Aug 2022 13:11:52 +0800</pubDate><guid>https://note.codiy.net/ielts/r4.1.2/</guid><description>
-&lt;p>An examination of the functioning of the senses in cetaceans, the group of mammals comprising whales, dolphins and porpoises
-Some of the senses that we and other terrestrial mammals take for granted are either reduced or absent in cetaceans or fail to function well in water. For example, it appears from their brain structure that toothed species are unable to smell. Baleen species, on the other hand, appear to have some related brain structures but it is not known whether these are functional. It has been speculated that, as the blowholes evolved and migrated to the top of the head, the neural pathways serving sense of smell may have been nearly all sacrificed. Similarly, although at least some cetaceans have taste buds, the nerves serving these have degenerated or are rudimentary.&lt;/p>
-&lt;p>The sense of touch has sometimes been described as weak too, but this view is probably mistaken. Trainers of captive dolphins and small whales often remark on their animals’ responsiveness to being touched or rubbed, and both captive and freeranging cetacean individuals of all species (particularly adults and calves, or members of the same subgroup) appear to make frequent contact. This contact may help to maintain order within a group, and stroking or touching are part of the courtship ritual in most species. The area around the blowhole is also particularly sensitive and captive animals often object strongly to being touched there.&lt;/p>
-&lt;p>The sense of vision is developed to different degrees in different species. Baleen species studied at close quarters underwater – specifically a grey whale calf in captivity for a year, and free-ranging right whales and humpback whales studied and filmed off Argentina and Hawaii – have obviously tracked objects with vision underwater, and they can apparently see moderately well both in water and in air. However, the position of the eyes so restricts the field of vision in baleen whales that they probably do not have stereoscopic vision.&lt;/p>
-&lt;p>On the other hand, the position of the eyes in most dolphins and porpoises suggests that they have stereoscopic vision forward and downward. Eye position in freshwater dolphins, which often swim on their side or upside down while feeding, suggests that what vision they have is stereoscopic forward and upward. By compare-son, the bottlenose dolphin has extremely keen vision in water. Judging from the way it watches and tracks airborne flying fish, it can apparently see fairly well through the air–water interface as well. And although preliminary experimental evidence suggests that their in-air vision is poor, the accuracy with which dolphins leap high to take small fish out of a trainer’s hand provides anecdotal evidence to the contrary.&lt;/p>
-&lt;p>Such variation can no doubt be explained with reference to the habitats in which individual species have developed. For example, vision is obviously more useful to species inhabiting clear open waters than to those living in turbid rivers and flooded plains. The South American boutu and Chinese beiji, for instance, appear to have very limited vision, and the Indian susus are blind, their eyes reduced to slits that probably allow them to sense only the direction and intensity of light.&lt;/p>
-&lt;p>Although the senses of taste and smell appear to have deteriorated, and vision in water appears to be uncertain, such weaknesses are more than compensated for by cetaceans’ well-developed acoustic sense. Most species are highly vocal, although they vary in the range of sounds they produce, and many forage for food using echo-location*. Large baleen whales primarily use the lower frequencies and are often limited in their repertoire. Notable exceptions are the nearly song-like choruses of bowhead whales in summer and the complex, haunting utterances of the humpback whales. Toothed species in general employ more of the frequency spectrum, and produce a wider variety of sounds, than baleen species (though the sperm whale apparently produces a monotonous series of high-energy clicks and little else). Some of the more complicated sounds are clearly communicative, although what role they may play in the social life and ‘culture’ of cetaceans has been more the subject of wild speculation than of solid science.&lt;/p>
-&lt;ol>
-&lt;li>Echolocation: the perception of objects by means of sound wave echoes.&lt;/li>
-&lt;/ol></description></item><item><title>Docs: R4.1.3 Visual Symbols and the Blind</title><link>https://note.codiy.net/ielts/r4.1.3/</link><pubDate>Tue, 09 Aug 2022 13:11:52 +0800</pubDate><guid>https://note.codiy.net/ielts/r4.1.3/</guid><description>
-&lt;h4 id="part-1">Part 1&lt;/h4>
-&lt;p>From a number of recent studies, it has become clear that blind people can appreciate the use of outlines and perspectives to describe the arrangement of objects and other surfaces in space. But pictures are more than literal representations. This fact was drawn to my attention dramatically when a blind woman in one of my investigations decided on her own initiative to draw a wheel as it was spinning. To show this motion, she traced a curve inside the circle (Fig.1). I was taken aback. Lines of motion, such as the one she used, are a very recent invention in the history of illustration. Indeed, as art scholar David Kunzle notes, Wilhelm Busch, a trend-setting nineteenth-century cartoonist, used virtually no motion lines in his popular figures until about 1877.&lt;/p>
-&lt;p>When I asked several other blind study subjects to draw a spinning wheel, one particularly clever rendition appeared repeatedly: several subjects showed the wheel’s spokes as curved lines. When asked about these curves, they all described them as metaphorical ways of suggesting motion. Majority rule would argue that this device somehow indicated motion very well. But was it a better indicator than, say, broken or wavy lines – or any other kind of line, for that matter? The answer was not clear. So I decided to test whether various lines of motion were apt ways of showing movement or if they were merely idiosyncratic marks. Moreover, I wanted to discover whether there were differences in how the blind and the sighted interpreted lines of motion.&lt;/p>
-&lt;p>To search out these answers, I created raised-line drawings of five different wheels, depicting spokes with lines that curved, bent, waved, dashed and extended beyond the perimeter of the wheel. I then asked eighteen blind volunteers to feel the wheels and assign one of the following motions to each wheel: wobbling, spinning fast, spinning steadily, jerking or braking. My control group consisted of eighteen sighted undergraduates from the University of Toronto.&lt;/p>
-&lt;p>All but one of the blind subjects assigned distinctive motions to each wheel. Most guessed that the curved spokes indicated that the wheel was spinning steadily; the wavy spokes, they thought, suggested that the wheel was wobbling; and the bent spokes were taken as a sign that the wheel was jerking. Subjects assumed that spokes extending beyond the wheel’s perimeter signified that the wheel had its brakes on and that dashed spokes indicated the wheel was spinning quickly.&lt;/p>
-&lt;p>In addition, the favored description for the sighted was the favored description for the blind in every instance. What is more, the consensus among the sighted was barely higher than that among the blind. Because motion devices are unfamiliar to the blind, the task I gave them involved some problem solving. Evidently, however, the blind not only figured out meanings for each line of motion, but as a group they generally came up with the same meaning at least as frequently as did sighted subjects.&lt;/p>
-&lt;h4 id="part-2">Part 2&lt;/h4>
-&lt;p>We have found that the blind understand other kinds of visual metaphors as well. One blind woman drew a picture of a child inside a heart – choosing that symbol, she said, to show that love surrounded the child. With Chang Hong Liu, a doctoral student from China, I have begun exploring how well blind people understand the symbolism behind shapes such as hearts that do not directly represent their meaning. We gave a list of twenty pairs of words to sighted subjects and asked them to pick from each pair the term that best related to a circle and the term that best related to a square. For example, we asked: What goes with soft? A circle or a square? Which shape goes with hard?&lt;/p>
-&lt;p>All our subjects deemed the circle soft and the square hard. A full 94% ascribed happy to the circle, instead of sad. But other pairs revealed less agreement: 79% matched fast to slow and weak to strong, respectively. And only 51% linked deep to circle and shallow to square. (See Fig.2) When we tested four totally blind volunteers using the same list, we found that their choices closely resembled those made by the sighted subjects. One man, who had been blind since birth, scored extremely well. He made only one match differing from the consensus, assigning ‘far’ to square and ‘near’ to circle. In fact, only a small majority of sighted subjects – 53% – had paired far and near to the opposite partners. Thus, we concluded that the blind interpret abstract shapes as sighted people do.&lt;/p></description></item><item><title>Docs: R4.2.1 Lost for Words</title><link>https://note.codiy.net/ielts/r4.2.1/</link><pubDate>Tue, 09 Aug 2022 13:11:52 +0800</pubDate><guid>https://note.codiy.net/ielts/r4.2.1/</guid><description>
-&lt;h3 id="many-minority-languages-are-on-the-danger-lists">Many Minority Languages Are on the Danger Lists&lt;/h3>
-&lt;p>In the Native American Navajo nation, which sprawls across four states in the American south-west, the native language is dying. Most of its speakers are middle-aged or elderly. Although many students take classes in Navajo, the schools are run in English. Street signs, supermarket goods and even their own newspaper are all in English. Not surprisingly, linguists doubt that any native speakers of Navajo will remain in a hundred years’ time.&lt;/p>
-&lt;p>Navajo is far from alone. Half the world’s 6,800 languages are likely to vanish within two generations—that’s one language lost every ten days. Never before has the planet’s linguistic diversity shrunk at such a pace. ‘At the moment, we are heading for about three or four languages dominating the world,’ says Mark Pagel, an evolutionary biologist at the University of Reading. ‘It’s a mass extinction, and whether we will ever rebound from the loss is difficult to know.’&lt;/p>
-&lt;p>Isolation breeds linguistic diversity: as a result, the world is peppered with languages spoken by only a few people. Only 250 languages have more than a million speakers, and at least 3,000 have fewer than 2,500. It is not necessarily these small languages that are about to disappear. Navajo is considered endangered despite having 150,000 speakers. What makes a language endangered is not just the number of speakers, but how old they are. If it is spoken by children it is relatively safe. The critically endangered languages are those that are only spoken by the elderly, according to Michael Krauss, director of the Alassk Native Language Center, in Fairbanks.&lt;/p>
-&lt;p>Why do people reject the language of their parents? It begins with a crisis of confidence, when a small community finds itself alongside a larger, wealthier society, says Nicholas Ostler, of Britain’s Foundation for Endangered Languages, in Bath. ‘People lose faith in their culture,’ he says. ‘When the next generation reaches their teens, they might not want to be induced into the old traditions.’&lt;/p>
-&lt;p>The change is not always voluntary. Quite often, governments try to kill off a minority language by banning its use in public or discouraging its use in schools, all to promote national unity. The former US policy of running Indian reservation schools in English, for example, effectively put languages such as Navajo on the danger list. But Salikoko Mufwene, who chairs the Linguistics department at the University of Chicago, argues that the deadliest weapon is not government policy but economic globalization. ‘Native Americans have not lost pride in their language, but they have had to adapt to socio-economic pressures,’ he says. ‘They cannot refuse to speak English if most commercial activity is in English.’ But are languages worth saving? At the very least, there is a loss of data for the study of languages and their evolution, which relies on comparisons between languages, both living and dead. When an unwritten and unrecorded language disappears, it is lost to science.&lt;/p>
-&lt;p>Language is also intimately bound up with culture, so it may be difficult to preserve one without the other. ‘If a person shifts from Navajo to English, they lose something,’ Mufwene says. ‘Moreover, the loss of diversity may also deprive us of different ways of looking at the world.’ says Pagel. There is mounting evidence that learning a language produces physiological changes in the brain. ‘Your brain and mine are different from the brain of someone who speaks French, for instance,’ Pagel says, and this could affect our thoughts and perceptions. ‘The patterns and connections we make among various concepts may be structured by the linguistic habits of our community.’&lt;/p>
-&lt;p>So despite linguists’ best efforts, many languages will disappear over the next century. But a growing interest in cultural identity may prevent the direst predictions from coming true. ‘The key to fostering diversity is for people to learn their ancestral tongue, as well as the dominant language,’ says Doug Whalen, founder and president of the Endangered Language Fund in New Haven, Connecticut . ‘Most of these languages will not survive without a large degree of bilingualism,’ he says. In New Zealand, classes for children have slowed the erosion of Maori and rekindled interest in the language. A similar approach in Hawaii has produced about 8,000 new speakers of Polynesian languages in the past few years. In California,‘apprentice’ programs have provided life support to several indigenous languages. Volunteer ‘apprentices’ pair up with one of the last living speakers of a Native American tongue to learn a traditional skill such as basket weaving, with instruction exclusively in the endangered language. After about 300 hours of training they are generally sufficiently fluent to transmit the language to the next generation. But Mufwene says that preventing a language dying out is not the same as giving it new life by using it every day. ‘Preserving a language is more like preserving fruits in a jar,’ he says.&lt;/p>
-&lt;p>However, preservation can bring a language back from the dead. There are examples of languages that have survived in written form and then been revived by later generations. But a written form is essential for this, so the mere possibility of revival has led many speakers of endangered languages to develop systems of writing where none existed before.&lt;/p></description></item><item><title>Docs: R4.2.2 Alternative Medicine in Australia</title><link>https://note.codiy.net/ielts/r4.2.2/</link><pubDate>Tue, 09 Aug 2022 13:11:52 +0800</pubDate><guid>https://note.codiy.net/ielts/r4.2.2/</guid><description>
-&lt;p>The first students to study alternative medicine at university level in Australia began their four-year, full-time course at the University of Technology Sydney, in early 1994. Their course covered, among other therapies, acupuncture. The theory they learnt is based on the traditional Chinese explanation of this ancient healing art that it can regulate the flow of‘Qi’ or energy through pathways in the body. This course reflects how far some alternative therapies have come in their struggle for acceptance by the medical establishment.&lt;/p>
-&lt;p>Australia has been unusual in the Western world in having a very conservative attitude to natural or alternative therapies, according to Dr Paul Laver, a lecturer in Public Health at the University of Sydney.‘We’ve had a tradition of doctors being fairly powerful and I guess they are pretty loath to allow any pretenders to their position to come into it.’ In many other industrialized countries, orthodox and alternative medicine have worked‘hand in glove’ for years. In Europe, only orthodox doctors can prescribe herbal medicine. In Germany, plant remedies account for 10% of the national turnover of pharmaceuticals. Americans made more visits to alternative therapists than to orthodox doctors in 1990, and each year they spend about $US12 billion on therapies that have not been scientifically tested.&lt;/p>
-&lt;p>Disenchantment with orthodox medicine has seen the popularity of alternative therapies in Australia climb steadily during the past 20 years. In a 1983 national health survey, 1.9% of people said they had contacted a chiropractor, naturopath, osteopath, acupuncturist or herbalist in the two weeks prior to the survey. By 1990, this figure had risen to 2.6% of the population. The 550,000 consultations with alternative therapists reported in the 1990 survey represented about an eighth of the total number of consultations with medically qualified personnel covered by the survey, according to Dr Laver and colleagues writing in the Australian Journal of Public Health in 1993. ‘A better educated and less accepting public has become disillusioned with the experts in general, and increasingly skeptical about science and empirically based knowledge,’ they said.‘The high standing of professionals, including doctors, has been eroded as a consequence.’&lt;/p>
-&lt;p>Rather than resisting or criticizing this trend, increasing numbers of Australian doctors, particularly younger ones, are forming group practices with alternative therapists or taking courses themselves, particularly in acupuncture and herbalism. Part of the incentive was financial, Dr Laver said. ‘ The bottom line is that most general practitioners are business people. If they see potential clientele going elsewhere, they might want to be able to offer a similar service.'&lt;/p>
-&lt;p>In 1993, Dr Laver and his colleagues published a survey of 289 Sydney people who attended eight alternative therapists’ practices in Sydney. These practices offered a wide range of alternative therapies from 25 therapists. Those surveyed had experienced chronicillnesses, for which orthodox medicine had been able to provide little relief. They commented that they liked the holistic approach of their alternative therapists and the friendly, concerned and detailed attention they had received. The cold, impersonal manner of orthodox doctors featured in the survey. An increasing exodus from their clinics, coupled with this and a number of other relevant surveys carried out in Australia, all pointing to orthodox doctors’ inadequacies, have led mainstream doctors themselves to begin to admit they could learn from the personal style of alternative therapists. Dr Patrick Store, President of the Royal College of General Practitioners, concurs that orthodox doctors could learn a lot about bedside manner and advising patients on preventative health from alternative therapists.&lt;/p>
-&lt;p>According to the Australian Journal of Public Health, 18% of patients visiting alternative therapists do so because they suffer from musculo-skeletal complaints, 12% suffer from digestive problems, which is only 1% more than those suffering from emotional problems. Those suffering from respiratory complaints represent 7% of their patients, and candida sufferers represent an equal percentage. Headache sufferers and those complaining of general ill health represent 6% and 5% of patients respectively and a further 4% see therapists for general health maintenance.&lt;/p>
-&lt;p>The survey suggested that complementary medicine is probably a better term than alternative medicine. Alternative medicine appears to be an adjunct sought in times of disenchantment when conventional medicine seems not to offer the answer.&lt;/p></description></item><item><title>Docs: R4.2.3 Play is a Serious Business</title><link>https://note.codiy.net/ielts/r4.2.3/</link><pubDate>Tue, 09 Aug 2022 13:11:52 +0800</pubDate><guid>https://note.codiy.net/ielts/r4.2.3/</guid><description>
-&lt;blockquote>
-&lt;p>Does Play Help Develop Bigger, Better Brains? Bryant Furlow Investigates.&lt;/p>
-&lt;/blockquote>
-&lt;h4 id="a">A&lt;/h4>
-&lt;p>Playing is a serious business. Children engrossed in a make-believe world, fox cubs play-fighting or kittens teasing a ball of string aren’t just having fun. Play may look like a carefree and exuberant way to pass the time before the hard work of adulthood comes along, but there’s much more to it than that. For a start, play can even cost animals their lives. Eighty percent of deaths among juvenile fur seals occur because playing pups fail to spot predators approaching. It is also extremely expensive in terms of energy. Playful young animals use around two or three percent of their energy cavorting, and in children that figure can be closer to fifteen percent.‘Even two or three percent is huge,’ says John Byers of Idaho University. ‘You just don’t find animals wasting energy like that,’ he adds. There must be a reason.&lt;/p>
-&lt;h4 id="b">B&lt;/h4>
-&lt;p>But if play is not simply a developmental hiccup, as biologists once thought, why did it evolve? The latest idea suggests that play has evolved to build big brains. In other words, playing makes you intelligent. Playfulness, it seems, is common only among mammals, although a few of the larger-brained birds also indulge. Animals at play often use unique signs-tail-wagging in dogs, for example—to indicate that activity superficially resembling adult behavior is not really in earnest. A popular explanation of play has been that it helps juveniles develop the skills they will need to hunt, mate and socialize as adults. Another has been that it allows young animals to get in shape for adult life by improving their respiratory endurance. Both these ideas have been questioned in recent years.&lt;/p>
-&lt;h4 id="c">C&lt;/h4>
-&lt;p>Take the exercise theory. If play evolved to build muscle or as a kind of endurance training, then you would expect to see permanent benefits. But Byers points out that the benefits of increased exercise disappear rapidly after training stops, so any improvement in endurance resulting from juvenile play would be lost by adulthood. ‘If the function of play was to get into shape,’ says Byers, ‘the optimum time for playing would depend on when it was most advantageous for the young of a particular species to do so. But it doesn’t work like that.’ Across species, play tends to peak about halfway through the suckling stage and then decline.&lt;/p>
-&lt;h4 id="d">D&lt;/h4>
-&lt;p>Then there’s the skills-training hypothesis. At first glance, playing animals do appear to be practicing the complex manoeuvres they will need in adulthood. But a closer inspection reveals this interpretation as too simplistic. In one study, behavioral ecologist Tim Caro, from the University of California, looked at the predatory play of kittens and their predatory behavior when they reached adulthood. He found that the way the cats played had no significant effect on their hunting prowess in later life.&lt;/p>
-&lt;h4 id="e">E&lt;/h4>
-&lt;p>Earlier this year, Sergio Pellis of Lethbridge University, Canada, reported that there is a strong positive link between brain size and playfulness among mammals in general. Comparing measurements for fifteen orders of mammal, he and his team found larger brains (for a given body size) are linked to greater playfulness. The converse was also found to be true. Robert Barton of Durham University believes that, because large brains are more sensitive to developmental stimuli than smaller brains, they require more play to help mould them for adulthood. ‘I concluded it’s to do with learning, and with the importance of environmental data to the brain during development,’ he says.&lt;/p>
-&lt;h4 id="f">F&lt;/h4>
-&lt;p>According to Byers, the timing of the playful stage in young animals provides an important clue to what’s going on. If you plot the amount of time a juvenile devotes to play each day over the course of its development, you discover a pattern typically associated with a ‘sensitive period’-a brief development window during which the brain can actually be modified in ways that are not possible earlier or later in life. Think of the relative ease with which young children-but not infants or adults-absorb language. Other researchers have found that play in cats, rats and mice is at its most intense just as this ‘window of opportunity’ reaches its peak.&lt;/p>
-&lt;h4 id="g">G&lt;/h4>
-&lt;p>‘People have not paid enough attention to the amount of the brain activated by play,’says Marc Bekoff from Colorado University. Bekoff studied coyote pups at play and found that the kind of behavior involved was markedly more variable and unpredictable than that of adults. Such behavior activates many different parts of the brain, he reasons. Bekoff likens it to a behavioral kaleidoscope, with animals at play jumping rapidly between activities. ‘They use behavior from a lot of different context&amp;ndash; predation, aggression, reproduction,’ he says. ‘Their developing brain is getting all sorts of stimulation.’&lt;/p>
-&lt;h4 id="h">H&lt;/h4>
-&lt;p>Not only is more of the brain involved in play than was suspected, but it also seems to activate higher cognitive processes. ‘There’s enormous cognitive, involvement in play,’ says Bekoof. He points out that play often involves complex assessments of playmates, ideas of reciprocity and the use of specialized signals and rules. He believes that play creates a brain that has greater behavioral flexibility and improved potential for learning later in life. The idea is backed up by the work of Stephen Siviy of Gettysburg College. Siviy studied how bouts of play affected the brain’s levels of a particular chemical associated with the stimulation and growth of nerve cells. He was surprised by the extent of the activation. ‘Play just lights everything up,’ he says. By allowing link-ups between brain areas that might not normally communicate with each other, play may enhance creativity.&lt;/p>
-&lt;h4 id="i">I&lt;/h4>
-&lt;p>What might further experimentation suggest about the way children are raised in many societies today? We already know that rat pups denied the chance to play grow smaller brain components and fail to develop the ability to apply social rules when they interact with their peers. With schooling beginning earlier and becoming increasingly exam-orientated, play is likely to get even less of a look-in. Who knows what the result of that will be?&lt;/p></description></item><item><title>Docs: R4.3.1 Micro-Enterprise Credit for Street Youth</title><link>https://note.codiy.net/ielts/r4.3.1/</link><pubDate>Tue, 09 Aug 2022 13:11:52 +0800</pubDate><guid>https://note.codiy.net/ielts/r4.3.1/</guid><description>
-&lt;blockquote>
-&lt;p>&amp;lsquo;I am from a large, poor family and for many years we have done without breakfast. Ever since I joined the Street Kids International program I have been able to buy my family sugar and buns for breakfast. I have also bought myself decent second-hand clothes and shoes.’&lt;br>
-Doreen Soko&lt;/p>
-&lt;/blockquote>
-&lt;blockquote>
-&lt;p>&amp;lsquo;We’ve had business experience. Now I’m confident to expand what we’ve been doing.I’ve learnt cash management, and the way of keeping money so we save for reinvestment.Now business is a part of our lives. As well, we didn’t know each other before—now we’ve made new friends.’&lt;br>
-Fan Kaoma.&lt;/p>
-&lt;/blockquote>
-&lt;blockquote>
-&lt;p>Participants in the Youth skills Enterprise Initiative Program, Zambia&lt;/p>
-&lt;/blockquote>
-&lt;p>Introduction
-Although small-scale business training and credit programs have become more common throughout the world, relatively little attention has been paid to the need to direct such opportunities to young people. Even less attention has been paid to children living on the street or in difficult circumstance. Over the past nine years, Street Kids International (S. K. I.) has been working with partnerorganizations in Africa, Latin America and India to support the economic lives of streetchildren. The purpose of this paper is to share some of the lessons S.K.I and our partnershave learned.&lt;/p>
-&lt;p>Background
-Typically, children do not end up on the streets due to a single cause, but to a combination of factors: a dearth of adequately funded schools, the demand for income at home, family breakdown and violence. The street may be attractive to children as a place to find adventurous play and money. However, it is also a place where some children are exposed, with little or no protection, to exploitative employment, urban crime, and abuse. Children who work on the streets are generally involved in unskilled, labor-intensive tasks which require long hours, such as shining shoes, carrying goods, guarding or washing cars, and informal trading. Some may also earn income through begging, or through theft and other illegal activities. At the same time, there are street children who take pride in supporting themselves and their families and who often enjoy their work.Many children may choose entrepreneurship because it allows them a degree of independence, is less exploitative than many forms of paid-employment, and is flexibleenough to allow them to participate in other activities such as education and domestic task.&lt;/p>
-&lt;p>Street Business Partnerships
-S. K. I. has worked with partner organizations in Latin America, Africa and India to develop innovative opportunities for street children to earn income. ·The S. K. I. Bicycle Courier Service first started in the Sudan.Participants in this enterprise were supplied with bicycles, which they used to deliver parcels and messages, and which they were required to pay for gradually from their wages. A similar program was taken up in Bangalore, India. ·Another successful project, The Shoe Shine Collective, was a partnership program with the Y.W.C.A. in the Dominican Republic. In this project, participants were lent money to purchase shoe shine boxes. They were also given a safe place to store their equipment, and facilities for individual savings plans. ·The Youth Skills Enterprise Initiative in Zambia is a joint program with the Red Cross Society and the Y.W.C.A. Street youths are supported to start their own small business through business training, life skills training and access to credit.&lt;/p>
-&lt;p>Lessons learned
-The following lessons have emerged from the programs that S. K. I. and partner organizations have created.·Being an entrepreneur is not for everyone, nor for every street child. Ideally, potential participants will have been involved in the organization’s programs for at least six months, and trust and relationship building will have already been established.·The involvement of the participants has been essential to the development of relevant programs. When children have had a major role in determining procedures, they are more likely to abide by and enforce them.·It is critical for all loans to be linked to training programs that include the development of basic business and life skills.·There are tremendous advantages to involving parents or guardians in the program,where such relationships exist. Home visits allow staff the opportunity to know where the participants live, and to understand more about each individual’s situation.·Small loans are provided initially for purchasing fixed assets such as bicycles, shoe shine kits and basic building materials for a market stall. As the entrepreneurs gain experience, the enterprises can be gradually expanded and consideration can be given to increasing loan amounts. The loan amount in S.K. I. programs have generally ranged from US$30-$100.·All S. K. I. programs have charged interest on the loans, primarily to get the entrepreneurs used to the concept of paying interest on borrowed money. Generally the rates have been modest (lower than bank rates.)&lt;/p>
-&lt;p>Conclusion
-There is a need to recognize the importance of access to credit for impoverished young people seeking to fulfill economic needs. The provision of small loans to support the entrepreneurial dreams and ambitions of youth can be an effective means to help them change their lives. However, we believe hat credit must be extended in association with other types of support that help participants develop critical life skills as well as productive businesses.&lt;/p></description></item><item><title>Docs: R4.3.2 Volcanoes — Earth-Shattering News</title><link>https://note.codiy.net/ielts/r4.3.2/</link><pubDate>Tue, 09 Aug 2022 13:11:52 +0800</pubDate><guid>https://note.codiy.net/ielts/r4.3.2/</guid><description>
-&lt;blockquote>
-&lt;p>When Mount Pinatubo suddenly erupted on 9 June 1991, the power of volcanoes past and present again hit the headlines.&lt;/p>
-&lt;/blockquote>
-&lt;h4 id="a">A&lt;/h4>
-&lt;p>Volcanoes are the ultimate earth-moving machinery. A violent eruption can blow the top few kilometers off a mountain, scatter fine ash practically all over the globe and hurl rock fragments into the stratosphere to darken the skies a continent away.&lt;/p>
-&lt;p>But the classic eruption — cone-shaped mountain, big bang, mushroom cloud and surges of molten lava — is only a tiny part of a global story. Volcanism, the name givento volcanic processes, really has shaped the world. Eruptions have rifted continents,raised mountain chains, constructed islands and shaped the topography of the earth. The entire ocean floor has a basement of volcanic basalt.&lt;/p>
-&lt;p>Volcanoes have not only made the continents, they are also thought to have made the world’s first stable atmosphere and provided all the water for the oceans, rivers and ice-caps. There are now about 600 active volcanoes. Every year they add two or three cubic kilometers of rock to the continents. Imagine a similar number of volcanoes smoking away for the last 3,500 million years. That is enough rock to explain the continental crust.&lt;/p>
-&lt;p>What comes out of volcanic craters is mostly gas. More than 90% of this gas is water vapor from the deep earth: enough to explain, over 3,500 million years, the water in the oceans. The rest of the gas is nitrogen, carbon dioxide, sulphur dioxide, methane,ammonia and hydrogen. The quantity of these gases, again multiplied over 3,500 million years, is enough to explain the mass of the world’s atmosphere. We are alive because volcanoes provided the soil, air and water we need.&lt;/p>
-&lt;h4 id="b">B&lt;/h4>
-&lt;p>Geologists consider the earth as having a molten core, surrounded by a semi-molten mantle and a brittle, outer skin. It helps to think of a soft-boiled egg with a runny yolk, a firm but squishy white and a hard shell. If the shell is even slightly cracked during boiling,the white material bubbles out and sets like a tiny mountain chain over the crack — like an archipelago of volcanic islands such as the Hawaiian Islands. But the earth is so much bigger and the mantle below is so much hotter.&lt;/p>
-&lt;p>Even though the mantle rocks are kept solid by overlying pressure, they can still slowly ‘flow’ like thick treacle. The flow, thought to be in the form of convection currents,is powerful enough to fracture the ‘eggshell’ of the crust into plates, and keep them bumping and grinding against each other, or even overlapping, at the rate of a few centimeters a year. These fracture zones, where the collisions occur, are where earthquakes happen. And, very often, volcanoes.&lt;/p>
-&lt;h4 id="c">C&lt;/h4>
-&lt;p>These zones are lines of weakness, or hot spots. Every eruption is different, but put at its simplest, where there are weaknesses, rocks deep in the mantle, heated to 1,350℃，will start to expand and rise. As they do so, the pressure drops, and they expand and become liquid and rise more swiftly.&lt;/p>
-&lt;p>Sometimes it is slow: vast bubbles of magma — molten rock from the mantle —inch lowards the surface, cooling slowly, to show through as granite extrusions(as on Skye, or the Great Whin Sill, the lava dyke squeezed out like toothpaste that carries part of Hadrian’s Wall in northern England). Sometimes — as in Northern Ireland, Wales and the Karoo in South Africa — the magma rose faster, and then flowed out horizontally on to the surface in vast thick sheets. In the Deccan plateau in western India, there are more than two million cubic kilometers of lava, some of it 2,400 meters thick, formed over 500,000 years of slurping eruption.&lt;/p>
-&lt;p>Sometimes the magma moves very swiftly indeed. It does not have time to cool as it surges upwards. The gases trapped inside the boiling rock expand suddenly, the lava glows with heat, it begins to froth, and it explodes with tremendous force. Then the slightly cooler lava following it begins to flow over the lip of the crater. It happens on Mars, it happened on the moon, it even happens on some of the moons of Jupiter and Uranus. By studying the evidence, vulcanologists can read the force of the great blasts of the past. Is the pumice light and full of holes? The explosion was tremendous. Are the rocks heavy, with huge crystalline basalt shapes, like the Giant’s Causeway in Northern Ireland? It was a slow, gentle eruption.&lt;/p>
-&lt;p>The biggest eruptions are deep on the mid-ocean floor, where new lava is forcing the continents apart and widening the Atlantic by perhaps five centimeters a year. Look at maps of volcanoes, earthquakes and island chains like the Philippines and Japan, and you can see the rough outlines of what are called tectonic plates — the plates which make up the earth’s crust and mantel. The most dramatic of these is the Pacific ‘ring of fire’ where there have been the most violent explosions — Mount Pinatubo near Manila, Mount St Helen’s in the Rockies and El Chichón in Mexico about a decade ago, not to mention world-shaking blasts like Krakatoa in the Sunda Straits in 1883.&lt;/p>
-&lt;h4 id="d">D&lt;/h4>
-&lt;p>But volcanoes are not very predictable. That is because geological time is not like human time. During quiet periods, volcanoes cap themselves with their own lava by forming a powerful cone from the molten rocks slopping over the rim of the crater; later the lava cools slowly into a huge, hard, stable plug which blocks one further eruption until the pressure below becomes irresistible. In the case of Mount Pinatubo, this took 600 years.&lt;/p>
-&lt;p>Then, sometimes, with only a small warning, the mountain blows its top. It did this at Mont Pelée in Martinique at 7.49 a.m. on 8 May, 1902. Of a town of 28,000, only two people survived. In 1815, a sudden blast removed the top 1,280 meters of Mount Tambora in Indonesia. The eruption was so fierce that dust thrown into the stratosphere darkened the skies, cancelling the following summer in Europe and North America.Thousands starved as the harvests failed, after snow in June and frosts in August.Volcanoes are potentially world news, especially the quiet ones.&lt;/p></description></item><item><title>Docs: R4.3.3 Obtaining Linguistic Data</title><link>https://note.codiy.net/ielts/r4.3.3/</link><pubDate>Tue, 09 Aug 2022 13:11:52 +0800</pubDate><guid>https://note.codiy.net/ielts/r4.3.3/</guid><description>
-&lt;h4 id="a">A&lt;/h4>
-&lt;p>Many procedures are available for obtaining data about a language. They range from a carefully planned, intensive field investigation in a foreign country to a casual intro-spection about one&amp;rsquo;s mother tongue carried out in an armchair at home.&lt;/p>
-&lt;h4 id="b">B&lt;/h4>
-&lt;p>In all cases, someone has to act as a source of language data — an informant. Infor-mants are (ideally) native speakers of a language, who provide utterances for analysis and other kinds of information about the language (e.g. translations, comments about correct-ness, or judgments on usage). Often, when studying their mother tongue, linguists act as their own informants, judging the ambiguity, acceptability, or other properties of utte-rances against their own intuitions. The convenience of this approach makes it widely used, and it is considered the norm in the generative approach to linguistics. But a linguist’s personal judgments are often uncertain, or disagree with the judgments of other linguists, at which point recourse is needed to more objective methods of enquiry, using non-linguists as informants. The latter procedure is unavoidable when working on foreign languages, or child speech.&lt;/p>
-&lt;h4 id="c">C&lt;/h4>
-&lt;p>Many factors must be considered when selecting informants — whether one is working with single speakers (a common situation when languages have not been described before), two people interacting, small groups or large-scale samples. Age, sex,social background and other aspects of identity are important, as these factors are known to influence the kind of language used. The topic of conversation and the characteristics of the social setting (e.g. the level of formality) are also highly relevant, as are the per-sonal qualities of the informants (e.g. their fluency and consistency). For larger studies,scrupulous attention has been paid to the sampling theory employed, and in all cases,decisions have to be made about the best investigative techniques to use.&lt;/p>
-&lt;h4 id="d">D&lt;/h4>
-&lt;p>Today, researchers often tape-record informants. This enables the linguist’s claims about the language to be checked, and provides a way of making those claims more accurate (‘difficult’pieces of speech can be listened to repeatedly). But obtaining natural-istic, good-quality data is never easy. People talk abnormally when they know they are being recorded, and sound quality can be poor. A variety of tape-recording procedures have thus been devised to minimize the ‘observer’s paradox’ (how to observe the way people behave when they are not being observed). Some recordings are made without the speakers being aware of the fact — a procedure that obtains very natural data, though ethical objections must be anticipated. Alternatively, attempts can be made to make the speaker forget about the recording, such as keeping the tape recorder out of sight, or us-ing radio microphones. A useful technique is to introduce a topic that quickly involves the speaker, and stimulates a natural language style (e.g. asking older informants about how times have changed in their locality).&lt;/p>
-&lt;h4 id="e">E&lt;/h4>
-&lt;p>An audio tape recording does not solve all the linguist’s problems, however. Speech is often unclear and ambiguous. Where possible,therefore, the recording has to be supplemented by the observer’s written comments on the non-verbal behavior of the participants, and about the context in general. A facial expression, for example, candramatically alter the meaning of what is-said. Video recordings avoid these problems to a large extent, but even they have limitations (the camera cannot be everywhere), and transcriptions always benefit from any additional commentary provided by an observer.&lt;/p>
-&lt;h4 id="f">F&lt;/h4>
-&lt;p>Linguists also make great use of structured sessions, in which they systematically ask their informants for utterances that describe certain actions, objects or behavior. With a bilingual informant, or through use of an interpreter, it is possible to use translation tech-niques (‘How do you say table in your language?’). A large number of points can be covered in a short time, using interview worksheets and questionnaires. Often, the re-searcher wishes to obtain information about just a single variable, in which case a re-stricted set of questions may be used: a particular feature of pronunciation, for example,can be elicited by asking the informant to say a restricted set of words. There are also several direct methods of elicitation, such as asking informants to fill in the blanks in a substitution frame (e.g. I ___ see a car), or feeding them the wrong stimulus for correc-tion (‘Is it possible to say I no can see?’).&lt;/p>
-&lt;h4 id="g">G&lt;/h4>
-&lt;p>A representative sample of language, compiled for the purpose of linguistic analysis,is known as a corpus. A corpus enables the linguist to make unbiased statements about frequency of usage, and it provides accessible data for the use of different researchers. Its range and size are variable. Some corpora attempt to cover the language as a whole, tak-ing extracts from many kinds of text; others are extremely selective, providing a collec-tion of material that deals only with a particular linguistic feature. The size of the corpus depends on practical factors, such as the time available to collect, process and store thedata: it can take up to several hours to provide an accurate transcription of a few minutes of speech. Sometimes a small sample of data will be enough to decide a linguistic hypo-thesis; by contrast, corpora in major research projects can total millions of words. An important principle is that all corpora, whatever their size, are inevitably limited in their coverage, and always need to be supplemented by data derived from the intuitions of native speakers of the language, through either introspection or experimentation.&lt;/p></description></item><item><title>Docs: R4.4.1 How Much Higher? How Much Faster?</title><link>https://note.codiy.net/ielts/r4.4.1/</link><pubDate>Tue, 09 Aug 2022 13:11:52 +0800</pubDate><guid>https://note.codiy.net/ielts/r4.4.1/</guid><description>
-&lt;h3 id="-limits-to-human-sporting-performance-are-not-yet-in-sight-">— Limits to Human Sporting Performance Are Not Yet in Sight —&lt;/h3>
-&lt;p>Since the early years of the twentieth century, when the International Athletic Federa-tion began keeping records, there has been a steady improvement in how fast athletes run,how high they jump and how far they are able to hurl massive objects, themselves included, through space. For the so-called power events — that require a relatively brief,explosive release of energy, like the 100-metre sprint and the long jump — times and distances have improved ten to twenty percent. In the endurance events the results have been more dramatic. At the 1908 Olympics, John Hayes of the U.S.team ran a marathon in a time of 2:55:18. In 1999, Morocco&amp;rsquo;s Khalid Khannouchi set a new world record of 2:05:42, almost thirty percent faster.&lt;/p>
-&lt;p>No one theory can explain improvements in performance, but the most important fac-tor has been genetics. ‘The athlete must choose his parents carefully,’ says Jesus Dapena,a sports scientist at Indiana University, invoking an oft-cited adage. Over the past century,the composition of the human gene pool has not changed appreciably, but with increasing global participation in athletics — and greater rewards to tempt athletes — it is more likely that individuals possessing the unique complement of genes for athletic perfor-mance can be identified early. ‘Was there someone like [sprinter] Michael Johnson in the 1920s?’ Dapena asks. ‘I’m sure that there was, but his talent was probably never realiz-ed.’&lt;/p>
-&lt;p>Identifying genetically talented individuals is only the first step. Michael Yessis, an emeritus professor of Sports Science at California State University at Fullerton, maintains that ‘genetics only determines about one third of what an athlete can do. But with the right training we can go much further with that one third than we’ve been going.’ Yessis believes that U.S. runners, despite their impressive achievements, are ‘running on their genetics’. By applying more scientific methods, ‘they’re going to go much faster’. These methods include strength training that duplicates what they are doing in their running events as well as plyometrics, a technique pioneered in the former Soviet Union.&lt;/p>
-&lt;p>Whereas most exercises are designed to build up strength or endurance, plyometrics focuses on increasing power — the rate at which an athlete can expend energy. When a sprinter runs, Yessis explains, her foot stays in contact with the ground for just under a tenth of a second, half of which is devoted to landing and the other half to pushing off.Plyometric exercises help athletes make the best use of this brief interval.&lt;/p>
-&lt;p>Nutrition is another area that sports trainers have failed to address adequately. ‘Many athletes are not getting the best nutrition, even through supplements,’ Yessis insists. Each activity has its own nutritional needs. Few coaches, for instance, understand how deficiencies in trace mineral can lead to injuries.&lt;/p>
-&lt;p>Focused training will also play a role in enabling records to be broken. ‘If we applied the Russian training model to some of the outstanding runners we have in this country,’Yessis asserts, ‘they would be breaking records left and right.’ He will not predict by how much, however: ‘Exactly what the limits are it’s hard to say, but there will be increase even if only by hundredths of a second, as long as our training continues to improve.’&lt;/p>
-&lt;p>One of the most important new methodologies is biomechanics, the study of the body in motion. A biomechanics films an athlete in action and then digitizes her performance,recording the motion of every joint and limb in three dimensions. By applying Newton’s laws to these motions, ‘we can say that this athlete’s run is not fast enough; that this one is not using his arms strongly enough during take-off,’ says Dapena, who uses these methods to help high jumpers. To date, however, biomechan- ics has made only a small difference to athletic performance.&lt;/p>
-&lt;p>Revolutionary ideas still come from the athletes themselves. For example, during the 1968 Olympics in Mexico City, a relatively unknown high jumper named Dick Fosbury won the gold by going over the bar backwards, in complete contradiction of all the received high-jumping wisdom, a move instantly dubbed the Fosbury flop. Fosbury him-self did not know what he was doing. That understanding took the later analysis of bio-mechanics, who put their minds to comprehending something that was too complex and unorthodox ever to have been invented through their own mathe- maticcal simula- tions.Fosbury also required another element that lies behind many improvements in athletic performance: an innovation in athletic equipment. In Fosbury’s case, it was the cushions that jumpers land on.Traditionally, high jumpers would land in pits filled with sawdust.But by Fosbury’s time, sawdust pits had been replaced by soft foam cushions, ideal for flopping.&lt;/p>
-&lt;p>In the end, most people who examine human performance are humbled by the resourcefulness of athletes and the powers of the human body. ‘Once you study athletics,you learn that it’s a vexingly complex issue,’ says John S. Raglin, a sports psychologist at Indiana University. ‘Core performance is not a simple of mundane thing of higher, faster,longer. So many variables enter into the equation, and our understanding in many cases is fundamental. We’ve got a long way to go.’ For the foreseeable future, records will be made to be broken.&lt;/p></description></item></channel></rss>
+&lt;p>It is crucial that we look at the facts if we want to make the best possible decisions for the future. It may be costly to be overly optimistic - but more costly still to be too pessimistic.&lt;/p></description></item></channel></rss>
