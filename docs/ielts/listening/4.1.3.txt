@@ -1,93 +1,136 @@
-4.1.3
-
-execute me, doctor john sen, may I speak to you for a minute?
-
-sure. come in.
-
-I am x, I am taking your course in population studies.
-
-Right, well, x, how can i help u.
-
-i am having a bit of trouble with the second assignment. and it's due in twelve days.
-
-what is the problem that you having?
-
-Is the assignment question or problem?
-
-well, that's part of the problem.
-
-I am also having, been having trouble getting hold the books.
-
-I been to the library several times, all the books are out.
-
-sounds like you should start borrowing the books be earlier
-
-I had a realy big assignment do in for a other course, and I've been speet on my time on that.
-
-You might get a extension of time to finish your assignment for me?
-
-If that's possible, but I don't know..
-
-well, Yes, It's possible, but extensions are normally given only for medical or compa reasons
-
-ortherwise, It's really a question of organzing your study. and we don't like giving extension to students who simply didn't plan their work properly.
-
-what did you get for your first assignment?
-
-I got eighty-seven persent.
-
-you did very well, indeed, so oviously you can produce good work.
-
-I don't think I will need too much extra time, as long as I can get hold of some of the important references.
-
-well, since you do so well in your frist assignment, I am prepared to give you an extra two weeks for this one
-
-so that would mean you need to submit it about a month from now.
-
-now what about the reading materials, are you chekout the general articles in the list?
-
-no not yet. there were about twenty of them, and i wasn't show which one would be most useful or important.
-
-they all useful, but i don't expect anyone to read them all, because a number of them deal with the same issues.
-
-and let me give you some suggestions.
-
-the article by xx and yy is really worth reading.
-
-right, i will read that one.
-
-you should also read the article by JS. but just look the part of rearch methology how they did it.
-
-and if you have time, the one by robos, sounds very relevant things, aloght it's not essential.
-
-ok, if is useful, i will try to read that one.
-
-now the one by xx, i won't bother with that at this stage if i were you.
-
-ok, i wouldn't bother with xx. oh now some one tell me the article by xxx is important
-
-oh, yes, in a way. but just look the last part where is discuss the research results.
-
-and last there is xxx, i can't think why i include that one
-
-it not bad, and could have some help, but not so much.
-
 ---
+title: 4.1.3
+date: 2022-08-15T21:01:52+08:00
+url: /ielts/l4.1.3/
+---
+You'll hear Melanie a student, talking to one of her lecturers about her studies.
 
-now let's deal with your assignment questions. what's the problem there.
+First, you have some time to look at questions twenty-one to twenty-seven.
 
-it's the graph on page 2.
+Now listen carefully, and answer questions twenty-one to twenty-seven.
 
-what seems to the problem, it's just the bar of graph showing reasons why people change where they live
+Excuse me, Dr Johnson.
 
-I got a photo copy, but the reasons at the bottom were missing
+May I speak to you for a minute?
 
-oh, ok, look at the first bar on the graph. that indicates a number of people who move because they want more space.
+Sure, come in.
 
-bar two is to do with the people living nearby disturbing them so they chose to move away to somewhere quiet
+I'm Melanie Griffin. I'm taking your course in population studies.
 
-now, that's look at bar number three, another reason that people change place their living becouse they want to be colser to the city.
+Right, well, Melanie, How can I help you?
 
-ok xxx to the city is an issue.
+I'm having a bit of trouble with the second assignment, and it's due in twelve days.
 
+What sort of trouble are you having?
 
+Is the assignment question a problem?
+
+Well, that's part of the problem.
+
+I'm also having - been having - trouble getting hold of the books.
+
+I've been to the library several times and all the books were out.
+
+Sounds like you should have started borrowing books a bit earlier.
+
+Well, I had a really big assignment due in for another course, and I've been spending all my time on that, and I thought...
+
+You might get an extension of time to finish your assignment for me?
+
+If that's possible. But I don't know...
+
+Well, yes, it is possible, but extensions are normally given only for medical or compassionate reasons.
+
+Otherwise, it's really a question of organizing your study, and we don't like giving extensions to students who simply didn't plan their work properly.
+
+What did you get for your first assignment?
+
+I got eighty-seven percent.
+
+Mmm, yes, you did very well indeed. So obviously you can produce good work.
+
+I don't think I'll need too much extra time, as long as I can get hold of some of the important references.
+
+Well, since you did so well in your first assignment, I'm prepared to give you an extra two weeks for this one.
+
+So that'll mean you need to submit it about a month from now.
+
+Oh, thank you!
+
+Now, what about the reading materials. Have you checked out the journal articles in the list?
+
+Umm, no, not yet. There were about twenty of them and...I wasn't sure which ones would be most useful or important.
+
+Well, they are all useful. But I don't expect anyone to read them all, because a number of them deal with the same issues.
+
+And let me give you some suggestions.
+
+The article by Anderson and Hawker is really worth reading.
+
+Right, I'll read that one.
+
+You should also read the article by Jackson, but just look at the part on the research methodology — how they did it.
+
+OK, Jackson, got that.
+
+And if you have time, the one by Roberts says very relevant things, although it's not essential.
+
+So...OK, if it's useful I'll try to read that one.
+
+Now, the one by Morris. I wouldn't​ bother with that at this stage if I were you.
+
+OK, I won't bother with Morris.
+
+Oh now, someone told me the article by Cooper is important.
+
+Well, yes, in a way, but just look at the last part, where he discusses the research results.
+
+And lastly, there is Forster. I can't think why I included that one.
+
+It's not bad, and could be of some help, but not that much.
+
+Before you hear the rest of the conversation, you have some time to look at questions twenty-eight to thirty.
+
+Now listen and answer questions twenty-eight to thirty.
+
+Now, let's deal with the assignment question.
+
+What's the problem there?
+
+It's the graph from page two.
+
+What seems to be the problem? It's just the bar graph, showing reasons why people change where they live.
+
+Well, I've got the photocopy, but the reasons at the bottom are missing.
+
+Ah, Ok, look at the first bar on the graph.
+
+Now that indicates the number of people who move because they want more space.
+
+Oh, I see, bar one, ok, now what about the next bar?
+
+Bar two is to do with people living nearby disturbing them, so they chose to move away to somewhere quieter.
+
+Now let's look at bar number three, another reason people change their place of living is because they want to be closer to the city.
+
+OK, proximity to the city is an issue.
+
+Now, bar number four refers to problems when the owner of the property won't help fix things that go wrong.
+
+In other words, the owner is not helpful, and so the tenants move out.
+
+OK, now what about bar five?
+
+Ah, bar five is about those people who move because they need a bus or train to get them into the city or to go to work.
+
+OK. And bar six?
+
+Bar number six is interesting, that reason was given quite a lot.
+
+People moving because they want to be in a more attractive neighbourhood.
+
+Oh, yes, thank you very much.
+
+That is the end of section three. You now have half a minute to check your answers.
+
+Now turn to section four.
