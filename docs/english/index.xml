@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Notebook – English Learning</title><link>https://note.codiy.net/docs/english/</link><description>Recent content in English Learning on Notebook</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://note.codiy.net/docs/english/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: English Phonetic Symbol</title><link>https://note.codiy.net/docs/2022/01/english-phonetic-symbol/</link><pubDate>Wed, 05 Jan 2022 13:11:52 +0800</pubDate><guid>https://note.codiy.net/docs/2022/01/english-phonetic-symbol/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Notebook – English Learning</title><link>https://note.codiy.net/docs/english/</link><description>Recent content in English Learning on Notebook</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://note.codiy.net/docs/english/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: English Phonetic Symbol</title><link>https://note.codiy.net/docs/1/01/english-phonetic-symbol/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://note.codiy.net/docs/1/01/english-phonetic-symbol/</guid><description>
 &lt;h2 id="音标的历史">音标的历史&lt;/h2>
 &lt;h3 id="ipa国际音标">IPA国际音标&lt;/h3>
 &lt;p>国际音标（广义），又称国际语音字母（英文International Phonetic Alphabet，简称IPA），以拉丁字母为基础的一套用来标音的系统，是用于为全世界所有语言注音的符号系统。其最早源于1888年，由国际语音协会(International Phonetic Association)设计的。&lt;/p>
@@ -248,7 +248,402 @@ alt=""
 &lt;h2 id="其他">其他&lt;/h2>
 &lt;ul>
 &lt;li>&lt;a href="http://www.yek.me.uk/gavgb.html">GA and GB Pronunciations of English&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Essential Grammars in Use</title><link>https://note.codiy.net/docs/2022/01/essential-grammars-in-use/</link><pubDate>Wed, 05 Jan 2022 13:11:52 +0800</pubDate><guid>https://note.codiy.net/docs/2022/01/essential-grammars-in-use/</guid><description>
+&lt;/ul></description></item><item><title>Docs: English Pronunciation</title><link>https://note.codiy.net/english/pronunciation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://note.codiy.net/english/pronunciation/</guid><description>
+&lt;p>&lt;a href="https://www.youtube.com/playlist?list=PLiRHe7F8P0-2Ll7FFuXyDDuODk3sEX5VP">语音技巧播放列表&lt;/a>&lt;/p>
+&lt;pre tabindex="0">&lt;code class="language-markmap" data-lang="markmap"># 语音
+## 发音
+- 元音
+- 单元音(无嘴形变化)
+- 长元音
+- 短元音
+- 双元音(有嘴形变化)
+- 辅音
+- 清辅音(无声带振动)
+- 浊辅音(有声带振动)
+- 重音
+## 连读(Connected Speech)
+- 连音(Catenation/Liaison)
+- `辅音结尾 + 元音开头`
+- not at all ~ noTaTall
+- all of it
+- look at it
+- 加音(Intrusion)
+- `元音 + 元音` 容易&amp;#34;糊&amp;#34;,所以需要加音
+- a/an就是为了连音方便`an apple` -&amp;gt; `a napple`
+- +/w/ -&amp;gt; `/uː/, /ʊ/, /aʊ/, /əʊ/ + /w/ + 元音`
+- just do + /w/ + it
+- who + /w/ + is
+- too + /w/ + often
+- you + /w/ + are
+- +/j/ -&amp;gt; `/iː/, /ɪ/, /eɪ/, /aɪ/, /ɔɪ/ + /j/ + 元音`
+- I + /j/ + am
+- she + /j/ + asked
+- stay + /j/ + up
+- +/r/ -&amp;gt; `/ə/, /ɑː/, /ɔː/ + /r/ + 元音`(只在英音中)
+- the idea + /r/ + of
+- law + /r/ + and order
+- China + /r/ + and India
+- bea**r** it
+- gea**r** up
+- fa**r** away
+- 省音(Elision) `辅音 + 辅音`
+- 单词内省音
+- different
+- interesting
+- history
+- similar
+- family
+- know
+- 单词间省音(`t,d,h,g`)
+- last year
+- you and me
+- tell her I love her
+- how ya doin&amp;#39;?
+- 缩读/缩写(Contraction)
+- you&amp;#39;re
+- I&amp;#39;ll
+- I&amp;#39;ve
+- want to == wanna
+- going to == gonna
+- have got to == gotta
+- out of == outta
+- 同化(Assimilation) `辅音 + 辅音`
+- 前音受后音影响
+- 无声除阻(`不完全爆破,失去爆破,失爆`)
+- 无声除阻
+- look back
+- that job
+- good night
+- 鼻除阻
+- 舌除阻
+- 浊音变清音
+- have to `/hæv -&amp;gt; hæf/`
+- of course `/v/ -&amp;gt; /f/`
+- 鼻化
+- in person `/in -&amp;gt; im/`
+- impolite
+- impatient
+- 后音受前音影响(`主要是复数尾词s/es`)
+- 前后音相互影响
+- 融合
+- `/s/ + /j/ =&amp;gt; /ʃ/`: God ble**ss y**ou
+- `/z/ + /j/ =&amp;gt; /ʒ/`: a**s y**ou wish
+- `/t/ + /j/ =&amp;gt; /tʃ/`: Nice to mee**t y**ou
+- `/d/ + /j/ =&amp;gt; /dʒ/`: Di**d y**ou do it?
+- 辅音延长
+- life force
+- fish shop
+- back coffee
+- 异化(Dissimilation) `辅音 + 辅音`
+- `/s/ + /t/,/k/,/p/` 中的`t,k,p`在`s`后由**送气**变为**不送气**
+- stand, stick
+- sky, school
+- spring, special
+- 有人管这叫&amp;#34;浊化&amp;#34;`t,k,p`浊化成`d,g,b`
+- r `两个r, 前面一个r不发音`
+- su(r)prise
+- pa(r)ticular
+- gove(r)nor
+- 弱读(Weak Forms/Reduction)
+- 弱读不是省音要弱,而是音变,弱读音标中间的元音一般都会变成**中央元音/ə/**
+- 介词: at, for, from, of, to
+- 冠词: an, some
+- 连词: and, but
+- 代词: you, us, them, her
+- 助动词: am, are, have, has, do, does, would, can, could, should
+## 节奏(rhythm) - 重音规律
+- 普通话: 音节等时性语言(每个字发音时长差不多)
+- 英语: 重音等时性语言
+- 英语语句中, **重读音节之间的时长基本相等**
+- **Rab**bits **eat** **car**rots
+- `重读 + 弱读` 形成节奏
+## 断句&amp;amp;停顿(意群划分)
+## 强调&amp;amp;响度
+## [语调](https://www.youtube.com/watch?v=DXx8StcXuj4) `音调/音高的起伏变化`
+- 分类
+- 平调
+- 升调
+- 一般疑问句(yes/no 问题)
+- 陈述形式的疑问句
+- 反义疑问句中的附加问句
+- 列举中,最后一个元素之前的元素
+- 礼貌的请求，建议或问题
+- 句子未完成的部分(提示接下来还有内容)
+- 降调
+- 特殊疑问句(非yes/no问题)
+- 陈述事实或回答问题
+- 感叹
+- 命令
+- 列举中,最后一个元素
+- 反义疑问句的前一部分
+- 作为回答/附和/确认的问句形式
+- 问句形式表礼貌,并非真的在问问题
+- 不满/愤怒
+- 先降后升
+- 先升后降
+- 语调基于节奏(升调降调等体现在重读音节上)
+- 作用
+- 表达态度/情感
+- 表达陈述/疑问
+- 强调
+- 帮助解释语句中成分的关系(比如and并列语句)
+- 社会/行为因素
+## 语气(感情)
+&lt;/code>&lt;/pre>&lt;h4 id="1-连音catenationliaison">1. 连音(Catenation/Liaison)&lt;/h4>
+&lt;p>
+&lt;p class="md__image">
+&lt;img
+src="https://img.codiy.net/english/pronunciation/19230731.png"
+alt=""
+/>
+&lt;/p>&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/EvbqrgYwWWo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h4 id="2-加音intrusion">2. 加音(Intrusion)&lt;/h4>
+&lt;p>
+&lt;p class="md__image">
+&lt;img
+src="https://img.codiy.net/english/pronunciation/19211611.png"
+alt=""
+/>
+&lt;/p>&lt;/p>
+&lt;p>
+&lt;p class="md__image">
+&lt;img
+src="https://img.codiy.net/english/pronunciation/19211831.png"
+alt=""
+/>
+&lt;/p>&lt;/p>
+&lt;p>
+&lt;p class="md__image">
+&lt;img
+src="https://img.codiy.net/english/pronunciation/19212032.png"
+alt=""
+/>
+&lt;/p>&lt;/p>
+&lt;p>
+&lt;p class="md__image">
+&lt;img
+src="https://img.codiy.net/english/pronunciation/19212203.png"
+alt=""
+/>
+&lt;/p>&lt;/p>
+&lt;h4 id="3-同化assimilation-异化dissimilation">3. 同化(Assimilation), 异化(Dissimilation)&lt;/h4>
+&lt;p>
+&lt;p class="md__image">
+&lt;img
+src="https://img.codiy.net/english/pronunciation/19213033.png"
+alt=""
+/>
+&lt;/p>&lt;/p>
+&lt;p>
+&lt;p class="md__image">
+&lt;img
+src="https://img.codiy.net/english/pronunciation/19212552.png"
+alt=""
+/>
+&lt;/p>&lt;/p>
+&lt;p>
+&lt;p class="md__image">
+&lt;img
+src="https://img.codiy.net/english/pronnuciation/19213359.png"
+alt=""
+/>
+&lt;/p>&lt;/p>
+&lt;p>
+&lt;p class="md__image">
+&lt;img
+src="https://img.codiy.net/english/pronunciation/19213205.png"
+alt=""
+/>
+&lt;/p>&lt;/p>
+&lt;h4 id="4-省音elision">4. 省音(Elision)&lt;/h4>
+&lt;p>
+&lt;p class="md__image">
+&lt;img
+src="https://img.codiy.net/english/pronunciation/19214151.png"
+alt=""
+/>
+&lt;/p>&lt;/p>
+&lt;h4 id="5-缩读缩写contraction">5. 缩读/缩写(Contraction)&lt;/h4>
+&lt;p>在美音中更普遍&lt;/p>
+&lt;p>
+&lt;p class="md__image">
+&lt;img
+src="https://img.codiy.net/english/pronunciation/19220019.png"
+alt=""
+/>
+&lt;/p>&lt;/p>
+&lt;p>
+&lt;p class="md__image">
+&lt;img
+src="https://img.codiy.net/english/pronunciation/19220105.png"
+alt=""
+/>
+&lt;/p>&lt;/p>
+&lt;h4 id="6-弱读weak-forms">6. 弱读(Weak Forms)&lt;/h4>
+&lt;p>
+&lt;p class="md__image">
+&lt;img
+src="https://img.codiy.net/english/pronunciation/19214944.png"
+alt=""
+/>
+&lt;/p>&lt;/p>
+&lt;p>
+&lt;p class="md__image">
+&lt;img
+src="https://img.codiy.net/english/pronunciation/19215037.png"
+alt=""
+/>
+&lt;/p>&lt;/p>
+&lt;p>
+&lt;p class="md__image">
+&lt;img
+src="https://img.codiy.net/english/pronunciation/19215542.png"
+alt=""
+/>
+&lt;/p>&lt;/p>
+&lt;h4 id="7-塞音-无声除阻">7. 塞音, 无声除阻&lt;/h4>
+&lt;p>塞音: b,p,k,g,t,d&lt;/p>
+&lt;p>塞音发音过程: 成阻-&amp;gt;持阻-&amp;gt;除阻&lt;/p>
+&lt;p>不完全爆破,失去爆破,失爆 == 无声除阻&lt;/p>
+&lt;p>无声除阻&lt;strong>不等于&lt;/strong>省音, 时长还是要占一拍, 要微微停一下&lt;/p>
+&lt;p>
+&lt;p class="md__image">
+&lt;img
+src="https://img.codiy.net/english/pronunciation/19224115.png"
+alt=""
+/>
+&lt;/p>&lt;/p>
+&lt;h4 id="8-鼻除阻舌除阻">8. 鼻除阻,舌除阻&lt;/h4>
+&lt;p>鼻除阻: 塞音 + 鼻音
+舌除阻: 塞音 + 舌边音&lt;/p>
+&lt;p>本质上还是无声除阻&lt;/p>
+&lt;p>
+&lt;p class="md__image">
+&lt;img
+src="https://img.codiy.net/english/pronunciation/19225325.png"
+alt=""
+/>
+&lt;/p>&lt;/p>
+&lt;p>
+&lt;p class="md__image">
+&lt;img
+src="https://img.codiy.net/english/pronunciation/19225357.png"
+alt=""
+/>
+&lt;/p>&lt;/p>
+&lt;p>
+&lt;p class="md__image">
+&lt;img
+src="https://img.codiy.net/english/pronunciation/19225601.png"
+alt=""
+/>
+&lt;/p>&lt;/p>
+&lt;h4 id="9-喉塞音">9. 喉塞音&lt;/h4>
+&lt;h4 id="10-不送气音">10. &amp;ldquo;不送气&amp;quot;音&lt;/h4>
+&lt;p>s + p,t,k 送气在发/s/已经送完, 后面的p,t,k不送气&lt;/p>
+&lt;h4 id="11-节奏">11. 节奏&lt;/h4>
+&lt;p>重读音节&lt;/p>
+&lt;p>
+&lt;p class="md__image">
+&lt;img
+src="https://img.codiy.net/english/pronunciation/19221045.png"
+alt=""
+/>
+&lt;/p>&lt;/p>
+&lt;h4 id="12-语调">12. 语调&lt;/h4></description></item><item><title>Docs: English Pronunciation in Use</title><link>https://note.codiy.net/english/pronunciation/1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://note.codiy.net/english/pronunciation/1/</guid><description>
+&lt;h4 id="34">34&lt;/h4>
+&lt;ul>
+&lt;li>连读和失音
+&lt;p class="md__image">
+&lt;img
+src="https://img.codiy.net/english/pronunciation/27232336.png"
+alt=""
+/>
+&lt;/p>
+&lt;p class="md__image">
+&lt;img
+src="https://img.codiy.net/english/pronunciation/27232430.png"
+alt=""
+/>
+&lt;/p>&lt;/li>
+&lt;/ul>
+&lt;h4 id="35">35&lt;/h4>
+&lt;ul>
+&lt;li>xxx
+&lt;p class="md__image">
+&lt;img
+src="https://img.codiy.net/english/pronunciation/27232009.png"
+alt=""
+/>
+&lt;/p>&lt;/li>
+&lt;li>&lt;strong>h&lt;/strong> not pronounced
+&lt;p class="md__image">
+&lt;img
+src="https://img.codiy.net/english/pronunciation/27231645.png"
+alt=""
+/>
+&lt;/p>&lt;/li>
+&lt;/ul>
+&lt;h4 id="37">37&lt;/h4>
+&lt;ul>
+&lt;li>you,me,he,she,him,her,we,us,them
+&lt;p class="md__image">
+&lt;img
+src="https://img.codiy.net/english/pronunciation/27231230.png"
+alt=""
+/>
+&lt;/p>&lt;/li>
+&lt;/ul>
+&lt;h4 id="38">38&lt;/h4>
+&lt;ul>
+&lt;li>conjunctions, prepositions
+&lt;p class="md__image">
+&lt;img
+src="https://img.codiy.net/english/pronunciation/27230759.png"
+alt=""
+/>
+&lt;/p>&lt;/li>
+&lt;/ul>
+&lt;h4 id="39">39&lt;/h4>
+&lt;ul>
+&lt;li>than, as
+&lt;p class="md__image">
+&lt;img
+src="https://img.codiy.net/english/pronunciation/27230431.png"
+alt=""
+/>
+&lt;/p>&lt;/li>
+&lt;li>there, there&amp;rsquo;s, there&amp;rsquo;re
+&lt;p class="md__image">
+&lt;img
+src="https://img.codiy.net/english/pronunciation/27230038.png"
+alt=""
+/>
+&lt;/p>&lt;/li>
+&lt;/ul>
+&lt;h4 id="41">41&lt;/h4>
+&lt;ul>
+&lt;li>other contractions
+&lt;p class="md__image">
+&lt;img
+src="https://img.codiy.net/english/pronunciation/29224442.png"
+alt=""
+/>
+&lt;/p>&lt;/li>
+&lt;/ul>
+&lt;h4 id="43">43&lt;/h4>
+&lt;ul>
+&lt;li>Sometimes you don&amp;rsquo;t hear the &lt;strong>-ed&lt;/strong> ending clearly.(只做口型)
+&lt;p class="md__image">
+&lt;img
+src="https://img.codiy.net/english/pronunciation/29225700.png"
+alt=""
+/>
+&lt;/p>&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Essential Grammars in Use</title><link>https://note.codiy.net/docs/1/01/essential-grammars-in-use/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://note.codiy.net/docs/1/01/essential-grammars-in-use/</guid><description>
 &lt;h2 id="1-tenses">1 Tenses&lt;/h2>
 &lt;p>Unit001 - Unit028&lt;/p>
 &lt;h3 id="11-present-continuous">1.1 Present Continuous&lt;/h3>
@@ -1857,4 +2252,45 @@ alt=""
 &lt;li>In &lt;strong>the Prefect tenses&lt;/strong>&lt;/li>
 &lt;li>In &lt;strong>Passive&lt;/strong> Sentences&lt;/li>
 &lt;li>As &lt;strong>adjective&lt;/strong>&lt;/li>
+&lt;/ul></description></item><item><title>Docs: IPA88</title><link>https://note.codiy.net/english/pronunciation/ipa88/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://note.codiy.net/english/pronunciation/ipa88/</guid><description>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/O4Twm51n2Xw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;/th>
+&lt;th>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>
+&lt;p class="md__image">
+&lt;img
+src="https://img.codiy.net/english/pronunciation/20222511.png?d=300x300"
+alt=""
+/>
+&lt;/p>&lt;/td>
+&lt;td>
+&lt;p class="md__image">
+&lt;img
+src="https://img.codiy.net/english/pronunciation/20222538.png?d=300x300"
+alt=""
+/>
+&lt;/p>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>
+&lt;p class="md__image">
+&lt;img
+src="https://img.codiy.net/english/pronunciation/20223505.png"
+alt=""
+/>
+&lt;/p>&lt;/p>
+&lt;h4 id="references">References&lt;/h4>
+&lt;ul>
+&lt;li>&lt;a href="https://www.yingyutu.com/dj">英语兔&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/playlist?list=PLiRHe7F8P0-2wRRzK6nzriMTXyfRwKEG6">英语兔Youtube&lt;/a>&lt;/li>
 &lt;/ul></description></item></channel></rss>
