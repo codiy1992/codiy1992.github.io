@@ -250,6 +250,7 @@ alt=""
 &lt;li>&lt;a href="http://www.yek.me.uk/gavgb.html">GA and GB Pronunciations of English&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: English Pronunciation</title><link>https://note.codiy.net/english/pronunciation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://note.codiy.net/english/pronunciation/</guid><description>
 &lt;p>&lt;a href="https://www.youtube.com/playlist?list=PLiRHe7F8P0-2Ll7FFuXyDDuODk3sEX5VP">语音技巧播放列表&lt;/a>&lt;/p>
+&lt;p>(连音, 加音, 弱读), 缩读, (省音, 无声除阻, 浊音变清音, 鼻化, 融合, 辅音延长, 送气)&lt;/p>
 &lt;pre tabindex="0">&lt;code class="language-markmap" data-lang="markmap"># 语音
 ## 发音
 - 元音
@@ -318,11 +319,13 @@ alt=""
 - look back
 - that job
 - good night
-- 鼻除阻
-- 舌除阻
+- 鼻除阻 `button`
+- 舌除阻 `bottle`
 - 浊音变清音
-- have to `/hæv -&amp;gt; hæf/`
-- of course `/v/ -&amp;gt; /f/`
+- `浊音(声带震动) + 清音(声带不震动)`
+- `前一个浊音变为对应的清音版本, 更便于发音`
+- have to `/hæv -&amp;gt; hæf/`(`/v/ + /t/ =&amp;gt; /f/ + /t/`)
+- of course `/v/ -&amp;gt; /f/`(`/v/ + /k/ =&amp;gt; /f/ + /k/`)
 - 鼻化
 - in person `/in -&amp;gt; im/`
 - impolite
@@ -340,11 +343,14 @@ alt=""
 - back coffee
 - 异化(Dissimilation) `辅音 + 辅音`
 - `/s/ + /t/,/k/,/p/` 中的`t,k,p`在`s`后由**送气**变为**不送气**
+- `/s/ 是一个很送气的音, 如果在加一个送气音,会很累`
+- `清辅音正常会送气; 浊辅音正常不送气`
+- `t,k,p不送气的版本仍然是清辅音(声带不震动)`
+- 有人管这叫&amp;#34;浊化&amp;#34;`t,k,p`浊化成`d,g,b`(但其实不正确, `d,g,b`声带会震动)
 - stand, stick
 - sky, school
 - spring, special
-- 有人管这叫&amp;#34;浊化&amp;#34;`t,k,p`浊化成`d,g,b`
-- r `两个r, 前面一个r不发音`
+- r `两个r化, 前面一个r不发音,主要在美音中, 英音无此问题`
 - su(r)prise
 - pa(r)ticular
 - gove(r)nor
